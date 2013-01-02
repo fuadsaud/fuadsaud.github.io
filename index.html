@@ -1,0 +1,49 @@
+<html>
+<head>
+  <title>Fuad Saud</title>
+
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <script type="text/javascript" src="jquery.js"></script>
+
+  <script type="text/javascript">
+    $(function() {
+      // Get the lastest tweet
+      $(".last-tweet").text("...");
+      $.ajax('http://search.twitter.com/search.json?q=from:fuadsaud&rpp=1&callback=?', {
+        type: 'GET',
+        success: function(data) {
+          console.log(data);
+          !data ? this.error() : $('.last-tweet').text(data.results[0].text);
+          $('.tweets').addClass('shown')
+        },
+        error: function(data) {
+          $('.last-tweet').text(":( Couldn't get the tweets");
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="content">
+    <div class="hero">
+      <h1>Fuad Saud</h1>
+      <p>I code; therefore I am.</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a target ="_blank" href="http://github.com/fuadsaud">code</a></li>
+        <li><a target="_blank" a href="#blog">blog</a><span class="wip">WIP</span></li>
+        <li><a target="_blank" a href="http://twitter.com/fuadsaud">tweets</a></li>
+        <li><a target="_blank" a href="http://plus.google.com/111258763005330870299?rel=author">g+</a></li>
+      </ul>
+    </nav>
+    <section id="tweets" class="tweets">
+      <a href="http://twitter.com/fuadsaud" class="last-tweet"></a>
+    </div>
+  </div>
+</body>
+</html>
