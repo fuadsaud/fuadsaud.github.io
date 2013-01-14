@@ -13,18 +13,19 @@
     $(function() {
       // Grab last tweet
       console.log('Trying to reach twitter.com...');
-      $(".last-tweet").text("...");
       $.ajax('http://search.twitter.com/search.json?q=from:fuadsaud&rpp=1&callback=?', {
         type: 'GET',
         dataType: 'jsonp',
         success: function(data) {
           console.log(data);
-          !data ? this.error() : $('.last-tweet').text(data.results[0].text);
+
+          $('.last-tweet').attr('href', 'http://twitter.com/fuadsaud/status/' + data.results[0].id);
+          $('.last-tweet').text(data.results[0].text);
+
           $('.tweets').addClass('shown')
         },
         error: function(data) {
-          $('.last-tweet').text(":( Couldn't get the tweets");
-          console.logsola('OHNOES!');
+          console.log('OHNOES!');
         }
       });
     });
@@ -45,7 +46,10 @@
       </ul>
     </nav>
     <section id="tweets" class="tweets">
-      <a href="http://twitter.com/fuadsaud" class="last-tweet"></a>
+      <q><a class="last-tweet"></a></q>
+      <a target="_blank" href="http://twitter.com/intent/user?screen_name=fuadsaud" class="follow-me">
+        <img src="https://dev.twitter.com/sites/all/themes/twitter_commons/images/twitter-logo.png">
+      </a>
     </div>
   </div>
 </body>

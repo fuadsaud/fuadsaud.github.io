@@ -94,10 +94,20 @@ nav li .wip {
   margin-left: 0;
 }
 
-.tweets a {
+.tweets .last-tweet {
   color: #fff;
   text-decoration: none;
   line-height: 1.5em;
   font-size: 150%;
   display: inline-block;
+}
+
+.tweets .follow-me {
+  float: right;
+  color: #00bbff;
+  text-decoration: none;
+}
+
+.tweets .follow-me:hover {
+  content: 'Follow me';
 }
