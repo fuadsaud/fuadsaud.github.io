@@ -34,15 +34,17 @@ nav {
   margin-right: 60px;
 }
 
+/*
 nav li {
   -webkit-transition-duration: 1.5s;
      -moz-transition-duration: 1.5s;
        -o-transition-duration: 1.5s;
           transition-duration: 1.5s;
 }
+*/
 
 nav li:hover {
-  margin-right: 90px;
+  /*margin-right: 90px;*/
 }
 
 nav li a {
@@ -54,6 +56,20 @@ nav li a {
 
 nav li a:hover {
   color: #00bbff;
+}
+
+nav li .wip {
+  position: relative;
+  top: -33px;
+  left: -18px;
+  font-size: 200%;
+  color: #f00;
+  display: inline-block;
+  -webkit-transform: rotate(-30deg);
+     -moz-transform: rotate(-30deg);
+      -ms-transform: rotate(-30deg);
+       -o-transform: rotate(-30deg);
+          transform: rotate(-30deg);
 }
 
 .tweets {
@@ -85,18 +101,3 @@ nav li a:hover {
   font-size: 150%;
   display: inline-block;
 }
-
-nav li .wip {
-  position: relative;
-  top: -33px;
-  left: -18px;
-  font-size: 200%;
-  color: #f00;
-  display: inline-block;
-  -webkit-transform: rotate(-30deg);
-     -moz-transform: rotate(-30deg);
-      -ms-transform: rotate(-30deg);
-       -o-transform: rotate(-30deg);
-          transform: rotate(-30deg);
-}
-
