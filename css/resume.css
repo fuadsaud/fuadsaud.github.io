@@ -1,0 +1,22 @@
+body {
+  background-color: #f2f2f0;
+}
+
+.container {
+  width: 50%;
+  margin: 60px auto;
+  font-family: Georgia, sans-serif;
+}
+
+a {
+  color: #aa0000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  line-height: 1.4em;
+}
