@@ -11,7 +11,7 @@
 
   <script type="text/javascript">
     $(function() {
-      // Grab last tweet
+      // Fetch last tweet
       console.log('Trying to reach twitter.com...');
       $.ajax('http://search.twitter.com/search.json?q=from:fuadsaud&rpp=1&callback=?', {
         type: 'GET',
@@ -31,26 +31,30 @@
     });
   </script>
 </head>
+
 <body>
   <div class="content">
     <div class="hero">
       <h1>Fuad Saud</h1>
       <p>I code; therefore I am.</p>
     </div>
+
     <nav>
       <ul>
         <li><a target="_blank" href="http://github.com/fuadsaud">code</a></li>
         <li><a target="_blank" href="/blog">blog</a><span class="wip">WIP</span></li>
         <li><a target="_blank" href="http://twitter.com/fuadsaud">tweets</a></li>
-        <li><a target="_blank" href="http://plus.google.com/111258763005330870299?rel=author">g+</a></li>
+        <li><a target="_blank" href="http://plus.google.com/111258763005330870299?rel=author" style="display: none">g+</a></li>
+        <li><a target="_blank" href="/resume">resume</a></li>
       </ul>
     </nav>
+
     <section id="tweets" class="tweets">
       <q><a class="last-tweet"></a></q>
       <a target="_blank" href="http://twitter.com/intent/user?screen_name=fuadsaud" class="follow-me">
         <img src="https://dev.twitter.com/sites/all/themes/twitter_commons/images/twitter-logo.png">
       </a>
-    </div>
+    </section>
   </div>
 </body>
 </html>
