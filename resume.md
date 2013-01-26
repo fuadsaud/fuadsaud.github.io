@@ -17,12 +17,11 @@ Rio Grande do Sul - Brazil
 I'm a 17 years old software developer living in Sapucaia do Sul, Brazil.
 
 I'm an avid learner, self-taught programmer, with interests in social technologies,
-design, usability, .
-I like playing out with new things and tools
+design, usability and mobile software. I like playing out with new things and tools.
 
 I'm passionate about Open Source, UNIX, commandline stuff, music, George R. R. Martin,
 etc. In my free time I'm usually digging some nice projects on GitHub, reading or
-<strike>trying to play</strike> playing the guitar
+<strike>trying to play</strike> playing the guitar.
 
 
 ## Education
