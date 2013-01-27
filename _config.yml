@@ -1,1 +1,3 @@
+auto: true
+server: 4000
 markdown: redcarpet
