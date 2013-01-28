@@ -21,7 +21,7 @@ design, usability and mobile software. I like playing out with new things and to
 
 I'm passionate about Open Source, UNIX, commandline stuff, music, George R. R. Martin,
 etc. In my free time I'm usually digging some nice projects on GitHub, reading or
-<strike>trying to play</strike> playing the guitar.
+<del>trying to play</del> playing the guitar.
 
 
 ## Education
@@ -62,4 +62,4 @@ management of metrology and calibration labs.
 This was my first formal employment. I worked mainly finding and
 correcting bugs on company's softwares and extending it's
 functionalities, remote deployment, etc. I played a little with SQL
-Server, PHP and - unfortunately - Delphi
+Server, PHP and <del>unfortunately<del> Delphi
