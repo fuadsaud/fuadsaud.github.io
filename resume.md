@@ -35,7 +35,7 @@ etc. In my free time I'm usually digging some nice projects on GitHub, reading o
 
 ## Technologies
 I play most with Ruby and Javascript, but I have some background with
-Java, Python, Shell Script.
+Java, Python, PHP and Shell Script.
 
 I have some experience with SQL and some RDBMS, such as MySQL and
 SQL server; but I have used MongoDB most part of time (I'm no NoSQL
