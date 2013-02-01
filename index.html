@@ -1,62 +1,17 @@
-<html>
-<head>
-  <title>Fuad Saud</title>
+---
+layout: default
+---
+<section class="about">
+  <p>
+    My name is Fuad Saud; I'm a software developer based in the south of Brazil.
+  </p>
+</section>
 
-  <meta charset="utf-8">
+<hr>
 
-  <link rel="stylesheet" type="text/css" href="css/reset.css">
-  <link rel="stylesheet" type="text/css" href="css/index.css">
-
-  <script type="text/javascript" src="js/jquery.js"></script>
-
-  <meta name="google-site-verification" content="6nAonBI-dZ4Y3vGp5gqLky9A13U6C7LXaV_A_skuaz0" />
-
-  <script type="text/javascript">
-    $(function() {
-      // Fetch last tweet
-      console.log('Trying to reach twitter.com...');
-      $.ajax('http://search.twitter.com/search.json?q=from:fuadsaud&rpp=1&callback=?', {
-        type: 'GET',
-        dataType: 'jsonp',
-        success: function(data) {
-          console.log(data);
-
-          $('.last-tweet').attr('href', 'http://twitter.com/fuadsaud/status/' + data.results[0].id);
-          $('.last-tweet').text(data.results[0].text);
-
-          $('.tweets').addClass('shown')
-        },
-        error: function(data) {
-          console.log('OHNOES!');
-        }
-      });
-    });
-  </script>
-</head>
-
-<body>
-  <div class="content">
-    <div class="hero">
-      <h1>Fuad Saud</h1>
-      <p>I code; therefore I am.</p>
-    </div>
-
-    <nav>
-      <ul>
-        <li><a target="_blank" href="http://github.com/fuadsaud">code</a></li>
-        <li><a target="_blank" href="/blog">blog</a><span class="wip">WIP</span></li>
-        <li><a target="_blank" href="http://twitter.com/fuadsaud">tweets</a></li>
-        <li><a target="_blank" href="http://plus.google.com/111258763005330870299?rel=author" style="display: none">g+</a></li>
-        <li><a target="_blank" href="/resume">resume</a></li>
-      </ul>
-    </nav>
-
-    <section id="tweets" class="tweets">
-      <q><a class="last-tweet"></a></q>
-      <a target="_blank" href="http://twitter.com/intent/user?screen_name=fuadsaud" class="follow-me">
-        <img src="https://dev.twitter.com/sites/all/themes/twitter_commons/images/twitter-logo.png">
-      </a>
-    </section>
-  </div>
-</body>
-</html>
+<dl class="listing">
+  {% for post in site.posts %}
+    <dt class="title"><a href="{{ post.url }}">{{ post.title }}</a></dt>
+    <dd class="tldr">{{ post.tldr }}</dd>
+  {% endfor %}
+</dl>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+{% include head.html %}
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/resume.html">resume</a></li>
+          <li><a href="http://github.com/fuadsaud">code</a></li>
+        </ul>
+      </nav>
+      <h1><a href="/">FS</a></h1>
+    </header>
+    <section class="main">
+      {{ content }}
+    </section>
+
+    <footer>
+      <p>
+        Feel free to hit me on <a href="http://twitter.com/fuadsaud">twitter</a>
+        or fork me at <a href="http://github.com/fuadsaud">github</a>.
+      </p>
+      <p>© 2013 Fuad Saud</p>
+      <p>
+        Powered by <a href="http://github.com/mojombo/jekyll">jekyll</a> and
+        hosted on <a href="http://pages.github.com">GitHub Pages</a>.
+        <br>
+        You can check this site's source code
+        <a href="http://github.com/fuadsaud/fuadsaud.github.com">here</a>.
+      </p>
+    </footer>
+  </div>
+
+{% include analytics.html %}
+</body>
+</html>
