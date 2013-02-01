@@ -1,3 +1,11 @@
 auto: true
 server: 4000
 markdown: redcarpet
+permalink: /:year/:month/:day/:title.html
+description: Brain dump by Fuad Saud
+author:
+  name: Fuad Saud
+  email: fuadksd@gmail.com
+sass:
+    syntax: scss
+    style:  compressed
