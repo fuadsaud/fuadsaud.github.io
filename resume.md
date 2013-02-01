@@ -62,4 +62,4 @@ management of metrology and calibration labs.
 This was my first formal employment. I worked mainly finding and
 correcting bugs on company's softwares and extending it's
 functionalities, remote deployment, etc. I played a little with SQL
-Server, PHP and <del>unfortunately<del> Delphi
+Server, PHP and <del>unfortunately</del> Delphi
