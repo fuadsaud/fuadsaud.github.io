@@ -1,5 +1,6 @@
 auto: true
 server: 4000
+pygments: true
 markdown: redcarpet
 permalink: /:year/:month/:day/:title.html
 description: Brain dump by Fuad Saud
