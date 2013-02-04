@@ -54,6 +54,8 @@ and features for company's products (mostly Ruby on Rails applications)
 and on the maintenance of existing projects. I learned tons of things
 during this period, and it was essential for my professional base.
 
+The stack here was mainly Ruby, JS, Resque, MongoDB and UNIX.
+
 ### Action Automação Ltda. ([www.cali.com.br](http://www.cali.com.br))
 #### Support Assistant and Software Developer
 Cali is small company developing softwares for automation and
@@ -61,5 +63,5 @@ management of metrology and calibration labs.
 
 This was my first formal employment. I worked mainly finding and
 correcting bugs on company's softwares and extending it's
-functionalities, remote deployment, etc. I played a little with SQL
-Server, PHP and <del>unfortunately</del> Delphi
+functionalities, remote deployment, etc. I played a little with MySQL,
+SQL Server, PHP and <del>unfortunately</del> Delphi
