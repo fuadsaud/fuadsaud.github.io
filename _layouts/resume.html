@@ -4,6 +4,8 @@
 
   <title>{{ page.title }}</title>
 
+  <meta name="viewport" content="width=device-width">
+
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/resume.css">
 </head>
@@ -16,5 +18,7 @@
     </ul>
     {{ content }}
   </div>
+
+  {{ include analytics.html }}
 </body>
 </html>
