@@ -34,7 +34,7 @@ projeto no GitHub, lendo ou <del>tentando tocar</del> tocando guitarra.
 
 ## Tecnologias
 As linguagens que eu tenho usado mais são Ruby e Javascript, mas eu tenho algum
-conhecimento em Java, Python, PHP and Shell Script.
+conhecimento em Java, Python, PHP e Shell Script.
 
 Tenho alguma experiência com SQL e alguns SGBDR - MySQL, SQL Server;
 mas na maior parte do tempo eu trabalhei com MongoDB (mas sem muita otimização
