@@ -1,4 +1,4 @@
 fuadsaud.github.com
 ===================
 
-Personal landing page / blog
+Personal page / blog
