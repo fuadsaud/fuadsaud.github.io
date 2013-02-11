@@ -38,8 +38,7 @@ I play most with Ruby and Javascript, but I have some background with
 Java, Python, PHP and Shell Script.
 
 I have some experience with SQL and some RDBMS, such as MySQL and
-SQL server; but I have used MongoDB most part of time (I'm no NoSQL
-expert though).
+SQL server; but I have used MongoDB most part of time.
 
 I use Git daily, and I love UNIX :)
 
@@ -49,7 +48,7 @@ I use Git daily, and I love UNIX :)
 Ocapi is a company focused on building solutions for e-commerces and
 digital marketing.
 
-It was and awesome innernship. I worked on development of new systems
+It was an awesome internship. I worked developing new systems
 and features for company's products (mostly Ruby on Rails applications)
 and on the maintenance of existing projects. I learned tons of things
 during this period, and it was essential for my professional base.
@@ -58,7 +57,7 @@ The stack here was mainly Ruby, JS, Resque, MongoDB and UNIX.
 
 ### Action Automação Ltda. ([www.cali.com.br](http://www.cali.com.br))
 #### Support Assistant and Software Developer
-Cali is small company developing softwares for automation and
+Cali is a small company developing softwares for automation and
 management of metrology and calibration labs.
 
 This was my first formal employment. I worked mainly finding and
