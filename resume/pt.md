@@ -7,6 +7,7 @@ title: Fuad Saud
 
 * [fuadksd@gmail.com](mailto:fuadksd@gmail.com)
 * [http://br.linkedin.com/in/fuadksd/](http://br.linkedin.com/in/fuadksd/)
+* [http://github.com/fuadsaud](http://http://github.com/fuadsaud)
 * +55 51 8539-8118 / 8516-1171
 
 Avenida Justino Camboim, 8200 - Bairro Camboim - Sapucaia do Sul
