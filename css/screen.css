@@ -94,7 +94,8 @@ article p {
 
 article blockquote {
     margin-left: 0;
-    padding-left: 15px;
+    padding: 5px 25px;
+    padding-right: 0;
     border-left: 2px solid red;
     color: #999;
 }
