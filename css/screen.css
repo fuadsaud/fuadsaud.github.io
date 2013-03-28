@@ -31,7 +31,7 @@ hr:before {
 .container {
     padding: 0 20px;
     margin: 0 auto;
-    max-width: 680px;
+    max-width: 50em;
 }
 
 .container > header nav ul {
@@ -69,6 +69,11 @@ hr:before {
     background-color: #00ffdd;
     padding: 10px;
     line-height: 2em;
+    text-align: center;
+}
+
+article header h1 {
+    font-weight: lighter;
 }
 
 article header .tldr {
@@ -76,6 +81,7 @@ article header .tldr {
     background-color: #ff89b4;
     color: #fff;
     padding: 10px;
+    margin: 30px 0;
 }
 
 article header .tldr:before {
