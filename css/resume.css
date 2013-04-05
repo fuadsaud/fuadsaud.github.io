@@ -1,11 +1,12 @@
 body {
   background-image: url("/img/feathers.png");
+  font-family: Georgia, sans-serif;
 }
 
 .container {
+  padding: 0 20px;
   max-width: 40em;
   margin: 0 auto;
-  font-family: Georgia, sans-serif;
 }
 
 a {
