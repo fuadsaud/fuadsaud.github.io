@@ -12,10 +12,12 @@ layout: default
 
 <hr>
 
-<dl class="listing">
+<section class="stream">
   {% for post in site.posts %}
-    <dt class="title"><a href="{{ post.url }}">{{ post.title }}</a></dt>
-    <dd class="tldr">{{ post.tldr }}</dd>
-    <hr>
+  <article>
+    <h1 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <p class="tldr">{{ post.tldr }}</p>
+  </article>
+  <hr>
   {% endfor %}
-</dl>
+</section>

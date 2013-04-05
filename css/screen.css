@@ -57,19 +57,18 @@ hr:before {
     padding: 10px 30px;
 }
 
-.listing {
+.stream {
     margin: 20px 0;
 }
 
-.listing dt {
-    color: #f05;
-    font-size: 200%;
+
+.stream h1 {
+    color: #a00;
+    text-align: center;
 }
 
-.listing dd {
-    padding: 10px 0;
-    margin-left: 10px;
-    margin-bottom: 40px;
+.stream p {
+    text-align: justify;
 }
 
 .container > footer {
