@@ -12,7 +12,8 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    background-color: #f50;
+    color: #fff;
 }
 
 hr {
@@ -32,6 +33,10 @@ hr:before {
     padding: 0 20px;
     margin: 0 auto;
     max-width: 50em;
+}
+
+.container > header a:hover {
+    background-color: inherit;
 }
 
 .container > header nav ul {
