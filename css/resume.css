@@ -1,22 +1,21 @@
 body {
-  /*background-color: #f8f8f8;*/
-  background-image: url("/img/bg.png");
+  background-image: url("/img/feathers.png");
 }
 
 .container {
-  max-width: 640px;
+  max-width: 40em;
   margin: 0 auto;
-  padding: 0 20px;
   font-family: Georgia, sans-serif;
 }
 
 a {
-  color: #aa0000;
-  text-decoration: none;
+    color: #a00;
+    text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+a:hover, a:active {
+    background-color: #a00;
+    color: #fff;
 }
 
 p {
