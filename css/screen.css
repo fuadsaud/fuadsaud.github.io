@@ -1,18 +1,18 @@
 body {
     background-image: url("/img/feathers.png");
-    background-color: #f7f7fa;
-    border-top: 10px solid cyan;
+    background-color: #fff;
+    border-top: 10px solid #a00;
     font-size: 17px;
     font-family: Verdana, sans-serif;
 }
 
 a {
-    color: #f50;
+    color: #a00;
     text-decoration: none;
 }
 
-a:hover {
-    background-color: #f50;
+a:hover, a:active {
+    background-color: #a00;
     color: #fff;
 }
 
@@ -21,7 +21,7 @@ hr {
     text-align: center;
     letter-spacing: 3px;
     font-size: 20px;
-    color: #f50;
+    color: #a00;
     border: none;
 }
 
@@ -32,50 +32,74 @@ hr:before {
 .container {
     padding: 0 20px;
     margin: 0 auto;
-    max-width: 50em;
+    max-width: 45em;
 }
 
-.container > header a:hover {
+.fs {
+    font-size: 4em;
+    margin: 10px 0 30px 0;
+    text-align: center;
+}
+
+.fs a:hover {
     background-color: inherit;
 }
 
-.container > header nav ul {
-    overflow: hidden;
-    padding: 0;
-    margin-bottom: 0;
-}
-
-.container > header nav ul li {
-    display: inline;
-    list-style: none;
-}
-
-.container > header nav ul li:first-child {
-    float: left;
-}
-
-.container > header nav ul li:last-child {
-    float: right;
-}
-
-.container > header h1 {
-    background-color: #0df;
-    text-align: center;
-    font-size: 400%;
-    margin: 10px 0 30px 0;
-}
-
-.container > header h1 a {
-    color: #ff0;
+.fs a {
+    color: #a00;
     text-decoration: none;
 }
 
+.about {
+    font-weight: lighter;
+    line-height: 2em;
+    text-align: center;
+    padding: 10px 30px;
+}
+
+.listing {
+    margin: 20px 0;
+}
+
+.listing dt {
+    color: #f05;
+    font-size: 200%;
+}
+
+.listing dd {
+    padding: 10px 0;
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+
 .container > footer {
-    background-color: #00ffdd;
-    padding: 10px;
+    font-size: 0.8em;
+    border-top: 1px solid #a00;
+    margin-top: 70px;
     line-height: 2em;
     text-align: center;
 }
+
+.social-links {
+    font-size: 10em;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.social-links li {
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.social-links .twitter  a:hover { color: #2eb8e7; }
+.social-links .github   a:hover { color: #286da3; }
+.social-links .feed     a:hover { color: #ff5500; }
+.social-links .linkedin a:hover { color: #286da3; }
 
 article header h1 {
     font-weight: lighter;
@@ -111,23 +135,29 @@ article blockquote {
     color: #999;
 }
 
-.about {
-    background-color: #f50;
-    color: #fff;
-    padding: 30px;
+@font-face {
+    font-family: "Entypo";
+    src: url("/fonts/entypo.ttf");
 }
 
-.listing {
-    margin: 20px 0;
+@font-face {
+    font-family: "Entypo Social";
+    src: url("/fonts/entypo-social.ttf");
 }
 
-.listing dt {
-    color: #f05;
-    font-size: 200%;
+.icon {
+    color: #000;
 }
 
-.listing dd {
-    padding: 10px 0;
-    margin-left: 10px;
-    margin-bottom: 40px;
+.icon:hover {
+    color: #a00;
+    background-color: inherit;
+}
+
+.entypo {
+    font-family: "Entypo";
+}
+
+.entypo-social {
+    font-family: "Entypo Social";
 }
