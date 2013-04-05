@@ -6,8 +6,8 @@ title: Fuad Saud
 # Fuad Frederik Saud
 
 * [fuadksd@gmail.com](mailto:fuadksd@gmail.com)
-* [http://br.linkedin.com/in/fuadksd/](http://br.linkedin.com/in/fuadksd/)
-* [http://github.com/fuadsaud](http://http://github.com/fuadsaud)
+* [br.linkedin.com/in/fuadksd/](//br.linkedin.com/in/fuadksd/)
+* [github.com/fuadsaud](//github.com/fuadsaud)
 * +55 51 8539-8118 / 8516-1171
 
 Avenida Justino Camboim, 8200 - Bairro Camboim - Sapucaia do Sul
@@ -41,7 +41,7 @@ Tenho alguma experiência com SQL e alguns SGBDR - MySQL, SQL Server; mas na
 maior parte do tempo eu trabalhei com MongoDB.
 
 ## Experiência Profissional
-### Ocapi Serviços de Informação Ltda. ([www.ocapi.com.br](http://www.ocapi.com.br))
+### Ocapi Serviços de Informação Ltda. ([www.ocapi.com.br](//www.ocapi.com.br))
 #### Desenvolvedor de Software - July 2012 to January 2013
 A Ocapi é uma empresa focada em produzir soluções para e-commerces e marketing
 digital.
@@ -54,7 +54,7 @@ minha base profissional.
 As tecnologias com as quais eu tive contato foram Ruby, JS, Resque, Redis e
 MongoDB.
 
-### Action Automação Ltda. ([www.cali.com.br](http://www.cali.com.br))
+### Action Automação Ltda. ([www.cali.com.br](//www.cali.com.br))
 #### Assistente de Suporte e Desenvolvedor de Software
 A Cali é uma pequena empresa que desenvolve softwares para automação e
 gerenciamento de laboratórios de metrologia e calibração.
