@@ -1,6 +1,15 @@
+<!DOCTYPE html>
 <html>
 <head>
-{% include head.html %}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+
+  <meta name="author" content="{{ site.author.name }}">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="canonical" href="{{ page.url | canonical }}">
 
   <style type="text/css">
     body {
@@ -29,7 +38,7 @@
 <body>
   <div class="container">
     <h1>404</h1>
-    <h1>OH NOES</h1>
+    <h1><blink>OH NOES</blink></h1>
     <marquee class="face">:O</marquee>
     <p>u broke da interwebz</p>
     <p>now go to back to <a href="/">teh hom page</a> and think about wat u done</p>
