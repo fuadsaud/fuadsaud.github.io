@@ -109,13 +109,14 @@ hr:before {
 .social-links .feed     a:hover { color: #ff5500; }
 .social-links .linkedin a:hover { color: #286da3; }
 
-article header h1 {
+article header {
     font-weight: lighter;
 }
 
 article header .tldr {
-    font-size: 100%;
-    background-color: #ff89b4;
+    font-size: 130%;
+    /*background-color: #ff89b4;*/
+    background-color: #000;
     color: #fff;
     padding: 10px;
     margin: 30px 0;
