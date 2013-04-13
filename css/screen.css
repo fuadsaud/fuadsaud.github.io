@@ -2,6 +2,7 @@ body {
     background-image: url("/img/feathers.png");
     background-color: #fff;
     border-top: 10px solid #a00;
+    box-shadow: inset 0px 10px 1em 0px #a88;
     font-size: 17px;
     font-family: Verdana, sans-serif;
 }
