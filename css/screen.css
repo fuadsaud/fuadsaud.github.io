@@ -83,6 +83,11 @@ hr:before {
     text-align: center;
 }
 
+.container > footer p {
+    margin: 0;
+    padding: 1em 0;
+}
+
 .social-links {
     font-size: 10em;
     margin: 0 auto;
