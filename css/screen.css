@@ -58,7 +58,7 @@ hr:before {
     font-weight: lighter;
     line-height: 2em;
     text-align: center;
-    padding: 10px 30px;
+    padding: 0 30px;
 }
 
 .stream {
