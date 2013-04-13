@@ -33,6 +33,12 @@ hr:before {
     content: '.......................';
 }
 
+h1 a:hover, h2 a:hover, h3 a:hover, .social-links a:hover {
+    text-shadow: #a88 -3px 2px 10px;
+    background-color: inherit;
+    color: inherit;
+}
+
 .container {
     padding: 0 20px;
     margin: 0 auto;
@@ -43,10 +49,7 @@ hr:before {
     font-size: 4em;
     margin: 10px 0 30px 0;
     text-align: center;
-}
-
-.fs a:hover {
-    background-color: inherit;
+    color: #a00;
 }
 
 .fs a {
@@ -176,3 +179,4 @@ article blockquote {
 .entypo-social {
     font-family: "Entypo Social";
 }
+
