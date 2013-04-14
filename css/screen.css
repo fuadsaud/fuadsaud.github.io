@@ -2,7 +2,7 @@ body {
     background-image: url("/img/feathers.png");
     background-color: #fff;
     border-top: 10px solid #a00;
-    box-shadow: inset 0px 10px 1em 0px #a88;
+    box-shadow: inset 0 10px 1em 0 #a88;
     font-size: 17px;
     font-family: Verdana, sans-serif;
 }
@@ -117,6 +117,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, .social-links a:hover {
 .social-links .github   a:hover { color: #286da3; }
 .social-links .feed     a:hover { color: #ff5500; }
 .social-links .linkedin a:hover { color: #286da3; }
+.social-links .mail     a:hover { color: #aa0000; }
 
 article header {
     font-weight: lighter;
