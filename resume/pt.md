@@ -3,7 +3,7 @@ layout: resume
 title: Fuad Saud
 ---
 
-# Fuad Frederik Saud
+## Fuad Frederik Saud
 
 * [fuadksd@gmail.com](mailto:fuadksd@gmail.com)
 * [br.linkedin.com/in/fuadksd/](//br.linkedin.com/in/fuadksd/)
@@ -13,7 +13,7 @@ title: Fuad Saud
 Avenida Justino Camboim, 8200 - Bairro Camboim - Sapucaia do Sul
 Rio Grande do Sul - Brazil
 
-## Background
+### Background
 
 Tenho 17 anos e moro em Sapucaia do Sul, Brasil.
 
@@ -24,7 +24,7 @@ Eu gosto bastante do universo Open Source, UNIX, aplicações de linha de comand
 música, etc. Na maior parte do meu tempo livre eu estou contribuindo com algum
 projeto no GitHub, lendo ou <del>tentando tocar</del> tocando guitarra.
 
-## Escolaridade
+### Escolaridade
 * **Bacharelado em Ciências da Computação**  
   Março 2011 - Presente (≅ 5o período - previsão de graduação: 2015)  
   Unisinos  
@@ -33,16 +33,16 @@ projeto no GitHub, lendo ou <del>tentando tocar</del> tocando guitarra.
   2008 - 2010  
   Escola Técnica Frederico Guilherme Schmidt  
 
-## Tecnologias
+### Tecnologias
 As linguagens que eu tenho usado mais são Ruby e Javascript, mas eu tenho algum
 conhecimento em Java, Python, PHP e Shell Script.
 
 Tenho alguma experiência com SQL e alguns SGBDR - MySQL, SQL Server; mas na
 maior parte do tempo eu trabalhei com MongoDB.
 
-## Experiência Profissional
-### Ocapi Serviços de Informação Ltda. ([www.ocapi.com.br](//www.ocapi.com.br))
-#### Desenvolvedor de Software - July 2012 to January 2013
+### Experiência Profissional
+#### Ocapi Serviços de Informação Ltda. ([www.ocapi.com.br](//www.ocapi.com.br))
+##### Desenvolvedor de Software - July 2012 to January 2013
 A Ocapi é uma empresa focada em produzir soluções para e-commerces e marketing
 digital.
 
@@ -54,8 +54,8 @@ minha base profissional.
 As tecnologias com as quais eu tive contato foram Ruby, JS, Resque, Redis e
 MongoDB.
 
-### Action Automação Ltda. ([www.cali.com.br](//www.cali.com.br))
-#### Assistente de Suporte e Desenvolvedor de Software
+#### Action Automação Ltda. ([www.cali.com.br](//www.cali.com.br))
+##### Assistente de Suporte e Desenvolvedor de Software
 A Cali é uma pequena empresa que desenvolve softwares para automação e
 gerenciamento de laboratórios de metrologia e calibração.
 

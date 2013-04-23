@@ -3,7 +3,7 @@ layout: resume
 title: Fuad Saud
 ---
 
-# Fuad Frederik Saud
+## Fuad Frederik Saud
 
 * [fuadksd@gmail.com](mailto:fuadksd@gmail.com)
 * [br.linkedin.com/in/fuadksd/](//br.linkedin.com/in/fuadksd/)
@@ -13,7 +13,7 @@ title: Fuad Saud
 Avenida Justino Camboim, 8200 - Bairro Camboim - Sapucaia do Sul
 Rio Grande do Sul - Brazil
 
-## Background
+### Background
 
 I'm a 17 years old software developer living in Sapucaia do Sul, Brazil.
 
@@ -26,7 +26,7 @@ free time I'm usually digging some nice projects on GitHub, reading or
 <del>trying to play</del> playing the guitar.
 
 
-## Education
+### Education
 * **Computer Science Bachelor**  
   March 2011 - Present (≅ 5th period - hopefully graduating in 2015)  
   Unisinos
@@ -35,16 +35,16 @@ free time I'm usually digging some nice projects on GitHub, reading or
   2008 - 2010  
   Frederico Guilherme Schmidt Technical School
 
-## Technologies
+### Technologies
 I play most with Ruby and Javascript, but I have some background with Java,
 Python, PHP and Shell Script.
 
 I have some experience with SQL and some RDBMS, such as MySQL and SQL server;
 but I have used MongoDB most part of time.
 
-## Experience
-### Ocapi Serviços de Informação Ltda. ([www.ocapi.com.br](//www.ocapi.com.br))
-#### Software Developer - July 2012 to January 2013
+### Experience
+#### Ocapi Serviços de Informação Ltda. ([www.ocapi.com.br](//www.ocapi.com.br))
+##### Software Developer - July 2012 to January 2013
 Ocapi is a company focused on building solutions for e-commerces and digital
 marketing.
 
@@ -55,8 +55,8 @@ essential for my professional base.
 
 The stack here was mainly Ruby, JS, Resque, Redis e MongoDB.
 
-### Action Automação Ltda. ([www.cali.com.br](//www.cali.com.br))
-#### Support Assistant and Software Developer
+#### Action Automação Ltda. ([www.cali.com.br](//www.cali.com.br))
+##### Support Assistant and Software Developer
 Cali is a small company developing softwares for automation and management of
 metrology and calibration labs.
 

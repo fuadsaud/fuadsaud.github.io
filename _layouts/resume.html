@@ -1,20 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-  {% include head.html %}
-
-  <link rel="stylesheet" type="text/css" href="/css/resume.css">
-</head>
-<body>
-  <div class="container">
-    <ul class="languages">
-      <li><a href="/resume/en.html">english</a></li>
-      |
-      <li><a href="/resume/pt.html">português</a></li>
-    </ul>
-    {{ content }}
-  </div>
-
-{% include analytics.html %}
-</body>
-</html>
+---
+layout: default
+---
+<ul class="languages">
+  <li><a href="/resume/en.html">english</a></li>
+  |
+  <li><a href="/resume/pt.html">português</a></li>
+</ul>
+<article class="resume">
+  {{ content }}
+</article>
