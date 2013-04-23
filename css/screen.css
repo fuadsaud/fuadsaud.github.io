@@ -17,6 +17,10 @@ a:hover, a:active {
          -o-transition-duration: 0.5s;
 }
 
+p {
+    line-height: 1.5em;
+}
+
 hr {
     margin: 20px 0 25px 0;
     text-align: center;
@@ -77,10 +81,8 @@ h2 a:hover, h3 a:hover, .social-links a:hover {
     max-width: 45em;
 }
 
-
-.stream h1 {
-    color: #a00;
-    text-align: center;
+.stream {
+    margin: 20px 0;
 }
 
 .stream p {
@@ -91,35 +93,44 @@ h2 a:hover, h3 a:hover, .social-links a:hover {
     font-size: 0.8em;
     border-top: 1px solid #a00;
     margin-top: 70px;
-    line-height: 2em;
     text-align: center;
+    background-color: #f2ece9;
+    padding: 0 1.5em;
 }
 
 .container > footer p {
     margin: 0;
     padding: 1em 0;
+    line-height: 2em;
 }
 
 .social-links {
-    font-size: 10em;
     margin: 0 auto;
     padding-left: 0;
-    padding-bottom: 50px;
     text-align: center;
 }
 
-@media(max-width: 700px) {
-    .social-links {
-        font-size: 4.9em;
-    }
-}
-
 .social-links li {
-    -webkit-font-smoothing: antialiased;
+    margin: 0 2em;
     display: inline-block;
+    -webkit-font-smoothing: antialiased;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
+}
+
+.social-links li .icon {
+    font-size: 10em;
+}
+
+@media(max-width: 700px) {
+    .social-links li {
+        margin: 0 1em;
+    }
+
+    .social-links li .icon {
+        font-size: 5em;
+    }
 }
 
 .social-links .twitter  a:hover { color: #2eb8e7; }
@@ -149,10 +160,6 @@ article header .tldr:before {
 article .highlight {
     background-color: #fff;
     padding: 10px 20px;
-}
-
-article p {
-    line-height: 1.5em;
 }
 
 article blockquote {
@@ -188,4 +195,12 @@ article blockquote {
 
 .entypo-social {
     font-family: "Entypo Social";
+}
+
+ul.languages {
+    padding: 0;
+}
+
+ul.languages li {
+    display: inline;
 }
