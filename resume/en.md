@@ -3,15 +3,7 @@ layout: resume
 title: Fuad Saud
 ---
 
-## Fuad Frederik Saud
-
-* <fuadksd@gmail.com>
-* [br.linkedin.com/in/fuadksd/](//br.linkedin.com/in/fuadksd/)
-* [github.com/fuadsaud](//github.com/fuadsaud)
-* +55 51 8539-8118 / 8516-1171
-
-Avenida Justino Camboim, 8200 - Bairro Camboim - Sapucaia do Sul
-Rio Grande do Sul - Brazil
+{% include resume_header.md %}
 
 ### Background
 
@@ -24,7 +16,6 @@ things and tools.
 I'm passionate about Open Source, UNIX, commandline stuff, music, etc. In my
 free time I'm usually digging some nice projects on GitHub, reading or
 <del>trying to play</del> playing the guitar.
-
 
 ### Education
 * **Computer Science Bachelor**  
