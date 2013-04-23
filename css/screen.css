@@ -5,12 +5,12 @@ body {
 }
 
 a {
-    color: #a00;
+    color: #3bb3b1;
     text-decoration: none;
 }
 
 a:hover, a:active {
-    background-color: #a00;
+    background-color: #3bb3b1;
     color: #fff;
     -webkit-transition-duration: 0.5s;
        -moz-transition-duration: 0.5s;
@@ -26,7 +26,7 @@ hr {
     text-align: center;
     letter-spacing: 3px;
     font-size: 20px;
-    color: #a00;
+    color: #3bb3b1;
     border: none;
 }
 
@@ -39,7 +39,6 @@ h1 {
     font-size: 4em;
     margin: 0 0 30px 0;
     text-align: center;
-    text-shadow: #000 -3px 3px 10px;
 }
 
 h1 a {
@@ -49,23 +48,23 @@ h1 a {
 
 h2 {
     font-size: 2em;
-    color: #a00;
+    color: #3bb3b1;
 }
 
 h2 a:hover, h3 a:hover, .social-links a:hover {
-    text-shadow: #a88 -3px 3px 10px;
+    text-shadow: #6b5f5d -3px 3px 10px;
     background-color: inherit;
     color: inherit;
 }
 
 .banner {
-    /*background-image: -webkit-linear-gradient(-90deg, #a00, #800);
-    background-image:    -moz-linear-gradient(-90deg, #a00, #800);
-    background-image:     -ms-linear-gradient(-90deg, #a00, #800);
-    background-image:      -o-linear-gradient(-90deg, #a00, #800);
-    background-image:         linear-gradient(-90deg, #a00, #800);*/
-    background-color: #a00;
-    box-shadow: 0 10px 1em 0 #a88;
+    /*background-image: -webkit-linear-gradient(-90deg, #3bb3b1, #800);
+    background-image:    -moz-linear-gradient(-90deg, #3bb3b1, #800);
+    background-image:     -ms-linear-gradient(-90deg, #3bb3b1, #800);
+    background-image:      -o-linear-gradient(-90deg, #3bb3b1, #800);
+    background-image:         linear-gradient(-90deg, #3bb3b1, #800);*/
+    background-color: #3bb3b1;
+    box-shadow: 0 10px 1em 0 #6b5f5d;
 }
 
 .about {
@@ -91,7 +90,7 @@ h2 a:hover, h3 a:hover, .social-links a:hover {
 
 .container > footer {
     font-size: 0.8em;
-    border-top: 1px solid #a00;
+    border-top: 1px solid #3bb3b1;
     margin-top: 70px;
     text-align: center;
     background-color: #f2ece9;
@@ -145,7 +144,7 @@ article header {
 
 article header .tldr {
     font-size: 130%;
-    background-color: #859900;
+    background-color: #6b5f5d;
     color: #fff;
     padding: 10px;
     margin: 30px 0;
@@ -184,7 +183,7 @@ article blockquote {
 }
 
 .icon:hover {
-    color: #a00;
+    color: #3bb3b1;
     background-color: inherit;
 }
 
