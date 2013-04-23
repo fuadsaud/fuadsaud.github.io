@@ -145,15 +145,14 @@ article header {
 
 article header .tldr {
     font-size: 130%;
-    /*background-color: #ff89b4;*/
-    background-color: #000;
+    background-color: #859900;
     color: #fff;
     padding: 10px;
     margin: 30px 0;
 }
 
 article header .tldr:before {
-    content: 'tl;dr';
+    content: "tl;dr";
     margin-right: 10px;
 }
 
