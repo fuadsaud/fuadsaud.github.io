@@ -7,14 +7,14 @@ body {
 a {
     color: #3bb3b1;
     text-decoration: none;
+    -webkit-transition-duration: 0.5s;
+       -moz-transition-duration: 0.5s;
+         -o-transition-duration: 0.5s;
 }
 
 a:hover, a:active {
     background-color: #3bb3b1;
     color: #fff;
-    -webkit-transition-duration: 0.5s;
-       -moz-transition-duration: 0.5s;
-         -o-transition-duration: 0.5s;
 }
 
 p {
