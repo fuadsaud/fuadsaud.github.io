@@ -56,7 +56,7 @@ h3 {
    color: $secondary-color;
 }
 
-h2, h3, .social-links {
+h2, h3 {
     a {
         &:hover {
             text-shadow: $secondary-color -3px 3px 10px;
@@ -95,12 +95,16 @@ h2, h3, .social-links {
     border-top: 1px solid $primary-color;
     margin-top: 70px;
     text-align: center;
-    // background-color: #f2ece9;
     background-color: $primary-color;
     color: #fff;
     padding: 0 1.5em;
 
-    a { color: inherit; }
+    a {
+        color: #000;
+
+        &:hover { background-color: #fff; }
+        &.icon:hover { background-color: inherit; }
+    }
 
     p {
         margin: 0;
@@ -152,7 +156,7 @@ article {
 
         .tldr {
             font-size: 130%;
-            background-color: $secondary-color;
+            background-color: #888;
             color: #fff;
             padding: 10px;
 
