@@ -1,8 +1,9 @@
 body {
-  background-color: #faf4f1;
+  background-color: #f1e8cc;
   font-size: 1.5em;
-  font-family: Verdana, sans-serif;
-  background: transparent url("/img/bg.png") repeat scroll top left; }
+  font-family: "Open Sans", Verdana, sans-serif;
+  background: transparent url("/img/bg.png") repeat scroll top left;
+  font-weight: lighter; }
 
 a {
   color: #aa0000;
@@ -25,41 +26,37 @@ hr {
   color: #aa0000;
   border: none; }
   hr:before {
-    content: '.......................'; }
+    content: "......................."; }
 
 h1 {
   color: #fff;
   font-size: 4em;
-  margin: 0 0 30px 0;
+  margin: 0;
   text-align: center; }
-  h1:hover {
-    text-shadow: 5px 5px 30px #000; }
-  h1 a {
-    color: #fff;
-    text-decoration: none; }
-    h1 a:hover {
-      background-color: inherit; }
 
 h2 {
   font-size: 2.5em;
-  color: #aa0000; }
+  color: #aa0000;
+  text-align: center;
+  margin: 0.8em; }
 
 h3 {
   font-size: 1.6em;
   color: #6b5f5d; }
 
-h2 a:hover, h3 a:hover {
-  text-shadow: #6b5f5d -3px 3px 10px;
-  background-color: inherit;
-  color: inherit; }
+h2, h3 {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s; }
+  h2:hover, h3:hover {
+    text-shadow: #6b5f5d -3px 3px 10px; }
 
 .banner {
   background-color: #aa0000;
-  background-image: -webkit-linear-gradient(90deg, #aa0000, red);
+  background-image: -webkit-linear-gradient(90deg, #aa0000, #f60000);
   box-shadow: 0 10px 1em #6b5f5d; }
 
 .about {
-  font-weight: lighter;
   line-height: 2em;
   text-align: center;
   padding: 0 30px; }
@@ -75,17 +72,17 @@ h2 a:hover, h3 a:hover {
     text-align: justify; }
 
 .container > footer {
-  background-color: #aa0000;
-  background-image: -webkit-linear-gradient(90deg, black, #333333);
   color: #fff;
   border-top: 1px solid #aa0000;
   margin-top: 70px;
   font-size: 0.8em;
   padding: 0 1.5em;
   text-align: center;
-  box-shadow: 0 -2px 1em #a00; }
+  background-color: #aa0000;
+  background-image: -webkit-linear-gradient(90deg, black, #404040);
+  box-shadow: 0 -2px 1em #aa0000; }
   .container > footer a {
-    color: #a00; }
+    color: #aa0000; }
     .container > footer a:hover {
       background-color: #fff; }
     .container > footer a.icon:hover {
@@ -125,9 +122,9 @@ h2 a:hover, h3 a:hover {
     .social-links li .icon {
       font-size: 5em; } }
 article {
-  padding: 10px; }
+  padding: 10px;
+  text-align: justify; }
   article header {
-    font-weight: lighter;
     text-align: center;
     margin-bottom: 4em; }
     article header .tldr {
@@ -150,14 +147,6 @@ article {
     color: #999; }
   article p {
     font-size: 1.1em; }
-
-@font-face {
-  font-family: "Entypo";
-  src: url("/fonts/entypo.ttf"); }
-
-@font-face {
-  font-family: "Entypo Social";
-  src: url("/fonts/entypo-social.ttf"); }
 
 .entypo {
   font-family: "Entypo"; }

@@ -1,11 +1,13 @@
 $primary-color:   #a00;
 $secondary-color: #6b5f5d;
+$footer-color:    #000;
 
 body {
-    background-color: #faf4f1;
+    background-color: #f1e8cc;
     font-size: 1.5em;
-    font-family: Verdana, sans-serif;
+    font-family: "Open Sans", Verdana, sans-serif;
     background: transparent url("/img/bg.png") repeat scroll top left;
+    font-weight: lighter;
 }
 
 a {
@@ -31,53 +33,46 @@ hr {
     color: $primary-color;
     border: none;
 
-    &:before { content: '.......................'; }
+    &:before { content: "......................."; }
 }
 
 h1 {
     color: #fff;
     font-size: 4em;
-    margin: 0 0 30px 0;
+    margin: 0;
     text-align: center;
-
-    &:hover { text-shadow: 5px 5px 30px #000; };
-
-    a {
-        color: #fff;
-        text-decoration: none;
-
-        &:hover { background-color: inherit; };
-    }
 }
 
 h2 {
     font-size: 2.5em;
     color: $primary-color;
+    text-align: center;
+    margin: 0.8em;
 }
 
 h3 {
-   font-size: 1.6em;
-   color: $secondary-color;
+    font-size: 1.6em;
+    color: $secondary-color;
 }
 
 h2, h3 {
-    a {
-        &:hover {
-            text-shadow: $secondary-color -3px 3px 10px;
-            background-color: inherit;
-            color: inherit;
-        }
+    -webkit-transition-duration: 0.5s;
+       -moz-transition-duration: 0.5s;
+         -o-transition-duration: 0.5s;
+
+    &:hover {
+        text-shadow: $secondary-color -3px 3px 10px;
     }
 }
 
 .banner {
     background-color: $primary-color;
-    background-image: -webkit-linear-gradient(90deg, #a00, #f00);
+    background-image: -webkit-linear-gradient(
+                        90deg, $primary-color, lighten($primary-color, 15%));
     box-shadow: 0 10px 1em $secondary-color;
 }
 
 .about {
-    font-weight: lighter;
     line-height: 2em;
     text-align: center;
     padding: 0 30px;
@@ -96,8 +91,6 @@ h2, h3 {
 }
 
 .container > footer {
-    background-color: $primary-color;
-    background-image: -webkit-linear-gradient(90deg, #000, #333);
     color: #fff;
     border-top: 1px solid $primary-color;
     margin-top: 70px;
@@ -105,10 +98,14 @@ h2, h3 {
     padding: 0 1.5em;
     text-align: center;
 
-    box-shadow: 0 -2px 1em #a00;
+    background-color: $primary-color;
+    background-image: -webkit-linear-gradient(
+        90deg, $footer-color, lighten($footer-color, 25%));
+
+    box-shadow: 0 -2px 1em $primary-color;
 
     a {
-        color: #a00;
+        color: $primary-color;
 
         &:hover { background-color: #fff; }
         &.icon:hover { background-color: inherit; }
@@ -156,9 +153,9 @@ h2, h3 {
 
 article {
     padding: 10px;
+    text-align: justify;
 
     header {
-        font-weight: lighter;
         text-align: center;
         margin-bottom: 4em;
 
@@ -190,16 +187,6 @@ article {
     }
 
     p { font-size: 1.1em; }
-}
-
-@font-face {
-    font-family: "Entypo";
-    src: url("/fonts/entypo.ttf");
-}
-
-@font-face {
-    font-family: "Entypo Social";
-    src: url("/fonts/entypo-social.ttf");
 }
 
 .entypo {
