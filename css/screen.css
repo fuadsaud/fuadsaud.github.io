@@ -1,7 +1,7 @@
 body {
   background-color: #f1e8cc;
   font-size: 1.5em;
-  font-family: "Open Sans", Verdana, sans-serif;
+  font-family: 'Open Sans', Verdana, sans-serif;
   background: transparent url("/img/bg.png") repeat scroll top left;
   font-weight: lighter; }
 
@@ -26,7 +26,7 @@ hr {
   color: #aa0000;
   border: none; }
   hr:before {
-    content: "......................."; }
+    content: '.......................'; }
 
 h1 {
   color: #fff;
@@ -142,7 +142,7 @@ article {
       padding: 10px;
       display: inline-block; }
       article header .tldr:before {
-        content: "tl;dr";
+        content: 'tl;dr';
         margin-right: 10px; }
   article .highlight {
     background-color: #fff;
@@ -157,10 +157,10 @@ article {
     font-size: 1.1em; }
 
 .entypo {
-  font-family: "Entypo"; }
+  font-family: 'Entypo'; }
 
 .entypo-social {
-  font-family: "Entypo Social"; }
+  font-family: 'Entypo Social'; }
 
 ul.languages {
   padding: 0; }
