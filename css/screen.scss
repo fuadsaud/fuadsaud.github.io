@@ -5,8 +5,8 @@ $footer-color:    #000;
 body {
     background-color: #f1e8cc;
     font-size: 1.5em;
-    font-family: "Open Sans", Verdana, sans-serif;
-    background: transparent url("/img/bg.png") repeat scroll top left;
+    font-family: 'Open Sans', Verdana, sans-serif;
+    background: transparent url('/img/bg.png') repeat scroll top left;
     font-weight: lighter;
 }
 
@@ -33,7 +33,7 @@ hr {
     color: $primary-color;
     border: none;
 
-    &:before { content: "......................."; }
+    &:before { content: '.......................'; }
 }
 
 @mixin h-with-link {
@@ -173,7 +173,7 @@ article {
             display: inline-block;
 
             &:before {
-                content: "tl;dr";
+                content: 'tl;dr';
                 margin-right: 10px;
             }
         }
@@ -196,11 +196,11 @@ article {
 }
 
 .entypo {
-    font-family: "Entypo";
+    font-family: 'Entypo';
 }
 
 .entypo-social {
-    font-family: "Entypo Social";
+    font-family: 'Entypo Social';
 }
 
 ul.languages {

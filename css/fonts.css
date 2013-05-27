@@ -35,11 +35,11 @@
 
 @font-face {
     font-family: "Entypo";
-    src: url("/fonts/entypo.ttf");
+    src: url('/fonts/entypo.ttf');
 }
 
 @font-face {
     font-family: "Entypo Social";
-    src: url("/fonts/entypo-social.ttf");
+    src: url('/fonts/entypo-social.ttf');
 }
 
