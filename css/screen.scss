@@ -36,11 +36,25 @@ hr {
     &:before { content: "......................."; }
 }
 
+@mixin h-with-link {
+    a {
+        color: inherit;
+        background-color: inherit;
+
+        &:hover {
+            color: inherit;
+            background-color: inherit;
+            text-shadow: $secondary-color -3px 3px 10px;
+        }
+    }
+}
+
 h1 {
     color: #fff;
     font-size: 4em;
     margin: 0;
     text-align: center;
+    @include h-with-link;
 }
 
 h2 {
@@ -55,15 +69,7 @@ h3 {
     color: $secondary-color;
 }
 
-h2, h3 {
-    -webkit-transition-duration: 0.5s;
-       -moz-transition-duration: 0.5s;
-         -o-transition-duration: 0.5s;
-
-    &:hover {
-        text-shadow: $secondary-color -3px 3px 10px;
-    }
-}
+h2, h3 { @include h-with-link; }
 
 .banner {
     background-color: $primary-color;
