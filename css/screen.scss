@@ -105,8 +105,6 @@ h2, h3 { @include h-with-link; }
     text-align: center;
 
     background-color: $primary-color;
-    background-image: -webkit-linear-gradient(
-        90deg, $footer-color, lighten($footer-color, 25%));
 
     box-shadow: 0 -2px 1em $primary-color;
 
