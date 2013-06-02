@@ -97,10 +97,7 @@ h2, h3 {
 
 .container > footer {
     color: #fff;
-    border-top: 1px solid $primary-color;
     margin-top: 70px;
-    font-size: 0.8em;
-    padding: 0 1.5em;
     text-align: center;
 
     background-color: $primary-color;
@@ -143,14 +140,17 @@ h2, h3 {
     .feed     a:hover { color: #ff5500; }
     .linkedin a:hover { color: #015A86; }
     .mail     a:hover { color: #ffffff; }
-
 }
 
-@media(max-width: 700px) {
-    .social-links li {
-        margin: 0 1em;
+@media(max-width: 768px) {
+    .social-links li { margin: inherit 1em; }
+}
 
-        .icon { font-size: 5em; }
+@media(max-width: 320px) {
+    .social-links li {
+        margin: 0 0.5em;
+
+        .icon { font-size: 3.5em; }
     }
 
 }
