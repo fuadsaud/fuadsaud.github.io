@@ -1,6 +1,5 @@
 $primary-color:   #a00;
 $secondary-color: #6b5f5d;
-$footer-color:    #000;
 
 body {
     background-color: #f1e8cc;
@@ -51,6 +50,7 @@ hr {
 
 h1 {
     color: #fff;
+    background-color: $primary-color; 
     font-size: 4em;
     margin: 0;
     text-align: center;
@@ -70,13 +70,6 @@ h3 {
 }
 
 h2, h3 { @include h-with-link; }
-
-.banner {
-    background-color: $primary-color;
-    background-image: -webkit-linear-gradient(
-                        90deg, $primary-color, lighten($primary-color, 15%));
-    box-shadow: 0 10px 1em $secondary-color;
-}
 
 .about {
     line-height: 2em;
@@ -109,9 +102,10 @@ h2, h3 { @include h-with-link; }
     box-shadow: 0 -2px 1em $primary-color;
 
     a {
-        color: $primary-color;
+        color: #999;
 
-        &:hover { background-color: #fff; }
+        &:hover { background-color: #000; }
+        &.icon { color: #ddd; }
         &.icon:hover { background-color: inherit; }
     }
 
