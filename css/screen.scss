@@ -45,7 +45,6 @@ hr {
         &:hover {
             color: inherit;
             background-color: inherit;
-            text-shadow: $secondary-color -3px 3px 10px;
         }
     }
 }
@@ -71,7 +70,11 @@ h3 {
     color: $secondary-color;
 }
 
-h2, h3 { @include h; }
+h2, h3 {
+    @include h;
+
+    &:hover { text-shadow: $secondary-color -3px 3px 10px; }
+}
 
 .about {
     line-height: 2em;
