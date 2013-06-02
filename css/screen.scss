@@ -177,20 +177,22 @@ article {
         }
     }
 
-    .highlight {
-        background-color: #fff;
-        padding: 10px 20px;
-    }
-
-    blockquote {
-        margin-left: 0;
-        padding: 5px 25px;
-        padding-right: 0;
-        border-left: 2px solid red;
-        color: #999;
-    }
-
     p { font-size: 1.1em; }
+}
+
+.highlight {
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+code { font-family: Inconsolata, Monaco, Menlo, monospaced, serif; }
+
+blockquote {
+    margin-left: 0;
+    padding: 5px 25px;
+    padding-right: 0;
+    border-left: 2px solid $primary-color;
+    color: #999;
 }
 
 .entypo {
