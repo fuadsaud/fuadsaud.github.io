@@ -143,10 +143,12 @@ h2, h3 {
 }
 
 @media(max-width: 768px) {
-    .social-links li { margin: inherit 1em; }
+    .social-links li { margin: 0 1em; }
 }
 
 @media(max-width: 320px) {
+    section.content { padding: 0; }
+
     .social-links li {
         margin: 0 0.5em;
 
