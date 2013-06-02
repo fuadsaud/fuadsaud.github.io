@@ -35,7 +35,9 @@ hr {
     &:before { content: '.......................'; }
 }
 
-@mixin h-with-link {
+@mixin h {
+    font-weight: lighter;
+
     a {
         color: inherit;
         background-color: inherit;
@@ -54,7 +56,7 @@ h1 {
     font-size: 4em;
     margin: 0;
     text-align: center;
-    @include h-with-link;
+    @include h;
 }
 
 h2 {
@@ -69,7 +71,7 @@ h3 {
     color: $secondary-color;
 }
 
-h2, h3 { @include h-with-link; }
+h2, h3 { @include h; }
 
 .about {
     line-height: 2em;
