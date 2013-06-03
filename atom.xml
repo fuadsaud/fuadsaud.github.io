@@ -1,0 +1,32 @@
+---
+layout: nil
+---
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>fs</title>
+  <link href="http://fuadsaud.github.io/"/>
+  <link type="application/atom+xml" rel="self" href="http://fuadsaud.github.io/atom.xml"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>http://fuadsaud.github.io/</id>
+  <author>
+    <name>Fuad Saud</name>
+    <email>fuadksd@gmail.com</email>
+  </author>
+
+  {% for post in site.posts %}
+  <entry>
+    <id>http://fuadsaud.github.io{{ post.id }}</id>
+    <id>http://fuadsaud.github.io{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="http://fuadsaud.github.io{{ post.url }}"/>
+    <title>{{ post.title | xml_escape }}</title>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <author>
+      <name>Fuad Saud</name>
+      <uri>http://fuadsaud.github.io/</uri>
+    </author>
+    <content type="html">{{ post.content | xml_escape }}</content>
+  </entry>
+  {% endfor %}
+
+</feed>
