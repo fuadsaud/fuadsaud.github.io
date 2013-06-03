@@ -1,7 +1,7 @@
 pygments: true
 markdown: redcarpet
 permalink: /:year/:month/:day/:title.html
-description: Brain dump by Fuad Saud
+description: Thoughts of a dying rubyist
 author:
   name: Fuad Saud
   email: fuadksd@gmail.com
