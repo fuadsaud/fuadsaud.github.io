@@ -73,7 +73,7 @@ h3 {
 h2, h3 {
     @include h;
 
-    &:hover { text-shadow: $secondary-color -3px 3px 10px; }
+    a:hover { text-shadow: $secondary-color -3px 3px 10px; }
 }
 
 .about {
