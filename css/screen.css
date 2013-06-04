@@ -151,6 +151,8 @@ article {
         margin-right: 10px; }
   article p {
     font-size: 1.1em; }
+  article .comments {
+    margin-top: 50px; }
 
 .highlight {
   background-color: #fff;
