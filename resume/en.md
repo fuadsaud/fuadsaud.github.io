@@ -3,8 +3,6 @@ layout: resume
 title: Fuad Saud
 ---
 
-If you need to get in touch, try one of these channels:
-
 {% include resume_header.md %}
 
 ### Background
