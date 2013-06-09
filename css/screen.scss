@@ -93,7 +93,7 @@ h2, h3 { a:hover { text-shadow: $secondary-color -0.05em 0.05em 0.15em; } }
     @include content-padding;
 
     color: #fff;
-    margin-top: 2em;
+    margin-top: 2.5em;
     text-align: center;
 
     background-color: $primary-color;
@@ -121,7 +121,7 @@ h2, h3 { a:hover { text-shadow: $secondary-color -0.05em 0.05em 0.15em; } }
     text-align: center;
 
     li {
-        margin: 0 2em;
+        margin: 0 1.8em;
         display: inline-block;
         -webkit-font-smoothing: antialiased;
         -webkit-box-sizing: border-box;

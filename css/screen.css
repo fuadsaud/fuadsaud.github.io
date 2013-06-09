@@ -74,7 +74,7 @@ h2 a:hover, h3 a:hover {
 .container > footer {
   padding: 0 0.75em;
   color: #fff;
-  margin-top: 2em;
+  margin-top: 2.5em;
   text-align: center;
   background-color: #aa0000;
   box-shadow: 0 -0.1em 1em #aa0000; }
@@ -96,7 +96,7 @@ h2 a:hover, h3 a:hover {
   padding-left: 0;
   text-align: center; }
   .social-links li {
-    margin: 0 2em;
+    margin: 0 1.8em;
     display: inline-block;
     -webkit-font-smoothing: antialiased;
     -webkit-box-sizing: border-box;
