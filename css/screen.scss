@@ -1,9 +1,11 @@
 $primary-color:   #a00;
 $secondary-color: #6b5f5d;
 
+html { font-size: 62.5% }
+
 body {
     background-color: #f1e8cc;
-    font-size: 1.5em;
+    font-size: 2.4rem;
     font-family: 'Open Sans', Verdana, sans-serif;
     background: transparent url(/img/bg.png) repeat scroll top left;
     font-weight: lighter;
@@ -28,7 +30,7 @@ hr {
     margin: 20px 0 25px 0;
     text-align: center;
     letter-spacing: 3px;
-    font-size: 20px;
+    font-size: 2.0rem;
     color: $primary-color;
     border: none;
 
@@ -51,22 +53,22 @@ hr {
 
 h1 {
     color: #fff;
-    background-color: $primary-color; 
-    font-size: 4em;
+    background-color: $primary-color;
+    font-size: 9.6rem;
     margin: 0;
     text-align: center;
     @include h;
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 6.0rem;
     color: $primary-color;
     text-align: center;
     margin: 0.3em 0.8em;
 }
 
 h3 {
-    font-size: 1.6em;
+    font-size: 4.0rem;
     color: $secondary-color;
 }
 
@@ -132,7 +134,7 @@ h2, h3 {
            -moz-box-sizing: border-box;
                 box-sizing: border-box;
 
-        .icon { font-size: 10em; }
+        .icon { font-size: 24rem; }
     }
 
     .twitter  a:hover { color: #2eb8e7; }
@@ -152,7 +154,7 @@ h2, h3 {
     .social-links li {
         margin: 0 0.5em;
 
-        .icon { font-size: 3.5em; }
+        .icon { font-size: 8.4rem; }
     }
 
 }
@@ -166,7 +168,7 @@ article {
         margin-bottom: 4em;
 
         .tldr {
-            font-size: 130%;
+            font-size: 3.0rem;
             background-color: #bdc;
             color: #555;
             padding: 10px;
@@ -178,8 +180,6 @@ article {
             }
         }
     }
-
-    p { font-size: 1.1em; }
 
     .comments { margin-top : 50px; }
 }
