@@ -5,7 +5,7 @@ html { font-size: 62.5% }
 
 body {
     background-color: #f1e8cc;
-    font-size: 2.4rem;
+    font-size: 3rem;
     font-family: 'Open Sans', Verdana, sans-serif;
     background: transparent url(/img/bg.png) repeat scroll top left;
     font-weight: lighter;
@@ -34,9 +34,7 @@ hr {
     &:before { content: '.......................'; }
 }
 
-@mixin h {
-    font-weight: lighter;
-
+h1, h2, h3, .social-links {
     a {
         color: inherit;
         background-color: inherit;
@@ -48,13 +46,14 @@ hr {
     }
 }
 
+h1, h2, h3, h4, h5, h6 { font-weight: lighter; }
+
 h1 {
     color: #fff;
     background-color: $primary-color;
     font-size: 9.6rem;
     margin: 0;
     text-align: center;
-    @include h;
 }
 
 h2 {
@@ -69,21 +68,11 @@ h3 {
     color: $secondary-color;
 }
 
-h2, h3 {
-    @include h;
-
-    a { text-shadow: $secondary-color -0.05em 0.05em 0.15em;}
-}
+h2, h3 { a:hover { text-shadow: $secondary-color -0.05em 0.05em 0.15em; } }
 
 .about {
     line-height: 2em;
     text-align: center;
-}
-
-.content {
-    padding: 0 0.75em;
-    margin: 0 auto;
-    max-width: 45em;
 }
 
 .stream {
@@ -91,7 +80,18 @@ h2, h3 {
     p { text-align: justify; }
 }
 
+@mixin content-padding { padding: 0 0.75em; }
+
+.content {
+    @include content-padding;
+
+    margin: 0 auto;
+    max-width: 45em;
+}
+
 .container > footer {
+    @include content-padding;
+
     color: #fff;
     margin-top: 2em;
     text-align: center;
@@ -131,10 +131,10 @@ h2, h3 {
         .icon { font-size: 24rem; }
     }
 
-    .twitter  a:hover { color: #2eb8e7; }
     .github   a:hover { color: #286da3; }
-    .feed     a:hover { color: #ff5500; }
+    .twitter  a:hover { color: #2eb8e7; }
     .linkedin a:hover { color: #015A86; }
+    .feed     a:hover { color: #ff5500; }
     .mail     a:hover { color: #000000; }
 }
 
@@ -146,7 +146,7 @@ article {
         margin-bottom: 3em;
 
         .tldr {
-            font-size: 3.0rem;
+            font-size: 3rem;
             background-color: #bdc;
             color: #555;
             padding: 0.35em;
@@ -159,12 +159,9 @@ article {
         }
     }
 
-    p {
-        font-size: 3rem;
-        line-height: 1.5em;
-    }
+    p { line-height: 1.5em; }
 
-    .comments { margin-top : 2em; }
+    .comments { margin-top: 2em; }
 }
 
 .highlight {
@@ -176,13 +173,13 @@ code { font-family: Inconsolata, Monaco, Menlo, monospace, serif; }
 
 blockquote {
     margin-left: 0;
+    margin-right: 0;
     padding: 0.5em 1em;
     border-left: 0.1em solid $primary-color;
     color: #999;
 }
 
 .entypo { font-family: 'Entypo'; }
-
 .entypo-social { font-family: 'Entypo Social'; }
 
 ul.languages {
@@ -191,19 +188,12 @@ ul.languages {
     li { display: inline; }
 }
 
-@media(max-width: 768px) {
-    .social-links li { margin: 0 1em; }
-}
+@media(max-width: 768px) { .social-links li { margin: 0 1em; } }
 
 @media(max-width: 320px) {
+    html { font-size: 45%; }
+    h2 { font-size: 1.8em; }
     .about { padding: 1em; }
 
     article { padding: 0.35em; }
-
-    .social-links li {
-        margin: 0 0.5em;
-
-        .icon { font-size: 8.5rem; }
-    }
-
 }

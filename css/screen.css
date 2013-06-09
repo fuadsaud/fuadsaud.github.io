@@ -3,7 +3,7 @@ html {
 
 body {
   background-color: #f1e8cc;
-  font-size: 2.4rem;
+  font-size: 3rem;
   font-family: 'Open Sans', Verdana, sans-serif;
   background: transparent url(/img/bg.png) repeat scroll top left;
   font-weight: lighter; }
@@ -27,19 +27,22 @@ hr {
   hr:before {
     content: '.......................'; }
 
+h1 a, h2 a, h3 a, .social-links a {
+  color: inherit;
+  background-color: inherit; }
+  h1 a:hover, h2 a:hover, h3 a:hover, .social-links a:hover {
+    color: inherit;
+    background-color: inherit; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: lighter; }
+
 h1 {
   color: #fff;
   background-color: #aa0000;
   font-size: 9.6rem;
   margin: 0;
-  text-align: center;
-  font-weight: lighter; }
-  h1 a {
-    color: inherit;
-    background-color: inherit; }
-    h1 a:hover {
-      color: inherit;
-      background-color: inherit; }
+  text-align: center; }
 
 h2 {
   font-size: 6.0rem;
@@ -51,32 +54,25 @@ h3 {
   font-size: 4.0rem;
   color: #6b5f5d; }
 
-h2, h3 {
-  font-weight: lighter; }
-  h2 a, h3 a {
-    color: inherit;
-    background-color: inherit; }
-    h2 a:hover, h3 a:hover {
-      color: inherit;
-      background-color: inherit; }
-  h2 a, h3 a {
-    text-shadow: #6b5f5d -0.05em 0.05em 0.15em; }
+h2 a:hover, h3 a:hover {
+  text-shadow: #6b5f5d -0.05em 0.05em 0.15em; }
 
 .about {
   line-height: 2em;
   text-align: center; }
-
-.content {
-  padding: 0 0.75em;
-  margin: 0 auto;
-  max-width: 45em; }
 
 .stream h2 {
   text-align: left; }
 .stream p {
   text-align: justify; }
 
+.content {
+  padding: 0 0.75em;
+  margin: 0 auto;
+  max-width: 45em; }
+
 .container > footer {
+  padding: 0 0.75em;
   color: #fff;
   margin-top: 2em;
   text-align: center;
@@ -108,14 +104,14 @@ h2, h3 {
     box-sizing: border-box; }
     .social-links li .icon {
       font-size: 24rem; }
-  .social-links .twitter a:hover {
-    color: #2eb8e7; }
   .social-links .github a:hover {
     color: #286da3; }
-  .social-links .feed a:hover {
-    color: #ff5500; }
+  .social-links .twitter a:hover {
+    color: #2eb8e7; }
   .social-links .linkedin a:hover {
     color: #015A86; }
+  .social-links .feed a:hover {
+    color: #ff5500; }
   .social-links .mail a:hover {
     color: #000000; }
 
@@ -125,7 +121,7 @@ article {
     text-align: center;
     margin-bottom: 3em; }
     article header .tldr {
-      font-size: 3.0rem;
+      font-size: 3rem;
       background-color: #bdc;
       color: #555;
       padding: 0.35em;
@@ -134,7 +130,6 @@ article {
         content: 'tl;dr';
         margin-right: 0.35em; }
   article p {
-    font-size: 3rem;
     line-height: 1.5em; }
   article .comments {
     margin-top: 2em; }
@@ -148,6 +143,7 @@ code {
 
 blockquote {
   margin-left: 0;
+  margin-right: 0;
   padding: 0.5em 1em;
   border-left: 0.1em solid #aa0000;
   color: #999; }
@@ -167,13 +163,14 @@ ul.languages {
   .social-links li {
     margin: 0 1em; } }
 @media (max-width: 320px) {
+  html {
+    font-size: 45%; }
+
+  h2 {
+    font-size: 1.8em; }
+
   .about {
     padding: 1em; }
 
   article {
-    padding: 0.35em; }
-
-  .social-links li {
-    margin: 0 0.5em; }
-    .social-links li .icon {
-      font-size: 8.5rem; } }
+    padding: 0.35em; } }
