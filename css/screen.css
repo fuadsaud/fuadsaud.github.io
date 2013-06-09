@@ -1,5 +1,10 @@
 html {
   font-size: 62.5%; }
+  @media (max-width: 320px) {
+    html {
+      font-size: 45%; } }
+  html * {
+    color-profile: sRGB; }
 
 body {
   background-color: #f1e8cc;
@@ -43,12 +48,18 @@ h1 {
   font-size: 9.6rem;
   margin: 0;
   text-align: center; }
+  @media (max-width: 768px) {
+    h1 h1 {
+      font-size: 12rem; } }
 
 h2 {
   font-size: 6.0rem;
   color: #aa0000;
   text-align: center;
   margin: 0.35em 0.75em; }
+  @media (max-width: 320px) {
+    h2 h2 {
+      font-size: 1.8em; } }
 
 h3 {
   font-size: 4.0rem;
@@ -60,6 +71,9 @@ h2 a:hover, h3 a:hover {
 .about {
   line-height: 2em;
   text-align: center; }
+  @media (max-width: 320px) {
+    .about .about {
+      padding: 1em; } }
 
 .stream h2 {
   text-align: left; }
@@ -104,6 +118,9 @@ h2 a:hover, h3 a:hover {
     box-sizing: border-box; }
     .social-links li .icon {
       font-size: 24rem; }
+    @media (max-width: 768px) {
+      .social-links li {
+        margin: 0 1em; } }
   .social-links .github a:hover {
     color: #286da3; }
   .social-links .twitter a:hover {
@@ -117,6 +134,9 @@ h2 a:hover, h3 a:hover {
 
 article {
   text-align: justify; }
+  @media (max-width: 320px) {
+    article {
+      padding: 0.35em; } }
   article header {
     text-align: center;
     margin-bottom: 3em; }
@@ -158,19 +178,3 @@ ul.languages {
   padding: 0; }
   ul.languages li {
     display: inline; }
-
-@media (max-width: 768px) {
-  .social-links li {
-    margin: 0 1em; } }
-@media (max-width: 320px) {
-  html {
-    font-size: 45%; }
-
-  h2 {
-    font-size: 1.8em; }
-
-  .about {
-    padding: 1em; }
-
-  article {
-    padding: 0.35em; } }
