@@ -24,12 +24,9 @@ a {
      }
 }
 
-p { line-height: 1.5em; }
-
 hr {
-    margin: 20px 0 25px 0;
     text-align: center;
-    letter-spacing: 3px;
+    letter-spacing: 0.3em;
     font-size: 2.0rem;
     color: $primary-color;
     border: none;
@@ -64,7 +61,7 @@ h2 {
     font-size: 6.0rem;
     color: $primary-color;
     text-align: center;
-    margin: 0.3em 0.8em;
+    margin: 0.35em 0.75em;
 }
 
 h3 {
@@ -75,36 +72,33 @@ h3 {
 h2, h3 {
     @include h;
 
-    a:hover { text-shadow: $secondary-color -3px 3px 10px; }
+    a { text-shadow: $secondary-color -0.05em 0.05em 0.15em;}
 }
 
 .about {
     line-height: 2em;
     text-align: center;
-    padding: 0 30px;
 }
 
 .content {
-    padding: 0 10px;
+    padding: 0 0.75em;
     margin: 0 auto;
     max-width: 45em;
 }
 
 .stream {
-    margin: 20px 0;
-
     h2 { text-align: left; }
     p { text-align: justify; }
 }
 
 .container > footer {
     color: #fff;
-    margin-top: 70px;
+    margin-top: 2em;
     text-align: center;
 
     background-color: $primary-color;
 
-    box-shadow: 0 -2px 1em $primary-color;
+    box-shadow: 0 -0.1em 1em $primary-color;
 
     a {
         color: #999;
@@ -144,71 +138,72 @@ h2, h3 {
     .mail     a:hover { color: #000000; }
 }
 
-@media(max-width: 768px) {
-    .social-links li { margin: 0 1em; }
-}
-
-@media(max-width: 320px) {
-    section.content { padding: 0; }
-
-    .social-links li {
-        margin: 0 0.5em;
-
-        .icon { font-size: 8.4rem; }
-    }
-
-}
-
 article {
-    padding: 10px;
     text-align: justify;
 
     header {
         text-align: center;
-        margin-bottom: 4em;
+        margin-bottom: 3em;
 
         .tldr {
             font-size: 3.0rem;
             background-color: #bdc;
             color: #555;
-            padding: 10px;
+            padding: 0.35em;
             display: inline-block;
 
             &:before {
                 content: 'tl;dr';
-                margin-right: 10px;
+                margin-right: 0.35em;
             }
         }
     }
 
-    .comments { margin-top : 50px; }
+    p {
+        font-size: 3rem;
+        line-height: 1.5em;
+    }
+
+    .comments { margin-top : 2em; }
 }
 
 .highlight {
     background-color: #fff;
-    padding: 10px 20px;
+    padding: 0.35em 0.75em;
 }
 
 code { font-family: Inconsolata, Monaco, Menlo, monospace, serif; }
 
 blockquote {
     margin-left: 0;
-    padding: 5px 25px;
-    padding-right: 0;
-    border-left: 2px solid $primary-color;
+    padding: 0.5em 1em;
+    border-left: 0.1em solid $primary-color;
     color: #999;
 }
 
-.entypo {
-    font-family: 'Entypo';
-}
+.entypo { font-family: 'Entypo'; }
 
-.entypo-social {
-    font-family: 'Entypo Social';
-}
+.entypo-social { font-family: 'Entypo Social'; }
 
 ul.languages {
     padding: 0;
 
     li { display: inline; }
+}
+
+@media(max-width: 768px) {
+    .social-links li { margin: 0 1em; }
+}
+
+@media(max-width: 320px) {
+    .about { padding: 1em; }
+
+    article { padding: 0.35em; }
+
+    .social-links li {
+        margin: 0 0.5em;
+
+        .icon { font-size: 8.5rem; }
+    }
+
 }
