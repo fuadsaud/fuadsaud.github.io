@@ -2,27 +2,25 @@ $primary-color:   #a00;
 $secondary-color: #6b5f5d;
 
 html {
+    * { color-profile: sRGB; }
+
     font-size: 62.5%;
 
     @media(max-width: 320px) { font-size: 45%; }
-
-    * { color-profile: sRGB; }
 }
 
 body {
-    background-color: #f1e8cc;
-    font-size: 3rem;
-    font-family: 'Open Sans', Verdana, sans-serif;
-    background: transparent url(/img/bg.png) repeat scroll top left;
-    font-weight: lighter;
+    background: url(/img/bg.png) repeat scroll top left #f1e8cc ;
+    font: 3rem lighter 'Open Sans', Verdana, sans-serif;
 }
 
 a {
     color: $primary-color;
     text-decoration: none;
-    -webkit-transition-duration: 0.5s;
-       -moz-transition-duration: 0.5s;
-         -o-transition-duration: 0.5s;
+
+       -moz-transition-duration: .5s;
+         -o-transition-duration: .5s;
+    -webkit-transition-duration: .5s;
 
      &:hover, &:active {
          background-color: $primary-color;
@@ -31,32 +29,40 @@ a {
 }
 
 hr {
-    text-align: center;
-    letter-spacing: 0.3em;
-    font-size: 2.0rem;
-    color: $primary-color;
     border: none;
+    color: $primary-color;
+    font-size: 2.0rem;
+    letter-spacing: .3em;
+    text-align: center;
 
     &:before { content: '.......................'; }
 }
 
-h1, h2, h3, .social-links {
+h1,
+h2,
+h3,
+.social-links {
     a {
-        color: inherit;
         background-color: inherit;
+        color: inherit;
 
         &:hover {
-            color: inherit;
             background-color: inherit;
+            color: inherit;
         }
     }
 }
 
-h1, h2, h3, h4, h5, h6 { font-weight: lighter; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { font-weight: lighter; }
 
 h1 {
-    color: #fff;
     background-color: $primary-color;
+    color: #fff;
     font-size: 9.6rem;
     margin: 0;
     text-align: center;
@@ -65,20 +71,21 @@ h1 {
 }
 
 h2 {
-    font-size: 6.0rem;
     color: $primary-color;
+    font-size: 6.0rem;
+    margin: .35em .75em;
     text-align: center;
-    margin: 0.35em 0.75em;
 
     @media(max-width: 320px) { h2 { font-size: 1.8em; } }
 }
 
 h3 {
-    font-size: 4.0rem;
     color: $secondary-color;
+    font-size: 4.0rem;
 }
 
-h2, h3 { a:hover { text-shadow: $secondary-color -0.05em 0.05em 0.15em; } }
+h2,
+h3 { a:hover { text-shadow: $secondary-color -.05em .05em .15em; } }
 
 .about {
     line-height: 2em;
@@ -92,7 +99,7 @@ h2, h3 { a:hover { text-shadow: $secondary-color -0.05em 0.05em 0.15em; } }
     p { text-align: justify; }
 }
 
-@mixin content-padding { padding: 0 0.75em; }
+@mixin content-padding { padding: 0 .75em; }
 
 .content {
     @include content-padding;
@@ -104,13 +111,11 @@ h2, h3 { a:hover { text-shadow: $secondary-color -0.05em 0.05em 0.15em; } }
 .container > footer {
     @include content-padding;
 
+    background-color: $primary-color;
+    box-shadow: 0 -.1em 1em $primary-color;
     color: #fff;
     margin-top: 2.5em;
     text-align: center;
-
-    background-color: $primary-color;
-
-    box-shadow: 0 -0.1em 1em $primary-color;
 
     a {
         color: #999;
@@ -121,9 +126,9 @@ h2, h3 { a:hover { text-shadow: $secondary-color -0.05em 0.05em 0.15em; } }
     }
 
     p {
+        line-height: 2em;
         margin: 0;
         padding: 1em 0;
-        line-height: 2em;
     }
 }
 
@@ -133,44 +138,47 @@ h2, h3 { a:hover { text-shadow: $secondary-color -0.05em 0.05em 0.15em; } }
     text-align: center;
 
     li {
-        margin: 0 1.8em;
-        display: inline-block;
-        -webkit-font-smoothing: antialiased;
-        -webkit-box-sizing: border-box;
-           -moz-box-sizing: border-box;
                 box-sizing: border-box;
+           -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+
+        display: inline-block;
+
+        -webkit-font-smoothing: antialiased;
+
+        margin: 0 1.8em;
 
         .icon { font-size: 24rem; }
 
         @media(max-width: 768px) { margin: 0 1em; }
     }
 
+    .feed     a:hover { color: #f50; }
+    .mail     a:hover { color: #000; }
     .github   a:hover { color: #286da3; }
-    .twitter  a:hover { color: #2eb8e7; }
     .linkedin a:hover { color: #015A86; }
-    .feed     a:hover { color: #ff5500; }
-    .mail     a:hover { color: #000000; }
+    .twitter  a:hover { color: #2eb8e7; }
 }
 
 article {
     text-align: justify;
 
-    @media(max-width: 320px) { padding: 0.35em; }
+    @media(max-width: 320px) { padding: .35em; }
 
     header {
-        text-align: center;
         margin-bottom: 3em;
+        text-align: center;
 
         .tldr {
-            font-size: 3rem;
             background-color: #bdc;
             color: #555;
-            padding: 0.35em;
             display: inline-block;
+            font-size: 3rem;
+            padding: .35em;
 
             &:before {
                 content: 'tl;dr';
-                margin-right: 0.35em;
+                margin-right: .35em;
             }
         }
     }
@@ -182,17 +190,17 @@ article {
 
 .highlight {
     background-color: #fff;
-    padding: 0.35em 0.75em;
+    padding: .35em .75em;
 }
 
 code { font-family: Inconsolata, Monaco, Menlo, monospace, serif; }
 
 blockquote {
+    border-left: .1em solid $primary-color;
+    color: #999;
     margin-left: 0;
     margin-right: 0;
-    padding: 0.5em 1em;
-    border-left: 0.1em solid $primary-color;
-    color: #999;
+    padding: .5em 1em;
 }
 
 .entypo { font-family: 'Entypo'; }
