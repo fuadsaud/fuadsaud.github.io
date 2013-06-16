@@ -8,7 +8,7 @@ html {
 
 body {
   background: url(/img/bg.png) repeat scroll top left #f1e8cc;
-  font: 3rem lighter 'Open Sans', Verdana, sans-serif; }
+  font: lighter normal 3rem 'Open Sans', Verdana, sans-serif; }
 
 a {
   color: #aa0000;
@@ -176,6 +176,20 @@ blockquote {
   margin-left: 0;
   margin-right: 0;
   padding: .5em 1em; }
+  blockquote:before {
+    content: '"';
+    position: relative;
+    left: 0;
+    top: 0; }
+
+blockquote {
+  quotes: "\201C" "\201D"; }
+  blockquote:before {
+    content: open-quote;
+    font-style: italic; }
+  blockquote:after {
+    content: close-quote;
+    font-style: italic; }
 
 .entypo {
   font-family: 'Entypo'; }
