@@ -25,9 +25,11 @@
     </author>
     <content type="html">
         {{ post.content | xml_escape }}
-
-        The post {{ post.title | xml_escape }} first appeared at
-        &lt;a href="{{ site.url }}"&gt;{{ site.name | xml_escape }}&lt;a&gt;
+	
+	&lt;footer&gt;
+	  The post {{ post.title | xml_escape }} first appeared at
+	  &lt;a href="{{ site.url }}"&gt;{{ site.name | xml_escape }}&lt;/a&gt;
+	&lt;/footer&gt;
     </content>
   </entry>
   {% endfor %}
