@@ -2,28 +2,33 @@
 ---
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>fs</title>
-  <link href="http://fuadsaud.github.io/"/>
-  <link type="application/atom+xml" rel="self" href="http://fuadsaud.github.io/atom.xml"/>
+  <title>{{ site.name }}</title>
+  <link href="{{ site.url }}/"/>
+  <link type="application/atom+xml" rel="self" href="{{ site.url }}/atom.xml"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>http://fuadsaud.github.io/</id>
+  <id>{{ site.url }}/</id>
   <author>
-    <name>Fuad Saud</name>
-    <email>fuadksd@gmail.com</email>
+    <name>{{ site.author.name }}</name>
+    <email>{{ site.author.email }}</email>
   </author>
 
   {% for post in site.posts %}
   <entry>
-    <id>http://fuadsaud.github.io{{ post.id }}</id>
-    <id>http://fuadsaud.github.io{{ post.id }}</id>
-    <link type="text/html" rel="alternate" href="http://fuadsaud.github.io{{ post.url }}"/>
+    <id>{{ site.url }}/{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="{{ site.url }}{{ post.url }}"/>
     <title>{{ post.title | xml_escape }}</title>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <author>
-      <name>Fuad Saud</name>
-      <uri>http://fuadsaud.github.io/</uri>
+      <name>{{ site.author.name }}</name>
+      <uri>{{ site.url }}</uri>
+      <email>{{ site.author.email }}</email>
     </author>
-    <content type="html">{{ post.content | xml_escape }}</content>
+    <content type="html">
+        {{ post.content | xml_escape }}
+
+        The post {{ post.title | xml_escape }} first appeared at
+        &lt;a href="{{ site.url }}"&gt;{{ site.name | xml_escape }}&lt;a&gt;
+    </content>
   </entry>
   {% endfor %}
 </feed>
