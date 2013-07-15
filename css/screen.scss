@@ -46,7 +46,7 @@ h3,
         background-color: inherit;
         color: inherit;
 
-        &:hover {
+        &:hover, &:active, &:focus {
             background-color: inherit;
             color: inherit;
         }
