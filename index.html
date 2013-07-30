@@ -11,12 +11,14 @@ layout: default
 
 <section class="stream">
   {% for post in site.posts %}
-  <hr>
-  <article>
-    <h2 class="title">
-     <a href="{{ post.url }}">{{ post.title }}</a>
-    </h2>
-    <p class="tldr">{{ post.tldr }}</p>
-  </article>
+    {% if post.published %}
+      <hr>
+      <article>
+        <h2 class="title">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        </h2>
+        <p class="tldr">{{ post.tldr }}</p>
+      </article>
+    {% endif %}
   {% endfor %}
 </section>
