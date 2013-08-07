@@ -7,22 +7,22 @@ html {
       font-size: 45%; } }
 
 body {
-  background: url(/img/bg.png) repeat scroll top left #f1e8cc;
+  background: url(/img/bg.png) repeat scroll top left #eeeeee;
   font: lighter normal 3rem 'Open Sans', Verdana, sans-serif; }
 
 a {
-  color: #aa0000;
+  color: #5c0c43;
   text-decoration: none;
   -moz-transition-duration: .5s;
   -o-transition-duration: .5s;
   -webkit-transition-duration: .5s; }
   a:hover, a:active {
-    background-color: #aa0000;
+    background-color: #5c0c43;
     color: #fff; }
 
 hr {
   border: none;
-  color: #aa0000;
+  color: #5c0c43;
   font-size: 2.0rem;
   letter-spacing: .3em;
   text-align: center; }
@@ -35,10 +35,16 @@ h3 a,
 .social-links a {
   background-color: inherit;
   color: inherit; }
-  h1 a:hover,
+  h1 a:hover, h1 a:active, h1 a:focus,
   h2 a:hover,
+  h2 a:active,
+  h2 a:focus,
   h3 a:hover,
-  .social-links a:hover {
+  h3 a:active,
+  h3 a:focus,
+  .social-links a:hover,
+  .social-links a:active,
+  .social-links a:focus {
     background-color: inherit;
     color: inherit; }
 
@@ -51,7 +57,7 @@ h6 {
   font-weight: lighter; }
 
 h1 {
-  background-color: #aa0000;
+  background-color: #5c0c43;
   color: #fff;
   font-size: 9.6rem;
   margin: 0;
@@ -61,7 +67,7 @@ h1 {
       font-size: 12rem; } }
 
 h2 {
-  color: #aa0000;
+  color: #5c0c43;
   font-size: 6.0rem;
   margin: .35em .75em;
   text-align: center; }
@@ -96,8 +102,8 @@ h3 a:hover {
 
 .container > footer {
   padding: 0 .75em;
-  background-color: #aa0000;
-  box-shadow: 0 -0.1em 1em #aa0000;
+  background-color: #5c0c43;
+  box-shadow: 0 -0.1em 1em #5c0c43;
   color: #fff;
   margin-top: 2.5em;
   text-align: center; }
@@ -171,7 +177,7 @@ code {
   font-family: Inconsolata, Monaco, Menlo, monospace, serif; }
 
 blockquote {
-  border-left: 0.1em solid #aa0000;
+  border-left: 0.1em solid #5c0c43;
   color: #999;
   margin-left: 0;
   margin-right: 0;
