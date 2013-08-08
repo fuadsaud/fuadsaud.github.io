@@ -96,7 +96,15 @@ h3 { a:hover { text-shadow: $secondary-color -.05em .05em .15em; } }
 }
 
 .stream {
-    h2 { text-align: left; }
+    h2 {
+      text-align: left;
+
+      time {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: .3em;
+      }
+    }
     p { text-align: justify; }
 }
 
@@ -169,6 +177,8 @@ article {
     header {
         margin-bottom: 3em;
         text-align: center;
+
+        .date { margin: 0; }
 
         .tldr {
             background-color: #bdc;

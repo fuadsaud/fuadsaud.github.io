@@ -5,6 +5,10 @@ comments: true
 <article class="post">
   <header>
     <h2><a href="#">{{ page.title }}</a></h2>
+    <p class="date">
+      {% assign post = page %}
+      {% include date.html %}
+    </p>
     <p class="tldr">{{ page.tldr }}</p>
   </header>
   {{ content }}

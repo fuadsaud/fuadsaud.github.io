@@ -20,7 +20,9 @@ layout: default
       <hr>
       <article>
         <h2 class="title">
-        <a href="{{ post.url }}">{{ post.title }}</a>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+          <!-- <time>{{ post.date | date: '%B %d, %Y' }}</time> -->
+          {% include date.html %}
         </h2>
         <p class="tldr">{{ post.tldr }}</p>
       </article>

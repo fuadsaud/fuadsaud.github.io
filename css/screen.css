@@ -92,6 +92,10 @@ h3 a:hover {
 
 .stream h2 {
   text-align: left; }
+  .stream h2 time {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: .3em; }
 .stream p {
   text-align: justify; }
 
@@ -155,6 +159,8 @@ article {
   article header {
     margin-bottom: 3em;
     text-align: center; }
+    article header .date {
+      margin: 0; }
     article header .tldr {
       background-color: #bdc;
       color: #555;
