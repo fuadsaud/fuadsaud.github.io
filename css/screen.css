@@ -83,8 +83,13 @@ h2 a:hover,
 h3 a:hover {
   text-shadow: #6b5f5d -0.05em 0.05em 0.15em; }
 
+p {
+  line-height: 2em; }
+
+strong {
+  font-weight: normal; }
+
 .about {
-  line-height: 2em;
   text-align: center; }
   @media (max-width: 320px) {
     .about .about {
@@ -120,7 +125,6 @@ h3 a:hover {
     .container > footer a.icon:hover {
       background-color: inherit; }
   .container > footer p {
-    line-height: 2em;
     margin: 0;
     padding: 1em 0; }
 
@@ -157,7 +161,7 @@ article {
     article {
       padding: .35em; } }
   article header {
-    margin-bottom: 3em;
+    margin-bottom: 1.5em;
     text-align: center; }
     article header .date {
       margin: 0; }
@@ -168,10 +172,8 @@ article {
       font-size: 3rem;
       padding: .35em; }
       article header .tldr:before {
-        content: 'tl;dr';
+        content: 'tl;dr: ';
         margin-right: .35em; }
-  article p {
-    line-height: 1.5em; }
   article .comments {
     margin-top: 2em; }
 
