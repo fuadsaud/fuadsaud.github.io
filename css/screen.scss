@@ -197,17 +197,24 @@ article {
         }
     }
 
-    .comments { margin-top: 2em; }
-}
+    img {
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+      width: 80%;
+    }
 
-.highlight {
+    .comments { margin-top: 2em; }
+  }
+
+  .highlight {
     background-color: #fff;
     padding: .35em .75em;
-}
+  }
 
-code { font-family: Inconsolata, Monaco, Menlo, monospace, serif; }
+  code { font-family: Inconsolata, Monaco, Menlo, monospace, serif; }
 
-blockquote {
+  blockquote {
     border-left: .1em solid $primary-color;
     color: #999;
     margin-left: 0;
@@ -220,27 +227,27 @@ blockquote {
       left: 0;
       top: 0;
     }
-}
-
-blockquote {
-  quotes: "\201C" "\201D";
-
-  &:before {
-    content: open-quote;
-    font-style: italic;
   }
 
-  &:after {
-    content: close-quote;
-    font-style: italic;
+  blockquote {
+    quotes: "\201C" "\201D";
+
+    &:before {
+      content: open-quote;
+      font-style: italic;
+    }
+
+    &:after {
+      content: close-quote;
+      font-style: italic;
+    }
   }
-}
 
-.entypo { font-family: 'Entypo'; }
-.entypo-social { font-family: 'Entypo Social'; }
+  .entypo { font-family: 'Entypo'; }
+  .entypo-social { font-family: 'Entypo Social'; }
 
-ul.languages {
+  ul.languages {
     padding: 0;
 
     li { display: inline; }
-}
+  }
