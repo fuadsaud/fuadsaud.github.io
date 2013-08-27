@@ -20,7 +20,7 @@ the development process of a sofware, and I was so excited about that I quickly
 became the most active user in the community :).
 
 When I migrated to Ubuntu I had to choose another tool to aid my text editing
-needs. After fiddling with Gedit a little, and frustrated myself trying to quit
+needs. After fiddling with Gedit a little, and frustrating myself trying to quit
 Vim, I stumbled on Sublime Text 2, which was pretty famous at the time for
 being good looking and a reliable cross-platform solution. And dammit, what a
 nice piece of software! It easilly outrunned any of the editors I've used until
