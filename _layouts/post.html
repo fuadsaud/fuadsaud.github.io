@@ -9,7 +9,9 @@ comments: true
       {% assign post = page %}
       {% include date.html %}
     </p>
-    <p class="tldr">{{ page.tldr }}</p>
+    {% if page.tldr %}
+      <p class="tldr">{{ page.tldr }}</p>
+    {% endif %}
   </header>
   {{ content }}
 
