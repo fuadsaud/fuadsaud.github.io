@@ -1,12 +1,9 @@
-$primary-color:   #50a0a6;
-$secondary-color: #418386;
+$primary-color:   #a00;
+$primary-color:   #5c0c43;
+$secondary-color: #6b5f5d;
 
 html {
     * { color-profile: sRGB; }
-
-    font-size: 62.5%;
-
-    @media(max-width: 320px) { font-size: 45%; }
 }
 
 body {
@@ -28,15 +25,7 @@ a {
      }
 }
 
-hr {
-    border: none;
-    color: $primary-color;
-    font-size: 2.0rem;
-    letter-spacing: .3em;
-    text-align: center;
-
-    &:before { content: '.......................'; }
-}
+hr { color: $primary-color; }
 
 h1,
 h2,
