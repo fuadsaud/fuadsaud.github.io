@@ -1,0 +1,127 @@
+html {
+  font-size: 62.5%; }
+  @media (max-width: 320px) {
+    html {
+      font-size: 45%; } }
+
+hr {
+  border: none;
+  font-size: 2.0rem;
+  letter-spacing: .3em;
+  text-align: center; }
+  hr:before {
+    content: '.......................'; }
+
+h1 {
+  font-size: 9.6rem;
+  margin: 0;
+  text-align: center; }
+  @media (max-width: 768px) {
+    h1 h1 {
+      font-size: 12rem; } }
+
+h2 {
+  font-size: 6.0rem;
+  margin: .35em .75em;
+  text-align: center; }
+  @media (max-width: 320px) {
+    h2 h2 {
+      font-size: 1.8em; } }
+
+h3 {
+  font-size: 4.0rem; }
+
+p {
+  line-height: 2em; }
+
+.about {
+  text-align: center; }
+  @media (max-width: 320px) {
+    .about .about {
+      padding: 1em; } }
+
+.stream h2 {
+  text-align: left; }
+  .stream h2 time {
+    display: inline-block;
+    font-size: .3em;
+    vertical-align: middle; }
+.stream p {
+  text-align: justify; }
+
+.content {
+  padding: 0 .75em;
+  margin: 0 auto;
+  max-width: 38em; }
+
+.container > footer {
+  padding: 0 .75em;
+  margin-top: 2.5em;
+  text-align: center; }
+  .container > footer p {
+    margin: 0;
+    padding: 1em 0; }
+
+.social-links {
+  margin: 0 auto;
+  padding-left: 0;
+  text-align: center; }
+  .social-links li {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: inline-block;
+    margin: 0 1.8em; }
+    .social-links li .icon {
+      font-size: 24rem; }
+    @media (max-width: 768px) {
+      .social-links li {
+        margin: 0 1em; } }
+
+article {
+  text-align: justify; }
+  @media (max-width: 320px) {
+    article {
+      padding: .35em; } }
+  article header {
+    margin-bottom: 1.5em;
+    text-align: center; }
+    article header .date {
+      margin: 0; }
+    article header .tldr {
+      display: inline-block;
+      font-size: 3rem;
+      padding: .35em; }
+      article header .tldr:before {
+        content: 'tl;dr: ';
+        margin-right: .35em; }
+  article img {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    width: 80%; }
+  article .comments {
+    margin-top: 2em; }
+
+.highlight {
+  padding: .35em .75em; }
+
+blockquote {
+  margin-left: 0;
+  margin-right: 0;
+  padding: .5em 1em; }
+  blockquote:before {
+    content: '"';
+    position: relative;
+    left: 0;
+    top: 0; }
+
+blockquote:before {
+  content: open-quote; }
+blockquote:after {
+  content: close-quote; }
+
+ul.languages {
+  padding: 0; }
+  ul.languages li {
+    display: inline; }

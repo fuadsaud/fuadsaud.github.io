@@ -1,6 +1,5 @@
-$primary-color:   #a00;
-$primary-color:   #5c0c43;
-$secondary-color: #6b5f5d;
+$primary-color:   #50a0a6;
+$secondary-color: #b82a38;
 
 html {
     * { color-profile: sRGB; }
@@ -12,7 +11,7 @@ body {
 }
 
 a {
-    color: $primary-color;
+    color: $secondary-color;
     text-decoration: none;
 
        -moz-transition-duration: .5s;
@@ -20,7 +19,7 @@ a {
     -webkit-transition-duration: .5s;
 
      &:hover, &:active {
-         background-color: $primary-color;
+         background-color: $secondary-color;
          color: #fff;
      }
 }
@@ -60,7 +59,7 @@ h1 {
 }
 
 h2 {
-    color: $primary-color;
+    color: $secondary-color;
     font-size: 6.0rem;
     margin: .35em .75em;
     text-align: center;
@@ -119,9 +118,6 @@ strong { font-weight: normal; }
     text-align: center;
 
     a {
-        color: #999;
-
-        &:hover { background-color: #000; }
         &.icon { color: #ddd; }
         &.icon:hover { background-color: inherit; }
     }
@@ -154,7 +150,7 @@ strong { font-weight: normal; }
     }
 
     .feed     a:hover { color: #f50; }
-    .mail     a:hover { color: #690; }
+    .mail     a:hover { color: $secondary-color; }
     .github   a:hover { color: #286da3; }
     .linkedin a:hover { color: #015A86; }
     .twitter  a:hover { color: #2eb8e7; }
