@@ -3,66 +3,21 @@
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-  {% include head.html %}
-</head>
+  <head>
+    {% include head.html %}
+  </head>
 
-<body>
-  <div class="container">
-    <header>
-      <h1><a href="/">{{ site.name }}</a></h1>
-    </header>
+  <body>
+    <div class="container">
+      {% include header.html %}
 
-    <section class="content">
-      {{ content }}
-    </section>
+      <section class="content">
+        {{ content }}
+      </section>
+    </div>
 
-    <footer>
-      <ul class="social-links">
-        <li class="github">
-          <a class="icon entypo-social"
-             href="//github.com/fuadsaud"
-             target="_blank"
-             title="Checkout my code at GitHub">&#62208;</a>
-        </li>
+    {% include analytics.html %}
 
-        <li class="twitter">
-          <a class="icon entypo-social"
-             href="//twitter.com/fuadsaud"
-             target="_blank"
-             title="Follow me on Twitter">&#62217;</a>
-        </li>
-
-        <li class="linkedin">
-          <a class="icon entypo-social"
-             href="//br.linkedin.com/in/fuadksd/"
-             target="_blank"
-             title="Visit my résumé on LinkedIn">&#62232;</a>
-        </li>
-
-        <li class="feed">
-          <a class="icon entypo"
-             href="/atom.xml"
-             title="Grab that feed">&#59194;</a>
-        </li>
-
-        <li class="mail">
-          <a class="icon entypo"
-             href="mailto:fuadksd@gmail.com"
-             target="_blank"
-             title="Send me an email">&#9993;</a>
-        </li>
-      </ul>
-      <p>
-        © 2013 Fuad Saud<br>
-        You can check this site's source code
-        <a href="//github.com/fuadsaud/fuadsaud.github.io"
-           target="_blank">here</a>.<br>
-        For the night is dark and full of terrors.
-      </p>
-    </footer>
-  </div>
-
-  {% include analytics.html %}
-</body>
+    <script type="text/javascript" src="/scripts/fs.js"></script>
+  </body>
 </html>

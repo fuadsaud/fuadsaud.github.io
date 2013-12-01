@@ -1,35 +1,23 @@
+@import 'bourbon/bourbon';
+
 $primary-color:   #50a0a6;
 $secondary-color: #b82a38;
 
-html {
-    * { color-profile: sRGB; }
+@mixin entypo { font-family: 'Entypo'; }
+@mixin entypo-social { font-family: 'Entypo Social'; }
+
+@mixin glowing-links {
+    a {
+        color: $secondary-color;
+
+        &:hover {
+            color: $secondary-color;
+            text-shadow: $secondary-color -.05em .05em .15em;
+        }
+    }
 }
 
-body {
-    background: url(/img/bg.png) repeat scroll top left #eee ;
-    font: lighter normal 3rem 'Open Sans', Verdana, sans-serif;
-}
-
-a {
-    color: $secondary-color;
-    text-decoration: none;
-
-       -moz-transition-duration: .5s;
-         -o-transition-duration: .5s;
-    -webkit-transition-duration: .5s;
-
-     &:hover, &:active {
-         background-color: $secondary-color;
-         color: #fff;
-     }
-}
-
-hr { color: $primary-color; }
-
-h1,
-h2,
-h3,
-.social-links {
+@mixin reset-links {
     a {
         background-color: inherit;
         color: inherit;
@@ -37,9 +25,36 @@ h3,
         &:hover, &:active, &:focus {
             background-color: inherit;
             color: inherit;
+            cursor: pointer;
         }
     }
 }
+
+html { * { color-profile: sRGB; } }
+
+body {
+    background: url(/images/bg.png) repeat scroll top left #eee ;
+    font: lighter normal 3rem 'Open Sans', Verdana, sans-serif;
+}
+
+a {
+    @include transition (.5s);
+
+    color: $secondary-color;
+    text-decoration: none;
+
+    &:hover, &:active {
+        background-color: $secondary-color;
+        color: #fff;
+    }
+}
+
+hr { color: $primary-color; }
+
+h1,
+h2,
+h3,
+.social-links { @include reset-links; }
 
 h1,
 h2,
@@ -48,190 +63,80 @@ h4,
 h5,
 h6 { font-weight: lighter; }
 
-h1 {
-    background-color: $primary-color;
-    color: #fff;
-    font-size: 9.6rem;
-    margin: 0;
-    text-align: center;
+h1 { color: #fff; }
 
-    @media(max-width: 768px) { h1 { font-size: 12rem} }
-}
-
-h2 {
-    color: $secondary-color;
-    font-size: 6.0rem;
-    margin: .35em .75em;
-    text-align: center;
-
-    @media(max-width: 320px) { h2 { font-size: 1.8em; } }
-}
-
-h3 {
-    color: $secondary-color;
-    font-size: 4.0rem;
-}
+h3 { color: #461114; }
 
 h2,
-h3 { a:hover { text-shadow: $secondary-color -.05em .05em .15em; } }
+h3 { @include glowing-links; }
+
+img { @include reset-links; }
 
 p { line-height: 2em; }
 
 strong { font-weight: normal; }
 
-.about {
-    text-align: center;
+.sidebar { @include transition (1s); }
 
-    @media(max-width: 320px) { .about { padding: 1em; } }
-}
+.sidebar,
+.topbar {
+    color: #333;
 
-.stream {
-    h2 {
-      text-align: left;
+    .avatar { @include reset-links; }
 
-      time {
-        display: inline-block;
-        vertical-align: middle;
-        font-size: .3em;
-      }
+    .toggle {
+        @include reset-links;
+        @include glowing-links;
     }
-
-    p { text-align: justify; }
-}
-
-@mixin content-padding { padding: 0 .75em; }
-
-.content {
-    @include content-padding;
-
-    margin: 0 auto;
-    max-width: 38em;
-}
-
-.container > footer {
-    @include content-padding;
 
     background-color: $primary-color;
-    box-shadow: 0 -.1em 1em $primary-color;
-    color: #fff;
-    margin-top: 2.5em;
-    text-align: center;
-
-    a {
-        &.icon { color: #ddd; }
-        &.icon:hover { background-color: inherit; }
-    }
-
-    p {
-        margin: 0;
-        padding: 1em 0;
-    }
 }
 
 .social-links {
-    margin: 0 auto;
-    padding-left: 0;
-    text-align: center;
+    li { -webkit-font-smoothing: antialiased; }
 
-    li {
-                box-sizing: border-box;
-           -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
+    .feed {
+        @include entypo;
 
-        display: inline-block;
-
-        -webkit-font-smoothing: antialiased;
-
-        margin: 0 1.8em;
-
-        .icon { font-size: 24rem; }
-
-        @media(max-width: 768px) { margin: 0 1em; }
+        a:hover { color: #f50; }
     }
 
-    .feed     a:hover { color: #f50; }
-    .mail     a:hover { color: $secondary-color; }
-    .github   a:hover { color: #286da3; }
-    .linkedin a:hover { color: #015A86; }
-    .twitter  a:hover { color: #2eb8e7; }
+    .mail {
+        @include entypo;
+
+        a:hover { color: $secondary-color; }
+    }
+
+    .github {
+        @include entypo-social;
+
+        a:hover { color: #286da3; }
+    }
+
+    .linkedin {
+        @include entypo-social;
+
+        a:hover { color: #015a86; }
+    }
+
+    .twitter {
+        @include entypo-social;
+
+        a:hover { color: #2eb8e7; }
+    }
 }
 
-article {
-    text-align: justify;
+article header .tldr {
+    background-color: #bdc;
+    color: #555;
+}
 
-    @media(max-width: 320px) { padding: .35em; }
+.highlight { background-color: #fff; }
 
-    header {
-        margin-bottom: 1.5em;
-        text-align: center;
+code { font-family: Inconsolata, Monaco, Menlo, monospace, serif; }
 
-        .date { margin: 0; }
+blockquote {
+    border-left-color: $primary-color;
 
-        .tldr {
-            background-color: #bdc;
-            color: #555;
-            display: inline-block;
-            font-size: 3rem;
-            padding: .35em;
-
-            &:before {
-                content: 'tl;dr: ';
-                margin-right: .35em;
-            }
-        }
-    }
-
-    img {
-      display: block;
-      margin: 20px auto;
-      text-align: center;
-      width: 80%;
-    }
-
-    .comments { margin-top: 2em; }
-  }
-
-  .highlight {
-    background-color: #fff;
-    padding: .35em .75em;
-  }
-
-  code { font-family: Inconsolata, Monaco, Menlo, monospace, serif; }
-
-  blockquote {
-    border-left: .1em solid $primary-color;
     color: #999;
-    margin-left: 0;
-    margin-right: 0;
-    padding: .5em 1em;
-
-    &:before {
-      content: '"';
-      position: relative;
-      left: 0;
-      top: 0;
-    }
-  }
-
-  blockquote {
-    quotes: "\201C" "\201D";
-
-    &:before {
-      content: open-quote;
-      font-style: italic;
-    }
-
-    &:after {
-      content: close-quote;
-      font-style: italic;
-    }
-  }
-
-  .entypo { font-family: 'Entypo'; }
-  .entypo-social { font-family: 'Entypo Social'; }
-
-  ul.languages {
-    padding: 0;
-
-    li { display: inline; }
-  }
+}

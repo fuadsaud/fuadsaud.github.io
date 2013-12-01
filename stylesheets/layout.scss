@@ -1,156 +1,226 @@
 @import 'bourbon/bourbon';
 
-html {
-  font-size: 62.5%;
+$resolution-treshold: 1140px;
 
-  @media(max-width: 320px) { font-size: 45%; }
+@mixin hide-low-res { @media(max-width: $resolution-treshold) { display: none; } }
+@mixin hide-hi-res { @media(min-width: $resolution-treshold) { display: none; } }
+
+html {
+    font-size: 62.5%;
+
+    @media(max-width: 320px) { font-size: 45%; }
 }
 
 hr {
-  border: none;
-  font-size: 2.0rem;
-  letter-spacing: .3em;
-  text-align: center;
+    border: none;
+    font-size: 2.0rem;
+    letter-spacing: .3em;
+    text-align: center;
 
-  &:before { content: '.......................'; }
+    &:before { content: '.......................'; }
 }
 
 h1 {
-  font-size: 9.6rem;
-  margin: 0;
-  text-align: center;
+    font-size: 6rem;
+    margin: 0;
 
-  @media(max-width: 768px) { h1 { font-size: 12rem} }
+    @media(max-width: 768px) { h1 { font-size: 12rem} }
 }
 
 h2 {
-  font-size: 6.0rem;
-  margin: .35em .75em;
-  text-align: center;
+    font-size: 4rem;
+    margin: .35em .75em;
 
-  @media(max-width: 320px) { h2 { font-size: 1.8em; } }
+    @media(max-width: 320px) { h2 { font-size: 1.8em; } }
 }
 
-h3 { font-size: 4.0rem; }
+h3 { font-size: 4rem; }
 
 p { line-height: 2em; }
 
-.about {
-  text-align: center;
+.container { &:after { clear: both; } }
 
-  @media(max-width: 320px) { .about { padding: 1em; } }
+.sidebar {
+    @include box-sizing (border-box);
+    @include hide-low-res;
+
+    padding: .75em .3em;
+    text-align: center;
+
+    float: left;
+    overflow-y: scroll;
+    position: fixed;
+    height: 100%;
+    width: 30%;
+
+    &.fold {
+        width: 5%;
+
+        h1,
+        img,
+        p,
+        ul { display: none; }
+    }
+
+    .toggle {
+        border: none;
+        display: inline-block;
+        float: left;
+        text-align: center;
+        width: 43px;
+    }
+
+    h1 { margin: .3em 0; }
+
+    img {
+        $border-radius: 500px;
+
+        @include border-top-radius ($border-radius);
+        @include border-bottom-radius ($border-radius);
+        @include border-left-radius ($border-radius);
+        @include border-right-radius ($border-radius);
+
+        height: 5em;
+        width: 5em;
+    }
+
+    p { font-size: .6em; }
+
+    .social-links { margin: .3em; }
+}
+
+.topbar {
+    @include hide-hi-res;
+
+    img, p, ul { display: none; }
+
+    height: 3em;
+}
+
+.content {
+    font-size: .75em;
+    margin: 0 auto;
+    padding: 1em;
+
+    @mixin split {
+        @include box-sizing (border-box);
+
+        float: right;
+        text-align: center;
+        width: 70%;
+    }
+
+    @mixin only {
+        float: none;
+        text-align: center;
+    }
+
+    &.only { @include only; }
+    @media(max-width: $resolution-treshold) { @include only; }
+    @media(min-width: $resolution-treshold) { @include split; }
 }
 
 .stream {
-  h2 {
-    text-align: left;
+    text-align: inherit;
 
-    time {
-      display: inline-block;
-      font-size: .3em;
-      vertical-align: middle;
+    .title {
+        time {
+            display: inline-block;
+            font-size: .4em;
+            vertical-align: middle;
+        }
     }
-  }
 
-  p { text-align: justify; }
-}
-
-@mixin content-padding { padding: 0 .75em; }
-
-.content {
-  @include content-padding;
-
-  margin: 0 auto;
-  max-width: 38em;
+    .tldr {
+        margin: 0 2em;
+        text-align: inherit;
+    }
 }
 
 .container > footer {
-  @include content-padding;
+    text-align: center;
 
-  margin-top: 2.5em;
-  text-align: center;
+    margin-top: 2.5em;
 
-  p {
-    margin: 0;
-    padding: 1em 0;
-  }
+    p {
+        margin: 0;
+        padding: 1em 0;
+    }
 }
 
 .social-links {
-  margin: 0 auto;
-  padding-left: 0;
-  text-align: center;
+    margin: 0 auto;
+    padding-left: 0;
+    text-align: center;
 
-  li {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+    li {
+        display: inline;
+        margin: .25em;
 
-    display: inline-block;
-
-    margin: 0 1.8em;
-
-    .icon { font-size: 24rem; }
-
-    @media(max-width: 768px) { margin: 0 1em; }
-  }
+        a { font-size: 8rem; }
+    }
 }
 
 article {
-  text-align: justify;
+    @media(max-width: 320px) { padding: .35em; }
 
-  @media(max-width: 320px) { padding: .35em; }
+    header {
+        text-align: center;
 
-  header {
-    margin-bottom: 1.5em;
-    text-align: center;
+        margin-bottom: 1.5em;
 
-    .date { margin: 0; }
+        .date { margin: 0; }
 
-    .tldr {
-      display: inline-block;
-      font-size: 3rem;
-      padding: .35em;
+        .tldr {
+            padding: .35em;
 
-      &:before {
-        content: 'tl;dr: ';
-        margin-right: .35em;
-      }
+            display: inline-block;
+
+            &:before {
+                content: 'tl;dr: ';
+                margin-right: .35em;
+            }
+        }
     }
-  }
 
-  img {
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    width: 80%;
-  }
+    img {
+        text-align: center;
 
-  .comments { margin-top: 2em; }
+        display: block;
+        margin: 20px auto;
+        width: 80%;
+    }
+
+    .comments { margin-top: 2em; }
+
+    p { text-align: justify; }
 }
 
-.highlight { padding: .35em .75em; }
-
-blockquote {
-  margin-left: 0;
-  margin-right: 0;
-  padding: .5em 1em;
-
-  &:before {
-    content: '"';
-    position: relative;
-    left: 0;
-    top: 0;
-  }
+.highlight {
+    padding: .35em .75em;
+    text-align: left;
 }
 
 blockquote {
-  &:before { content: open-quote; }
-  &:after { content: close-quote; }
+    border-left-width: .1em;
+    border-left-style: solid;
+    padding: .5em 1em;
+
+    margin-left: 0;
+    margin-right: 0;
+    quotes: "\201C" "\201D";
+
+    &:after { content: close-quote; }
+    &:before {
+        content: open-quote;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
 }
 
 ul.languages {
-  padding: 0;
+    padding: 0;
 
-  li { display: inline; }
+    li { display: inline; }
 }

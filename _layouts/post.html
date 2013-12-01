@@ -5,19 +5,23 @@ comments: true
 <article class="post">
   <header>
     <h2><a href="#">{{ page.title }}</a></h2>
-    <p class="date">
+    <span class="date">
       {% assign post = page %}
       {% include date.html %}
-    </p>
+    </span>
+
     {% if page.tldr %}
+      <br>
       <p class="tldr">{{ page.tldr }}</p>
     {% endif %}
   </header>
   {{ content }}
 
   <section class="comments">
-      {% if page.comments %}
-        {% include disqus.html %}
-      {% endif %}
+    {% if page.comments %}
+      {% include disqus.html %}
+    {% endif %}
   </section>
 </article>
+
+{% include reading_mode.html %}

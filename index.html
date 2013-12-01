@@ -3,10 +3,10 @@ layout: default
 ---
 <p class="about">
   Hello comrade!<br>
-  My name is <strong>Fuad Saud</strong>
-  I'm a CS student living in the south of Brazil;<br>
+  My name is <strong>Fuad Saud</strong>, and I'm an average frood,<br>
+  living in the nonsensical weather of south Brazil.<br>
   I hack <a href="//github.com/fuadsaud" target="_blank">for fun</a>
-  as well as <a href="//avela.me" target="_blank">for living.</a><br>
+  as well as <a href="//avela.me" target="_blank">for living</a>.<br>
   We should probably talk; so ping me on
   <a href="//twitter.com/fuadsaud" target="_blank">twitter</a>!
 </p>
@@ -17,10 +17,11 @@ layout: default
       <hr>
       <article>
         <h2 class="title">
-          <a href="{{ post.url }}">{{ post.title }}</a>
-          <!-- <time>{{ post.date | date: '%B %d, %Y' }}</time> -->
-          {% include date.html %}
+          <a href="{{ post.url }}">
+            {{ post.title }}<br>{% include date.html %}
+          </a>
         </h2>
+
         <p class="tldr">{{ post.tldr }}</p>
       </article>
     {% endif %}
