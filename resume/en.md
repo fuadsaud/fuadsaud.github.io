@@ -34,8 +34,15 @@ I have some experience with SQL and some RDBMS, such as MySQL and SQL server;
 but I have used MongoDB most part of time.
 
 ### Experience
-#### Ocapi Serviços de Informação Ltda. ([www.ocapi.com.br](//www.ocapi.com.br))
+
+#### Avelã ([avela.me](//avela.me))
+##### Software Developer - April 2013 to present
+
+Avelã makes CRM software for medical clinics.
+
+#### Ocapi ([www.ocapi.com.br](//www.ocapi.com.br))
 ##### Software Developer - July 2012 to January 2013
+
 Ocapi is a company focused on building solutions for e-commerces and digital
 marketing.
 
@@ -46,8 +53,9 @@ essential for my professional base.
 
 The stack here was mainly Ruby, JS, Resque, Redis e MongoDB.
 
-#### Action Automação Ltda. ([www.cali.com.br](//www.cali.com.br))
+#### Cali ([www.cali.com.br](//www.cali.com.br))
 ##### Support Assistant and Software Developer
+
 Cali is a small company developing softwares for automation and management of
 metrology and calibration labs.
 
