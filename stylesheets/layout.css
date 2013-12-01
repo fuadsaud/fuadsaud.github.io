@@ -178,7 +178,10 @@ blockquote {
     left: 0;
     top: 0; }
 
-ul.languages {
+.languages {
   padding: 0; }
-  ul.languages li {
+  .languages li {
     display: inline; }
+
+.useful-links {
+  list-style: none; }
