@@ -1,5 +1,5 @@
 <script type="text/javascript">
-  document.onreadystatechange = function() {
-    if (document.readyState == 'complete') FS.enableReadingMode();
-  };
+  document.addEventListener('DOMContentLoaded', function(event) {
+    FS.enableReadingMode();
+  });
 </script>
