@@ -1,2 +1,2 @@
 web: jekyll serve --watch --port 4000
-assets: scss --watch css
+assets: scss --watch stylesheets
