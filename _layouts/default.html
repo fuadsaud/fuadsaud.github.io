@@ -18,6 +18,7 @@
 
     {% include analytics.html %}
 
-    <script type="text/javascript" src="/scripts/fs.js"></script>
+    <script type="text/javascript">{% include fs.js %}</script>
+    {% comment %} <script type="text/javascript" src="/scripts/fs.js"></script> {% endcomment %}
   </body>
 </html>
