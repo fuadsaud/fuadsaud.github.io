@@ -24,7 +24,7 @@ h1 {
     font-size: 6rem;
     margin: 0;
 
-    @media(max-width: 768px) { h1 { font-size: 12rem} }
+    @media(max-width: 768px) { h1 { font-size: 12rem } }
 }
 
 h2 {
@@ -91,6 +91,8 @@ p { line-height: 2em; }
 
 .topbar {
     @include hide-hi-res;
+
+    text-align: center;
 
     img, p, ul { display: none; }
 

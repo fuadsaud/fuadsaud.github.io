@@ -81,6 +81,7 @@ p {
     margin: .3em; }
 
 .topbar {
+  text-align: center;
   height: 3em; }
   @media (min-width: 1140px) {
     .topbar {
