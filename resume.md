@@ -3,42 +3,44 @@ layout: resume
 title: Fuad Saud
 ---
 
-{% include resume_header.md %}
+## Fuad Frederik Saud
 
-### Background
+<ul class="useful-links">
+  <li><a href="mailto:fuadksd@gmail.com">fuadsaud@icloud.com</a></li>
+  <li><a href="//br.linkedin.com/in/fuadsaud/">br.linkedin.com/in/fuadsaud/</a></li>
+  <li><a href="//github.com/fuadsaud">github.com/fuadsaud</a></li>
+  <li><a href="//twitter.com/fuadsaud">twitter.com/fuadsaud</a></li>
+</ul>
 
-I'm a 17 years old software developer living in Sapucaia do Sul, Brazil.
+### Hi there
 
-I'm an avid learner, self-taught programmer, with interests in social
-technologies, design, usability and mobile software. I like playing out with new
-things and tools.
+I'm an 18 years old software developer living in São Leopoldo, Brazil.
 
-I'm passionate about Open Source, UNIX, commandline stuff, music, etc. In my
-free time I'm usually digging some nice projects on GitHub, reading or
-<del>trying to play</del> playing the guitar.
+I'm an avid learner, self-taught programmer, and I've been doing working with
+software for about 2 years.
 
-### Education
-* **Computer Science Bachelor**  
-  March 2011 - Present (≅ 5th period - hopefully graduating in 2015)  
-  Unisinos
+I do a lot of Ruby these days, because it's what I'm pretty used to (it's in
+the comfort zone), but I've been playing more with JavaScript, Clojure, Elixir
+and Go lately and I want to invest more time working with some of these
+technologies in the near future. I have some (not really joyful) experience
+with Java and C++ (mainly because of college work).
 
-* **High School**  
-  2008 - 2010  
-  Frederico Guilherme Schmidt Technical School
+I blog at [fuad.im](//fuad.im) (and I should really be writing more there).
 
-### Technologies
-I play most with Ruby and Javascript, but I have some background with Java,
-Python, PHP and Shell Script.
+### Where I've been studying
 
-I have some experience with SQL and some RDBMS, such as MySQL and SQL server;
-but I have used MongoDB most part of time.
+####**Computer Science Bachelor**  
 
-### Experience
+At [Unisinos](//unisinos.br) since March 2011. I'm in the 6th period (will
+hopefully graduate in 2015).
+
+### Where I've been working
 
 #### Avelã ([avela.me](//avela.me))
-##### Software Developer - April 2013 to present
+##### Software Developer - Since April 2013
 
-Avelã makes CRM software for medical clinics.
+Avelã makes CRM software for medical clinics. I deal with a lot of legacy code
+and refactoring apps written in Ruby with heavy Rails usage.
 
 #### Ocapi ([www.ocapi.com.br](//www.ocapi.com.br))
 ##### Software Developer - July 2012 to January 2013
@@ -47,11 +49,9 @@ Ocapi is a company focused on building solutions for e-commerces and digital
 marketing.
 
 It was an awesome internship. I worked developing new systems and features for
-company's products (mostly Ruby on Rails applications) and on the maintenance of
-existing projects. I learned tons of things during this period, and it was
+company's products (mostly Ruby on Rails applications) and on the maintenance
+of existing projects. I learned tons of things during this period, and it was
 essential for my professional base.
-
-The stack here was mainly Ruby, JS, Resque, Redis e MongoDB.
 
 #### Cali ([www.cali.com.br](//www.cali.com.br))
 ##### Support Assistant and Software Developer
@@ -61,4 +61,4 @@ metrology and calibration labs.
 
 This was my first formal employment. I worked mainly finding and correcting bugs
 on company's softwares and extending it's functionalities, remote deployment,
-etc. I played a little with MySQL, SQL Server and PHP.
+etc. Pretty boring but it was enough to get started.
