@@ -7,29 +7,29 @@ title: Fuad Saud
 
 <ul class="useful-links">
   <li><a href="mailto:fuadksd@gmail.com">fuadsaud@icloud.com</a></li>
-  <li><a href="//br.linkedin.com/in/fuadsaud/">br.linkedin.com/in/fuadsaud/</a></li>
-  <li><a href="//github.com/fuadsaud">github.com/fuadsaud</a></li>
-  <li><a href="//twitter.com/fuadsaud">twitter.com/fuadsaud</a></li>
+  <li><a href="//www.linkedin.com/in/fuadsaud/" target="_blank">www.linkedin.com/in/fuadsaud/</a></li>
+  <li><a href="//github.com/fuadsaud" target="_blank">github.com/fuadsaud</a></li>
+  <li><a href="//twitter.com/fuadsaud" target="_blank">twitter.com/fuadsaud</a></li>
 </ul>
 
 ### Hi there
 
 I'm an 18 years old software developer living in São Leopoldo, Brazil.
 
-I'm an avid learner, self-taught programmer, and I've been doing working with
+I'm an avid learner, self-taught programmer, and I've been working with
 software for about 2 years.
 
 I do a lot of Ruby these days, because it's what I'm pretty used to (it's in
-the comfort zone), but I've been playing more with JavaScript, Clojure, Elixir
-and Go lately and I want to invest more time working with some of these
+the comfort zone), but I've been playing more with JavaScript, Clojure and
+Elixir lately and I want to invest more time working with some of these
 technologies in the near future. I have some (not really joyful) experience
 with Java and C++ (mainly because of college work).
 
-I blog at [fuad.im](//fuad.im) (and I should really be writing more there).
+I <del>should be blogging more</del> blog at [fuad.im](//fuad.im).
 
 ### Where I've been studying
 
-####**Computer Science Bachelor**  
+####**Computer Science Bachelor**
 
 At [Unisinos](//unisinos.br) since March 2011. I'm in the 6th period (will
 hopefully graduate in 2015).
@@ -40,7 +40,7 @@ hopefully graduate in 2015).
 ##### Software Developer - Since April 2013
 
 Avelã makes CRM software for medical clinics. I deal with a lot of legacy code
-and refactoring apps written in Ruby with heavy Rails usage.
+and refactoring apps written using Ruby on Rails.
 
 #### Ocapi ([www.ocapi.com.br](//www.ocapi.com.br))
 ##### Software Developer - July 2012 to January 2013
