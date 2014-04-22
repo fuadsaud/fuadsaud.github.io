@@ -37,7 +37,7 @@ hopefully graduate in 2015).
 ### Where I've been working
 
 #### Avelã ([avela.me](//avela.me))
-##### Software Developer - Since April 2013
+##### Software Developer - April 2013 to April 2014
 
 Avelã makes CRM software for medical clinics. I deal with a lot of legacy code
 and refactoring apps written using Ruby on Rails.
