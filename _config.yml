@@ -1,3 +1,6 @@
+gems:
+  - jemoji
+  - jekyll-sitemap
 pygments: true
 markdown: redcarpet
 permalink: /:year/:month/:day/:title.html
