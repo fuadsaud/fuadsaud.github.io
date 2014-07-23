@@ -5,8 +5,8 @@ pygments: true
 markdown: redcarpet
 permalink: /:year/:month/:day/:title.html
 name: fs
-description: Thoughts of a dying rubyist
+description: fuad saud's worhtless thougts
 url: http://fuadsaud.github.io
 author:
   name: Fuad Saud
-  email: fuadksd@gmail.com
+  email: fuadsaud@icloud.com
