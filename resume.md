@@ -14,27 +14,52 @@ title: Fuad Saud
 
 ### Hi there
 
-I'm an 18 years old software developer living in São Leopoldo, Brazil.
+I'm a 19 years old software developer and computer geek living in the
+Rochester, NY area.
 
 I'm an avid learner, self-taught programmer, and I've been working with
 software for about 2 years.
 
-I do a lot of Ruby these days, because it's what I'm pretty used to (it's in
-the comfort zone), but I've been playing more with JavaScript, Clojure and
-Elixir lately and I want to invest more time working with some of these
+I do a lot of Ruby programming these days, because it's what I'm pretty used to
+(it's in the comfort zone), but I've been playing more with JavaScript and
+Clojure laately and I want to invest more time working with some of these
 technologies in the near future. I have some (not really joyful) experience
 with Java and C++ (mainly because of college work).
 
 I <del>should be blogging more</del> blog at [fuad.im](//fuad.im).
 
-### Where I've been studying
+### Where I've been studyingshould be blogging more
+
+####**Computer Science Sandwich Graduation**
+
+At [RIT](//rit.edu) since August 2014. I'm studying abroad at the Rochester
+Institute of Technology, in Rochester, NY, as part of a one year long
+non-degree exchange program I'm participating in.
 
 ####**Computer Science Bachelor**
 
-At [Unisinos](//unisinos.br) since March 2011. I'm in the 6th period (will
-hopefully graduate in 2015).
+At [Unisinos](//unisinos.br) since March 2011. I'm in the 7th period (will
+hopefully graduate in 2016).
 
 ### Where I've been working
+
+
+### CWI ([cwi.com.br](//cwi.com.br)
+#### Software Developer - April 2013 to July 2013
+
+CWI is an IT company that offers software services like Software Factory,
+Project Factory, Test Factory and Outsourcing.
+
+There I worked on the team outsourced to iba, a digital content delivery
+company.
+
+iba is a young project that focuses on high scale delivery of digital
+content like magazines, newspapers and books through mobile, desktop and web
+apps.
+
+Stack used there consisted mainly of several Ruby based REST microservices
+(developed with the Sinatra framework along with Cucumber and RSpec), backed by
+MongoDB and Redis databases on an Amazon infrastructure.
 
 #### Avelã ([avela.me](//avela.me))
 ##### Software Developer - April 2013 to April 2014
