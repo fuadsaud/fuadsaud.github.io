@@ -64,8 +64,9 @@ MongoDB and Redis databases on an Amazon infrastructure.
 #### Avelã ([avela.me](//avela.me))
 ##### Software Developer - April 2013 to April 2014
 
-Avelã makes CRM software for medical clinics. I deal with a lot of legacy code
-and refactoring apps written using Ruby on Rails.
+Avelã makes CRM software for medical clinics. I used to deal with a lot of
+legacy code and refactor apps written using Ruby on Rails, JavaScript and MySQL
+databases.
 
 #### Ocapi ([www.ocapi.com.br](//www.ocapi.com.br))
 ##### Software Developer - July 2012 to January 2013
