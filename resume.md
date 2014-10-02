@@ -28,7 +28,7 @@ with Java and C++ (mainly because of college work).
 
 I <del>should be blogging more</del> blog at [fuad.im](//fuad.im).
 
-### Where I've been studyingshould be blogging more
+### Where I've been studying
 
 ####**Computer Science Sandwich Graduation**
 
@@ -44,7 +44,7 @@ hopefully graduate in 2016).
 ### Where I've been working
 
 
-### CWI ([cwi.com.br](//cwi.com.br)
+### CWI ([cwi.com.br](//cwi.com.br))
 #### Software Developer - April 2013 to July 2013
 
 CWI is an IT company that offers software services like Software Factory,
