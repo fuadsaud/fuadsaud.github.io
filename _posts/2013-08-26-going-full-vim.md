@@ -158,7 +158,7 @@ Anyway, I feel good now after doing the switch. I just completed one of the
 goals I had in my life, as a developer. I'm so happy to say I'm a Vim user I
 already bought a sticker:
 
-![Vim love](https://dl.dropboxusercontent.com/u/40335688/Bucket/IMG_0225.png)
+![Vim love](http://i.imgur.com/mzypjfN.png)
 
 There are yet a few issues I'm not very pleased with, such as HTML/ERB
 indentation and poor snippets scopes settings (the whole snippets set is poor,
