@@ -6,8 +6,9 @@ title: Fuad Saud
 ## Fuad Frederik Saud
 
 <ul class="useful-links">
-  <li><a href="mailto:fuadksd@gmail.com">fuadsaud@icloud.com</a></li>
+  <li><a href="mailto:fuadfsaud@gmail.com">fuadsaud@gmail.com</a></li>
   <li><a href="//www.linkedin.com/in/fuadsaud/" target="_blank">www.linkedin.com/in/fuadsaud/</a></li>
+  <li><a href="//careers.stackoverflow.com/fuad" target="_blank">careers.stackoverflow.com/fuad</a></li>
   <li><a href="//github.com/fuadsaud" target="_blank">github.com/fuadsaud</a></li>
   <li><a href="//twitter.com/fuadsaud" target="_blank">twitter.com/fuadsaud</a></li>
 </ul>
@@ -15,26 +16,32 @@ title: Fuad Saud
 ### Hi there
 
 I'm a 19 years old software developer and computer geek living in the
-Rochester, NY area.
+Rochester, NY area. I'm studying abroad in the U.S, attending Rochester
+Institute of Technology's Computer Science program for a year.
 
-I'm an avid learner, self-taught programmer, and I've been working with
-software for about 2 years.
+I've been working with software development since 2012 and I really like it.
+Most of what I did since then is web development involving technologies like
+**Ruby** and **JavaScript** and **MongoDB** but I'm also interested in things
+such as functional programming - I've been playing with **Clojure** and
+**Haskell** for a while and I think I'm falling in love for them -, data
+analysis - I have some knowledge in **data mining** from college courses that I
+still didn't have the chance to put to work in non-college related tasks - and
+artificial intelligence - same goes for **machine learning**, which I think is
+an awesome field I'd like to explore more.
 
-I do a lot of Ruby programming these days, because it's what I'm pretty used to
-(it's in the comfort zone), but I've been playing more with JavaScript and
-Clojure laately and I want to invest more time working with some of these
-technologies in the near future. I have some (not really joyful) experience
-with Java and C++ (mainly because of college work).
+I also like **football** - mostly the one played with the feet but have been
+learning about the one played with the hands lately -, **music** - many genres but
+mostly indie and folk rock - and **coffee**.
 
-I <del>should be blogging more</del> blog at [fuad.im](//fuad.im).
+I <del>should be blogging</del> blog at [fuad.im](//fuad.im).
 
 ### Where I've been studying
 
 ####**Computer Science Sandwich Graduation**
 
 At [RIT](//rit.edu) since August 2014. I'm studying abroad at the Rochester
-Institute of Technology, in Rochester, NY, as part of a one year long
-non-degree exchange program I'm participating in.
+Institute of Technology, in Rochester, NY, as part of a year long
+non-degree exchange program sponsored by the Brazilian Government.
 
 ####**Computer Science Bachelor**
 
@@ -45,7 +52,7 @@ hopefully graduate in 2016).
 
 
 ### CWI ([cwi.com.br](//cwi.com.br))
-#### Software Developer - April 2013 to July 2013
+#### Software Developer - April 2014 to July 2014
 
 CWI is an IT company that offers software services like Software Factory,
 Project Factory, Test Factory and Outsourcing.
