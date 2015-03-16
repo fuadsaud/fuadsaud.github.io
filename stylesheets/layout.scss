@@ -224,4 +224,8 @@ blockquote {
     li { display: inline; }
 }
 
-.useful-links { list-style: none; }
+.useful-links {
+  list-style: none;
+
+  padding: 0;
+}
