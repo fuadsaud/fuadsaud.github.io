@@ -2,6 +2,6 @@ source 'https://rubygems.org'
 
 gem 'github-pages'
 
+gem 'rouge'
 gem 'foreman'
-gem 'sass'
 gem 'rb-fsevent'
