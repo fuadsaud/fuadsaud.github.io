@@ -5,13 +5,7 @@ title: Fuad Saud
 
 ## Fuad Frederik Saud
 
-<ul class="useful-links">
-  <li><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-  <li><a href="{{ site.author.links.linkedin }}"  target="_blank">linkedin</a></li>
-  <li><a href="{{ site.author.links.socarrers }}" target="_blank">stackoverflow careers</a></li>
-  <li><a href="{{ site.author.links.github }}"    target="_blank">github</a></li>
-  <li><a href="{{ site.author.links.twitter }}"   target="_blank">twitter</a></li>
-</ul>
+{% include contact_links.html %}
 
 ### Hi there
 

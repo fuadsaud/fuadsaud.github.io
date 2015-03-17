@@ -15,6 +15,19 @@ $twitter-color: #2eb8e7;
 @mixin entypo { font-family: 'Entypo'; }
 @mixin entypo-social { font-family: 'Entypo Social'; }
 
+
+@mixin invert-colors-on-hover($color: $secondary-color) {
+    @include transition (.5s);
+
+    color: $color;
+    text-decoration: none;
+
+    &:hover, &:active {
+        background-color: $color;
+        color: #fff;
+    }
+}
+
 @mixin glowing-links {
     a {
         color: $secondary-color;
@@ -47,15 +60,7 @@ body {
 }
 
 a {
-    @include transition (.5s);
-
-    color: $secondary-color;
-    text-decoration: none;
-
-    &:hover, &:active {
-        background-color: $secondary-color;
-        color: #fff;
-    }
+    @include invert-colors-on-hover($secondary-color);
 }
 
 hr { color: $primary-color; }
@@ -73,7 +78,7 @@ h5,
 h6 { font-weight: lighter; }
 
 h1 { color: #fff; }
-
+h2 { color: $secondary-color; }
 h3 { color: #461114; }
 
 h2,
@@ -151,9 +156,19 @@ blockquote {
 }
 
 .contact-links {
-  .email     { color: $email-color; }
-  .github    { color: $github-color; }
-  .linkedin  { color: $linkedin-color; }
-  .socareers { color: $socareers-color; }
-  .twitter   { color: $twitter-color; }
+    .email     { @include invert-colors-on-hover($email-color); }
+    .github    { @include invert-colors-on-hover($github-color); }
+    .linkedin  { @include invert-colors-on-hover($linkedin-color); }
+    .socareers { @include invert-colors-on-hover($socareers-color); }
+    .twitter   { @include invert-colors-on-hover($twitter-color); }
+
+    li {
+        @include reset-links;
+
+        display: inline;
+
+        &::after { content: '•'; }
+
+        &:last-child::after { content: ''; }
+    }
 }
