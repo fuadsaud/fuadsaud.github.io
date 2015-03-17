@@ -6,15 +6,15 @@ window.FS = new (function() {
   var content = document.querySelector('.content');
 
   sidebarToggle.addEventListener('click', function() {
-    _this.toggleReadingMode();
+    _this.toggleOffCanvas();
   });
 
-  this.toggleReadingMode = function() {
+  this.toggleOffCanvas = function() {
     sidebar.classList.toggle('fold');
     content.classList.toggle('only');
   };
 
-  this.enableReadingMode = function() {
+  this.hideOffCanvas = function() {
     sidebar.classList.add('fold');
     content.classList.add('only');
   };
