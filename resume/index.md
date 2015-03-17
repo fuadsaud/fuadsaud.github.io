@@ -45,8 +45,9 @@ hopefully graduate in 2016).
 ### Where I've been working
 
 
-### CWI ([cwi.com.br](//cwi.com.br))
-#### Software Developer - April 2014 to July 2014
+#### CWI ([cwi.com.br](//cwi.com.br))
+
+##### Software Developer - April 2014 to July 2014
 
 CWI is an IT company that offers software services like Software Factory,
 Project Factory, Test Factory and Outsourcing.
@@ -63,6 +64,7 @@ Stack used there consisted mainly of several Ruby based REST microservices
 MongoDB and Redis databases on an Amazon infrastructure.
 
 #### Avelã ([avela.me](//avela.me))
+
 ##### Software Developer - April 2013 to April 2014
 
 Avelã makes CRM software for medical clinics. I used to deal with a lot of
@@ -70,6 +72,7 @@ legacy code and refactor apps written using Ruby on Rails, JavaScript and MySQL
 databases.
 
 #### Ocapi ([www.ocapi.com.br](//www.ocapi.com.br))
+
 ##### Software Developer - July 2012 to January 2013
 
 Ocapi is a company focused on building solutions for e-commerces and digital
@@ -81,6 +84,7 @@ of existing projects. I learned tons of things during this period, and it was
 essential for my professional base.
 
 #### Cali ([www.cali.com.br](//www.cali.com.br))
+
 ##### Support Assistant and Software Developer
 
 Cali is a small company developing softwares for automation and management of
