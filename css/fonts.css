@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'),
+       local('OpenSans-Light'),
+       url(http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTVMBBrntOh5tSEdJ1aeglyY.woff) format('woff'),
+       url(/fonts/OpenSans-Light.ttf) format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'),
+       local('OpenSans'),
+       url(http://themes.googleusercontent.com/static/fonts/opensans/v6/K88pR3goAWT7BTt32Z01m7O3LdcAZYWl9Si6vvxL-qU.woff) format('woff'),
+       url(/fonts/OpenSans-Regular.ttf) format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'),
+       local('OpenSans-Bold'),
+       url(http://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzFMBBrntOh5tSEdJ1aeglyY.woff) format('woff'),
+       url(/fonts/OpenSans-Bold.ttf) format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans Light Italic'),
+       local('OpenSansLight-Italic'),
+       url(http://themes.googleusercontent.com/static/fonts/opensans/v6/PRmiXeptR36kaC0GEAetxnAs8Wu_YJ_iPyCHUNPN6JQ.woff) format('woff'),
+       url(/fonts/OpenSansLight-Italic.ttf) format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'),
+       local('OpenSans-Italic'),
+       url(http://themes.googleusercontent.com/static/fonts/opensans/v6/xjAJXh38I15wypJXxuGMBhsKoB_2lT5BZsH32Y4e7So.woff) format('woff'),
+       url(/fonts/OpenSans-Italic.ttf) format('woff');
+}
+
+@font-face {
+    font-family: "Entypo";
+    src: url(/fonts/entypo.ttf);
+}
+
+@font-face {
+    font-family: "Entypo Social";
+    src: url(/fonts/entypo-social.ttf);
+}
+

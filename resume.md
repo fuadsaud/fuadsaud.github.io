@@ -6,11 +6,11 @@ title: Fuad Saud
 ## Fuad Frederik Saud
 
 <ul class="useful-links">
-  <li><a href="mailto:fuadfsaud@gmail.com">fuadsaud@gmail.com</a></li>
-  <li><a href="//www.linkedin.com/in/fuadsaud/" target="_blank">www.linkedin.com/in/fuadsaud/</a></li>
-  <li><a href="//careers.stackoverflow.com/fuad" target="_blank">careers.stackoverflow.com/fuad</a></li>
-  <li><a href="//github.com/fuadsaud" target="_blank">github.com/fuadsaud</a></li>
-  <li><a href="//twitter.com/fuadsaud" target="_blank">twitter.com/fuadsaud</a></li>
+  <li><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+  <li><a href="{{ site.author.links.linkedin }}"  target="_blank">linkedin</a></li>
+  <li><a href="{{ site.author.links.socarrers }}" target="_blank">stackoverflow careers</a></li>
+  <li><a href="{{ site.author.links.github }}"    target="_blank">github</a></li>
+  <li><a href="{{ site.author.links.twitter }}"   target="_blank">twitter</a></li>
 </ul>
 
 ### Hi there
@@ -45,7 +45,7 @@ non-degree exchange program sponsored by the Brazilian Government.
 
 ####**Computer Science Bachelor**
 
-At [Unisinos](//unisinos.br) since March 2011. I'm in the 7th period (will
+At [Unisinos](//unisinos.br/global/en/) since March 2011. I'm in the 7th period (will
 hopefully graduate in 2016).
 
 ### Where I've been working

@@ -5,6 +5,13 @@
 $primary-color:   #50a0a6;
 $secondary-color: #b82a38;
 
+$email-color: $secondary-color;
+$feed-color: #f50;
+$github-color: #286da3;
+$linkedin-color: #015a86;
+$socareers-color: #fd8808;
+$twitter-color: #2eb8e7;
+
 @mixin entypo { font-family: 'Entypo'; }
 @mixin entypo-social { font-family: 'Entypo Social'; }
 
@@ -100,31 +107,31 @@ strong { font-weight: normal; }
     .feed {
         @include entypo;
 
-        a:hover { color: #f50; }
+        a:hover { color: $feed-color; }
     }
 
-    .mail {
+    .email {
         @include entypo;
 
-        a:hover { color: $secondary-color; }
+        a:hover { color: $email-color; }
     }
 
     .github {
         @include entypo-social;
 
-        a:hover { color: #286da3; }
+        a:hover { color: $github-color; }
     }
 
     .linkedin {
         @include entypo-social;
 
-        a:hover { color: #015a86; }
+        a:hover { color: $linkedin-color; }
     }
 
     .twitter {
         @include entypo-social;
 
-        a:hover { color: #2eb8e7; }
+        a:hover { color: $twitter-color; }
     }
 }
 
@@ -141,4 +148,12 @@ blockquote {
     border-left-color: $primary-color;
 
     color: #999;
+}
+
+.contact-links {
+  .email     { color: $email-color; }
+  .github    { color: $github-color; }
+  .linkedin  { color: $linkedin-color; }
+  .socareers { color: $socareers-color; }
+  .twitter   { color: $twitter-color; }
 }

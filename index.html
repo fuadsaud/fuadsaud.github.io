@@ -3,12 +3,12 @@ layout: default
 ---
 <p class="about">
   Hello comrade!<br>
-  My name is <strong>Fuad Saud</strong> and I'm an average guy<br>
-  living in Rochester, NY.<br>
-  I hack software <a href="//github.com/fuadsaud" target="_blank">for fun</a>
+  My name is <strong>{{ site.author.name }}</strong> and I'm an average guy<br>
+  living in {{ site.author.location }}.<br>
+  I hack software <a href="{{ site.author.links.github }}" target="_blank">for fun</a>
   and for living.
   Wanna talk? Just ping me on
-  <a href="//twitter.com/fuadsaud" target="_blank">twitter</a>!
+  <a href="{{ author.links.twitter }}" target="_blank">twitter</a>!
 </p>
 
 <p class="about">

@@ -39,19 +39,18 @@
         title="Grab that feed">&#59194;</a>
     </li>
 
-    <li class="mail">
-      <a href="mailto:fuadksd@gmail.com"
+    <li class="email">
+      <a href="mailto:{{ site.author.email }}"
         target="_blank"
-        title="Mail me">&#9993;</a>
+        title="Email me">&#9993;</a>
     </li>
   </ul>
 
   <p>
-    © 2013 Fuad Saud<br>
+    © {{ site.time | date: '%Y' }} {{ site.author.name }}<br>
     Made with jekyll and love, and hosted by
     <a href="//pages.github.com">GitHub Pages</a>.<br>
     Source code is open and you can check it
-    <a href="//github.com/fuadsaud/fuadsaud.github.io"
-      target="_blank">here</a>.<br>
+    <a href="{{ site.repo_url }}" target="_blank">here</a>.<br>
   </p>
 </header>

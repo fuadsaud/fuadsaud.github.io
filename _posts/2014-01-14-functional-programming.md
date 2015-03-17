@@ -9,7 +9,7 @@ So I'm reading
 and one of the examples given to illustrate the usage of closures caught my
 eye. Here it is:
 
-```clojure
+{% highlight clojure linenos %}
 (defn make-composed-comparison [& comparisons]
   (fn [p1 p2]
     (let [results (for [comparison comparisons] (comparison p1 p2))
@@ -18,7 +18,7 @@ eye. Here it is:
       (if (nil? first-non-zero-result)
         0
         first-non-zero-result))))
-```
+{% endhighlight %}
 
 It's a function that takes a list of comparator functions and returns their
 composition, which in turn, returns the first nonzero comparation result, or
