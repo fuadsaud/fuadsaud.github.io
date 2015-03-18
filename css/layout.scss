@@ -5,8 +5,8 @@
 
 $resolution-treshold: 1140px;
 
-@mixin hide-low-res { @media(max-width: $resolution-treshold) { display: none; } }
-@mixin hide-hi-res { @media(min-width: $resolution-treshold) { display: none; } }
+@mixin hide-small-screen { @media(max-width: $resolution-treshold) { display: none; } }
+@mixin hide-large-screen { @media(min-width: $resolution-treshold + 1) { display: none; } }
 
 html {
     font-size: 62.5%;
@@ -41,7 +41,7 @@ p { line-height: 2em; }
 
 .sidebar {
     @include box-sizing (border-box);
-    @include hide-low-res;
+    @include hide-small-screen;
 
     padding: .75em .3em;
     text-align: center;
@@ -90,7 +90,7 @@ p { line-height: 2em; }
 }
 
 .topbar {
-    @include hide-hi-res;
+    @include hide-large-screen;
 
     text-align: center;
 
@@ -100,7 +100,7 @@ p { line-height: 2em; }
 }
 
 .bottombar {
-    @include hide-hi-res;
+    @include hide-large-screen;
 
     p {
         font-size: .7em;
@@ -135,8 +135,9 @@ p { line-height: 2em; }
     }
 
     &.only { @include only; }
+
     @media(max-width: $resolution-treshold) { @include only; }
-    @media(min-width: $resolution-treshold) { @include split; }
+    @media(min-width: $resolution-treshold + 1) { @include split; }
 }
 
 .stream {
