@@ -1,6 +1,8 @@
 .highlight {
     background-color: #073642;
     color: #93a1a1;
+
+    font-size: 2rem;
 }
 
 .highlight .c {

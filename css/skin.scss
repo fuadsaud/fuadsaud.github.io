@@ -79,7 +79,7 @@ h6 { font-weight: lighter; }
 
 h1 { color: #fff; }
 h2 { color: $secondary-color; }
-h3 { color: #461114; }
+h3 { color: $primary-color; }
 
 h2,
 h3 { @include glowing-links; }
