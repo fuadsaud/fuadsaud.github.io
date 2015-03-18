@@ -7,6 +7,7 @@ name: fs
 description: fuad saud's worhtless thougts
 url: //fuad.im
 repo_url: //github.com/fuadsaud/fuadsaud.github.io
+feed_url: /atom.xml
 avatar: //www.gravatar.com/avatar/a6ac07e8e5efbba8bec17c104c8e4bb8.png?s=150
 author:
   name: Fuad Saud
