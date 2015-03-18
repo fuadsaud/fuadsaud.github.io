@@ -31,16 +31,16 @@ I <del>should be blogging</del> blog at [fuad.im](//fuad.im).
 
 ### Where I've been studying
 
-####**Computer Science Sandwich Graduation**
+#### **Computer Science Sandwich Graduation**
 
 At [RIT](//rit.edu) since August 2014. I'm studying abroad at the Rochester
 Institute of Technology, in Rochester, NY, as part of a year long
 non-degree exchange program sponsored by the Brazilian Government.
 
-####**Computer Science Bachelor**
+#### **Computer Science BS**
 
-At [Unisinos](//unisinos.br/global/en/) since March 2011. I'm in the 7th period (will
-hopefully graduate in 2016).
+At [Unisinos](//unisinos.br/global/en/) since March 2011. I'm in the 7th period
+(will hopefully graduate in 2016).
 
 ### Where I've been working
 
