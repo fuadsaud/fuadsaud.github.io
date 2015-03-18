@@ -82,7 +82,11 @@ p { line-height: 2em; }
 
     p { font-size: .6em; }
 
-    .social-links { margin: .3em; }
+    .social-links {
+        margin: .3em;
+
+        a { font-size: 3em; }
+    }
 }
 
 .topbar {
@@ -93,6 +97,23 @@ p { line-height: 2em; }
     img, p, ul { display: none; }
 
     height: 3em;
+}
+
+.bottombar {
+    @include hide-hi-res;
+
+    p {
+        font-size: .7em;
+
+        margin: 0;
+        padding: 1em;
+
+        text-align: center;
+    }
+
+    .social-links {
+        a { font-size: 6em; }
+    }
 }
 
 .content {
@@ -154,8 +175,6 @@ p { line-height: 2em; }
     li {
         display: inline;
         margin: .25em;
-
-        a { font-size: 3em; }
     }
 }
 
@@ -226,7 +245,7 @@ blockquote {
 }
 
 .contact-links {
-  list-style: none;
+    list-style: none;
 
-  padding: 0;
+    padding: 0;
 }

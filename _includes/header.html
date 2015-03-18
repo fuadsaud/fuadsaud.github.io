@@ -15,42 +15,6 @@
 
   <h1><a href="/">{{ site.name }}</a></h1>
 
-  <ul class="social-links">
-    <li class="github">
-      <a href="//github.com/fuadsaud"
-        target="_blank"
-        title="Checkout my code at GitHub">&#62208;</a>
-    </li>
-
-    <li class="twitter">
-      <a href="//twitter.com/fuadsaud"
-        target="_blank"
-        title="Follow me on Twitter">&#62217;</a>
-    </li>
-
-    <li class="linkedin">
-      <a href="//br.linkedin.com/in/fuadksd/"
-        target="_blank"
-        title="Visit my résumé on LinkedIn">&#62232;</a>
-    </li>
-
-    <li class="feed">
-      <a href="/atom.xml"
-        title="Grab that feed">&#59194;</a>
-    </li>
-
-    <li class="email">
-      <a href="mailto:{{ site.author.email }}"
-        target="_blank"
-        title="Email me">&#9993;</a>
-    </li>
-  </ul>
-
-  <p>
-    © {{ site.time | date: '%Y' }} {{ site.author.name }}<br>
-    Made with jekyll and love, and hosted by
-    <a href="//pages.github.com">GitHub Pages</a>.<br>
-    Source code is open and you can check it
-    <a href="{{ site.repo_url }}" target="_blank">here</a>.<br>
-  </p>
+  {% include social_links.html %}
+  {% include copyright.html %}
 </header>

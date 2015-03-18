@@ -93,7 +93,8 @@ strong { font-weight: normal; }
 .sidebar { @include transition (1s); }
 
 .sidebar,
-.topbar {
+.topbar,
+.bottombar {
     color: #333;
 
     .avatar { @include reset-links; }
