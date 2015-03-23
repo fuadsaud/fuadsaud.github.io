@@ -125,6 +125,7 @@ p { line-height: 2em; }
         @include box-sizing (border-box);
 
         float: right;
+        padding: 1em 3em;
         text-align: center;
         width: 70%;
     }
