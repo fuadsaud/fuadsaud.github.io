@@ -2,32 +2,32 @@
 layout: default
 ---
 <p class="about">
-  Hello comrade!<br>
-  My name is <strong>{{ site.author.name }}</strong> and I'm an average guy<br>
-  living in {{ site.author.location }}.<br>
-  I hack software <a href="{{ site.author.links.github }}" target="_blank">for fun</a>
-  and for living.
-  Wanna talk? Just ping me on
-  <a href="{{ site.author.links.twitter }}" target="_blank">twitter</a>!
+    Hello comrade!<br>
+    My name is <strong>{{ site.author.name }}</strong> and I'm an average guy<br>
+    living in {{ site.author.location }}.<br>
+    I hack software <a href="{{ site.author.links.github }}" target="_blank">for fun</a>
+    and for living.
+    Wanna talk? Just ping me on
+    <a href="{{ site.author.links.twitter }}" target="_blank">twitter</a>!
 </p>
 
 <p class="about">
-  I write some random stuff in this blog.<br>You should probably check it out:
+    I write some random stuff in this blog.<br>You should probably check it out:
 </p>
 
 <section class="stream">
-  {% for post in site.posts %}
-    {% if post.published %}
-      <hr>
-      <article>
-        <h2 class="title">
-          <a href="{{ post.url }}">
-            {{ post.title }}<br>{% include date.html %}
-          </a>
-        </h2>
+    {% for post in site.posts %}
+        {% if post.published %}
+            <hr>
+            <section class="post">
+                <h1 class="title">
+                    <a href="{{ post.url }}">
+                        {{ post.title }}<br>{% include date.html %}
+                    </a>
+                </h1>
 
-        <p class="tldr">{{ post.tldr }}</p>
-      </article>
-    {% endif %}
-  {% endfor %}
-</section>
+                <p class="tldr">{{ post.tldr }}</p>
+                </section class="post-headsup">
+            {% endif %}
+        {% endfor %}
+    </section>

@@ -3,7 +3,7 @@ window.FS = new (function() {
 
   var sidebarToggle = document.querySelector('.js-toggle-sidebar');
   var sidebar = document.querySelector('.sidebar');
-  var content = document.querySelector('.content');
+  var content = document.querySelector('main');
 
   sidebarToggle.addEventListener('click', function() {
     _this.toggleOffCanvas();

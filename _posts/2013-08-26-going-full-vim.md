@@ -105,7 +105,7 @@ resemble the one I was used to with Sublime - getting snippets to work played
 major role here. So I thought I could share some pretty basic tips with people
 stuck in the same situation I was:
 
-### Get to know how to move around
+## Get to know how to move around
 
 I highly recommend you to learn the basic movements language of Vim. Using
 Sublime Vintage helped me a lot in the migration process, so give it a try if
@@ -113,7 +113,7 @@ you want to migrate. Using Vim effectivelly is mainly about the things you can
 do with the commands in normal mode, so if you don't get them, you're not
 gonna get a taste of the power it provides you.
 
-### Get yourself some packages, hell yeah
+## Get yourself some packages, hell yeah
 
 Vim is pretty powerfull out of the box, but you won't get far without some
 plugins. Vim Sensible, Fugitive, Commentary, Repeat an Surround are all useful
@@ -121,7 +121,7 @@ and rather simple to get started. You should also get some support for you
 prefered languages - for rubyists, [vim-ruby](//github.com/vim-ruby/vim-ruby)
 is a must have.
 
-### Know your vimrc
+## Know your vimrc
 
 You should definetly get some plugins to start. But just go throwing anything
 you find cool into your vimrc. Only add things after you're sure you understand
@@ -140,19 +140,19 @@ can check it
 Got curious about something? Just go `:help interesting-setting` and you'll
 probably find some useful and straightforward info on the subject.
 
-### Get Vundle
+## Get Vundle
 
 Or any other package manager. It's just the only reasonable way to maintain
 your dependencies.
 
-### Vimcasts.org
+## Vimcasts.org
 
 Seriously, this is an essential resource. As of now there are 50 episodes: you
 can watch them in sitting if you get as excited as I was. And you'll get to
 listen to - Drew Neil's - sexiest voice in the screencasters community -
 besides [Ben Orenstein](//twitter.com/r00k)'s, of course :)
 
-### So...
+## So...
 
 Anyway, I feel good now after doing the switch. I just completed one of the
 goals I had in my life, as a developer. I'm so happy to say I'm a Vim user I

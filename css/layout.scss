@@ -119,20 +119,19 @@ p { line-height: 2em; }
 main {
     font-size: .75em;
     margin: 0 auto;
-    padding: 1em;
+    text-align: center;
 
     @mixin split {
         @include box-sizing (border-box);
 
+        padding: 2em 3em;
         float: right;
-        padding: 1em 3em;
-        text-align: center;
         width: 70%;
     }
 
     @mixin only {
         float: none;
-        text-align: center;
+        padding: 2em 0 2em 5%;
     }
 
     &.only { @include only; }
@@ -144,22 +143,24 @@ main {
 .stream {
     text-align: inherit;
 
-    .title {
-        time {
-            display: inline-block;
-            font-size: .4em;
-            vertical-align: middle;
+    .post {
+        .title {
+            time {
+                display: inline-block;
+                font-size: .4em;
+                vertical-align: middle;
+            }
         }
-    }
 
-    .tldr {
-        margin: 0 2em;
-        text-align: inherit;
+        .tldr {
+            margin: 0 2em;
+            text-align: inherit;
+        }
     }
 }
 
 .container > footer {
-    text-align: center;
+    text-align: justify;
 
     margin-top: 2.5em;
 
@@ -180,7 +181,7 @@ main {
     }
 }
 
-article {
+.post {
     @media(max-width: 320px) { padding: .35em; }
 
     header {

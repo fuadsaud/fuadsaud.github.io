@@ -15,7 +15,6 @@ $twitter-color: #2eb8e7;
 @mixin entypo { font-family: 'Entypo'; }
 @mixin entypo-social { font-family: 'Entypo Social'; }
 
-
 @mixin invert-colors-on-hover($color: $secondary-color) {
     @include transition (.5s);
 
@@ -52,7 +51,10 @@ $twitter-color: #2eb8e7;
     }
 }
 
-html { * { color-profile: sRGB; } }
+html {
+    * { color-profile: sRGB;
+    };
+}
 
 body {
     background: url(/images/bg.png) repeat scroll top left #eee ;
@@ -77,13 +79,6 @@ h4,
 h5,
 h6 { font-weight: lighter; }
 
-h1 { color: #fff; }
-h2 { color: $secondary-color; }
-h3 { color: $primary-color; }
-
-h2,
-h3 { @include glowing-links; }
-
 img { @include reset-links; }
 
 p { line-height: 2em; }
@@ -96,6 +91,8 @@ strong { font-weight: normal; }
 .topbar,
 .bottombar {
     color: #333;
+
+    h1 { color: #fff; }
 
     .avatar { @include reset-links; }
 
@@ -141,14 +138,29 @@ strong { font-weight: normal; }
     }
 }
 
-article header .tldr {
-    background-color: #bdc;
-    color: #555;
+.post {
+    header .tldr {
+        background-color: #bdc;
+        color: #555;
+    }
 }
 
-.highlight { background-color: #fff; }
+.post,
+.resume {
+    h1 { color: $secondary-color; }
+    h2 { color: $primary-color; }
 
-code { font-family: Inconsolata, Monaco, Menlo, monospace, serif; }
+    h1,
+    h2 { @include glowing-links; }
+}
+
+.highlight {
+    background-color: #fff;
+}
+
+code {
+    font-family: Inconsolata, Monaco, Menlo, monospace, serif;
+}
 
 blockquote {
     border-left-color: $primary-color;
