@@ -1,16 +1,16 @@
 ---
 ---
-@import 'bourbon/bourbon';
+@import 'bourbon/app/assets/stylesheets/bourbon';
 
 $primary-color:   #50a0a6;
 $secondary-color: #b82a38;
 
-$email-color: $secondary-color;
-$feed-color: #f50;
-$github-color: #b7b7b8;
-$linkedin-color: #015a86;
+$email-color:     $secondary-color;
+$feed-color:      #f50;
+$github-color:    #777778;
+$linkedin-color:  #015a86;
 $socareers-color: #fd8808;
-$twitter-color: #2eb8e7;
+$twitter-color:   #2eb8e7;
 
 @mixin invert-colors-on-hover($color: $secondary-color) {
     @include transition (.5s);

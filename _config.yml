@@ -4,6 +4,8 @@ gems:
   - jekyll-sitemap
 highlighter: pygments
 permalink: /:year/:month/:day/:title
+sass:
+  sass_dir: bower_components/
 name: fs
 description: fuad saud's worhtless thougts
 url: //fuad.im
