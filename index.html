@@ -26,8 +26,11 @@ layout: default
                     </a>
                 </h1>
 
-                <p class="tldr">{{ post.tldr }}</p>
-                </section class="post-headsup">
-            {% endif %}
-        {% endfor %}
-    </section>
+                {% if post.tldr %}
+                    <p class="tldr">{{ post.tldr }}</p>
+                {% endif %}
+
+            </section class="post-headsup">
+        {% endif %}
+    {% endfor %}
+</section>
