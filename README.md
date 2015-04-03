@@ -6,6 +6,6 @@ blog, resume, and everything else.
 
 ## Thanks
 
-* to Daniel Bruce for his wonderful icon set ([entypo.com](//entypo.com));
+* [Font Awesome](http://fontawesome.io) for such awesome fonts;
 * [Jekyll](//jekyllrb.com) for the awesome engine;
 * [Github Pages](//pages.github.com) for hosting service.
