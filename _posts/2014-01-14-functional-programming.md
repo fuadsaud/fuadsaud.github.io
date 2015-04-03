@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FUNctional programming
+title: FUNctional Programming
 published: true
 ---
 
