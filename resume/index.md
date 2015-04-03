@@ -1,6 +1,7 @@
 ---
 layout: resume
 title: Fuad Saud
+redirect_from: "/resume.html"
 ---
 
 # Fuad Frederik Saud
