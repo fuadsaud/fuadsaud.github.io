@@ -40,12 +40,12 @@ p { line-height: 2em; }
 .container { &:after { clear: both; } }
 
 .sidebar {
-    @include box-sizing (border-box);
     @include hide-small-screen;
 
     padding: .75em .3em;
     text-align: center;
 
+    box-sizing: border-box;
     float: left;
     overflow-y: scroll;
     position: fixed;
@@ -122,7 +122,7 @@ main {
     text-align: center;
 
     @mixin split {
-        @include box-sizing (border-box);
+        box-sizing: border-box;
 
         padding: 2em 3em;
         float: right;
