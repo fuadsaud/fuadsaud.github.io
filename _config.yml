@@ -2,7 +2,7 @@ gems:
   - jemoji
   - jekyll-sitemap
 highlighter: pygments
-permalink: /:year/:month/:day/:title.html
+permalink: /:year/:month/:day/:title
 name: fs
 description: fuad saud's worhtless thougts
 url: //fuad.im
