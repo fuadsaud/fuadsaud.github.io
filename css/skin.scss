@@ -4,6 +4,7 @@
 
 $primary-color:   #50a0a6;
 $secondary-color: #b82a38;
+$tertiary-color:  #2b2d42;
 
 $email-color:     $secondary-color;
 $feed-color:      #f50;
@@ -24,13 +25,13 @@ $twitter-color:   #2eb8e7;
     }
 }
 
-@mixin glowing-links {
+@mixin glowing-links($color: $secondary-color) {
     a {
-        color: $secondary-color;
+        color: $color;
 
         &:hover {
-            color: $secondary-color;
-            text-shadow: $secondary-color -.05em .05em .15em;
+            color: $color;
+            text-shadow: $color -.05em .05em .15em;
         }
     }
 }
@@ -62,34 +63,50 @@ a {
     @include invert-colors-on-hover($secondary-color);
 }
 
-hr { color: $primary-color; }
+hr {
+    color: $primary-color;
+}
 
 h1,
 h2,
 h3,
-.social-links { @include reset-links; }
+.social-links {
+    @include reset-links;
+}
 
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 { font-weight: lighter; }
+h6 {
+    font-weight: lighter;
+}
 
-img { @include reset-links; }
+img {
+    @include reset-links;
+}
 
-p { line-height: 2em; }
+p {
+    line-height: 2em;
+}
 
-strong { font-weight: normal; }
+strong {
+    font-weight: normal;
+}
 
-.sidebar { @include transition (1s); }
+.sidebar {
+    @include transition (1s);
+}
 
 .sidebar,
 .topbar,
 .bottombar {
     color: #333;
 
-    h1 { color: #fff; }
+    h1 {
+        color: #fff;
+    }
 
     .avatar { @include reset-links; }
 
@@ -102,8 +119,6 @@ strong { font-weight: normal; }
 }
 
 .social-links {
-    li { -webkit-font-smoothing: antialiased; }
-
     .feed {
         a:hover { color: $feed-color; }
     }
@@ -126,7 +141,7 @@ strong { font-weight: normal; }
 }
 
 .post {
-    header .tldr {
+    .tldr {
         background-color: #bdc;
         color: #555;
     }
@@ -134,11 +149,23 @@ strong { font-weight: normal; }
 
 .post,
 .resume {
-    h1 { color: $secondary-color; }
-    h2 { color: $primary-color; }
+    h1 {
+        @include glowing-links($secondary-color);
 
-    h1,
-    h2 { @include glowing-links; }
+        color: $secondary-color;
+    }
+
+    h2 {
+        @include glowing-links($primary-color);
+
+        color: $primary-color;
+    }
+
+    h3 {
+        @include glowing-links($tertiary-color);
+
+        color: $tertiary-color;
+    }
 }
 
 .highlight {

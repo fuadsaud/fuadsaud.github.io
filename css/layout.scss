@@ -5,39 +5,46 @@
 
 $resolution-treshold: 1140px;
 
-@mixin hide-small-screen { @media(max-width: $resolution-treshold) { display: none; } }
-@mixin hide-large-screen { @media(min-width: $resolution-treshold + 1) { display: none; } }
+@mixin hide-small-screen {
+    @media(max-width: $resolution-treshold) { display: none;
+    };
+}
+@mixin hide-large-screen {
+    @media(min-width: $resolution-treshold + 1) { display: none;
+    };
+}
 
 html {
     font-size: 62.5%;
 
+    box-sizing: border-box;
+
     @media(max-width: 320px) { font-size: 45%; }
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 hr {
     border: none;
-    font-size: 1.0em;
+    font-size: 1em;
     letter-spacing: .3em;
     text-align: center;
+    height: 1em;
 
     &:before { content: '.......................'; }
 }
 
-h1 {
-    font-size: 2em;
-    margin: 0;
+p {
+    line-height: 2em;
 }
 
-h2 {
-    font-size: 1.75em;
-    margin: .35em .75em;
+.container {
+    &:after {
+        clear: both;
+    };
 }
-
-h3 { font-size: 1.3em; }
-
-p { line-height: 2em; }
-
-.container { &:after { clear: both; } }
 
 .sidebar {
     @include hide-small-screen;
@@ -124,14 +131,14 @@ main {
     @mixin split {
         box-sizing: border-box;
 
-        padding: 2em 3em;
+        padding: 1em 3em;
         float: right;
         width: 70%;
     }
 
     @mixin only {
         float: none;
-        padding: 2em 0 2em 5%;
+        padding: 1em 0 1em 5%;
     }
 
     &.only { @include only; }
@@ -153,6 +160,8 @@ main {
         }
 
         .tldr {
+            display: inline-block;
+
             margin: 0 2em;
             text-align: inherit;
         }
@@ -181,25 +190,44 @@ main {
     }
 }
 
-.post {
-    @media(max-width: 320px) { padding: .35em; }
+.resume, .post {
+    @media(max-width: 320px) {
+        padding: .35em;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin: 1.2em .5em .5em .5em;
+    }
+
+    h2 {
+        font-size: 1.75em;
+        margin: 1.2em .75em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+        margin: 1.2em .5em;
+    }
 
     header {
         text-align: center;
 
         margin-bottom: 1.5em;
 
-        .date { margin: 0; }
+        .date {
+            margin: 0;
+        }
+    }
 
-        .tldr {
-            padding: .35em;
+    .tldr {
+        padding: .35em;
 
-            display: inline-block;
+        display: inline-block;
 
-            &:before {
-                content: 'tl;dr: ';
-                margin-right: .35em;
-            }
+        &:before {
+            content: 'tl;dr: ';
+            margin-right: .35em;
         }
     }
 
@@ -213,7 +241,10 @@ main {
 
     .comments { margin-top: 2em; }
 
-    p { text-align: justify; }
+    p {
+        text-align: justify;
+        margin: 1.2em 0;
+    }
 }
 
 .highlight {
