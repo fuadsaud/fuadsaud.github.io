@@ -46,7 +46,7 @@ At [Unisinos](//unisinos.br/global/en/) since March 2011. I'm in the 7th period
 ## Where I've been working
 
 
-### CWI ([cwi.com.br](//cwi.com.br))
+### [CWI (cwi.com.br)](//cwi.com.br)
 
 #### Full-time Software Developer - April 2014 to July 2014
 
@@ -64,7 +64,7 @@ Stack used there consisted mainly of several Ruby based REST microservices
 (developed with the Sinatra framework along with Cucumber and RSpec), backed by
 MongoDB and Redis databases on an Amazon infrastructure.
 
-### Avelã ([avela.me](//avela.me))
+### [Avelã (avela.me)](//avela.me)
 
 #### Full-time Software Developer - April 2013 to April 2014
 
@@ -72,7 +72,7 @@ Avelã makes CRM software for medical clinics. I used to deal with a lot of
 legacy code and refactor apps written using Ruby on Rails, JavaScript and MySQL
 databases.
 
-### Ocapi ([www.ocapi.com.br](//www.ocapi.com.br))
+### [Ocapi (www.ocapi.com.br)](//www.ocapi.com.br)
 
 #### Intern Software Developer - July 2012 to January 2013
 
@@ -84,7 +84,7 @@ company's products (mostly Ruby on Rails applications) and on the maintenance
 of existing projects. I learned tons of things during this period, and it was
 essential for my professional base.
 
-### Cali ([www.cali.com.br](//www.cali.com.br))
+### [Cali (www.cali.com.br)](//www.cali.com.br)
 
 #### Intern Support Assistant and Software Developer
 
