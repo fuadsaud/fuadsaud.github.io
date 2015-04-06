@@ -73,7 +73,9 @@ p {
         width: 43px;
     }
 
-    h1 { margin: .3em 0; }
+    h1 {
+        margin: .3em 0;
+    }
 
     img {
         $border-radius: 500px;
@@ -101,7 +103,9 @@ p {
 
     text-align: center;
 
-    img, p, ul { display: none; }
+    h1 {
+        margin: 0;
+    }
 
     height: 3em;
 }
@@ -143,8 +147,15 @@ main {
 
     &.only { @include only; }
 
-    @media(max-width: $resolution-treshold) { @include only; }
-    @media(min-width: $resolution-treshold + 1) { @include split; }
+    @media(max-width: $resolution-treshold) {
+        @include only;
+
+        padding-left: 0;
+    }
+
+    @media(min-width: $resolution-treshold + 1) {
+        @include split;
+    }
 }
 
 .stream {
