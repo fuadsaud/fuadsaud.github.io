@@ -6,12 +6,15 @@
 $resolution-treshold: 1140px;
 
 @mixin hide-small-screen {
-    @media(max-width: $resolution-treshold) { display: none;
-    };
+    @media(max-width: $resolution-treshold) {
+        display: none;
+    }
 }
+
 @mixin hide-large-screen {
-    @media(min-width: $resolution-treshold + 1) { display: none;
-    };
+    @media(min-width: $resolution-treshold + 1) {
+        display: none;
+    }
 }
 
 html {
@@ -22,8 +25,13 @@ html {
     @media(max-width: 320px) { font-size: 45%; }
 }
 
+html,
+body {
+    height: 100%;
+}
+
 *, *:before, *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 hr {
@@ -41,31 +49,50 @@ p {
 }
 
 .container {
-    &:after {
-        clear: both;
-    };
+    display:         flex;
+    display: -webkit-flex;
+
+            flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+
+            align-content: stretch;
+    -webkit-align-content: stretch;
+
+    height: 100%;
+}
+
+main,
+.sidebar,
+.topbar,
+.footer {
+            flex: 1 100%;
+    -webkit-flex: 1 100%;
 }
 
 .sidebar {
     @include hide-small-screen;
 
-    padding: .75em .3em;
     text-align: center;
 
+    padding: .75em .3em;
+
     box-sizing: border-box;
-    float: left;
-    overflow-y: scroll;
-    position: fixed;
+
+            flex: 33;
+    -webkit-flex: 33;
+
     height: 100%;
-    width: 30%;
 
     &.fold {
-        width: 5%;
+                flex: 5;
+        -webkit-flex: 5;
 
         h1,
         img,
         p,
-        ul { display: none; }
+        ul {
+            display: none;
+        }
     }
 
     .toggle {
@@ -103,11 +130,13 @@ p {
 
     text-align: center;
 
+    height: 3em;
+
     h1 {
         margin: 0;
     }
 
-    height: 3em;
+    overflow-y: auto;
 }
 
 .bottombar {
@@ -123,29 +152,38 @@ p {
     }
 
     .social-links {
-        a { font-size: 3em; }
+        a {
+            font-size: 3em;
+        }
     }
 }
 
 main {
     font-size: .75em;
-    margin: 0 auto;
     text-align: center;
+
+            flex: 67;
+    -webkit-flex: 67;
+
+    overflow-y: auto;
 
     @mixin split {
         box-sizing: border-box;
 
-        padding: 1em 3em;
-        float: right;
-        width: 70%;
+        padding: 1em 2em 3em 2em;
     }
 
     @mixin only {
-        float: none;
-        padding: 1em 0 1em 5%;
+        padding: 1em 3em 3em 3em;
+
+            flex: 95;
+    -webkit-flex: 95;
+
     }
 
-    &.only { @include only; }
+    &.only {
+        @include only;
+    }
 
     @media(max-width: $resolution-treshold) {
         @include only;
@@ -180,6 +218,9 @@ main {
 }
 
 .container > footer {
+    display:         flex;
+    display: -webkit-flex;
+
     text-align: justify;
 
     margin-top: 2.5em;
@@ -208,7 +249,7 @@ main {
 
     h1 {
         font-size: 2em;
-        margin: 1.2em .5em .5em .5em;
+        margin: .5em .5em .5em .5em;
     }
 
     h2 {
