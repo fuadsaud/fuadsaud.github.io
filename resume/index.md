@@ -10,9 +10,12 @@ redirect_from: "/resume.html"
 
 ## Hi there
 
-I'm a 19 years old software developer and computer geek living in the
-Rochester, NY area. I'm studying abroad in the U.S, attending Rochester
-Institute of Technology's Computer Science program for a year.
+I'm a 19 years old software developer and computer geek living in
+{{ site.author.location }}. I'm currently studying abroad in the U.S and
+working as a Research Assistant for the [WISDM Lab](//wisdmproject.com) at
+[Fordham University](//fordham.edu), after having attended
+[Rochester Institute of Technology's Computer Science program](//cs.rit.edu)
+for one academic year.
 
 I've been working with software development since 2012 and I really like it.
 Most of what I did since then is web development involving technologies like
@@ -45,6 +48,9 @@ At [Unisinos](//unisinos.br/global/en/) since March 2011. I'm in the 7th period
 
 ## Where I've been working
 
+### [WISDM Lab (wisdmproject.com)](//wisdmproject.com)
+
+#### Research Assistant - May 2015 to August 2015 (current)
 
 ### [CWI (cwi.com.br)](//cwi.com.br)
 
