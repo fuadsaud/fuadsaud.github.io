@@ -164,9 +164,9 @@ strong {
     }
 
     h3 {
-        @include glowing-links($tertiary-color);
+        @include glowing-links($quinary-color);
 
-        color: $tertiary-color;
+        color: $quinary-color;
     }
 }
 
