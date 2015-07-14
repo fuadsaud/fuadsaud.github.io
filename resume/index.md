@@ -11,21 +11,21 @@ redirect_from: "/resume.html"
 ## Hi there
 
 I'm a 19 years old software developer and computer geek living in
-{{ site.author.location }}. I'm currently studying abroad in the U.S and
-working as a Research Assistant for the [WISDM Lab](//wisdmproject.com) at
-[Fordham University](//fordham.edu), after having attended
+{{site.author.location }}. I'm currently studying abroad in the U.S and working
+as a Research Assistant for the [WISDM Lab](//wisdmproject.com) at
+[Fordham University](//fordham.edu) - until August -, after having attended
 [Rochester Institute of Technology's Computer Science program](//cs.rit.edu)
-for one academic year.
+for a year.
 
 I've been working with software development since 2012 and I really like it.
 Most of what I did since then is web development involving technologies like
 **Ruby** and **JavaScript** and **MongoDB** but I'm also interested in things
 such as functional programming - I've been playing with **Clojure** and
-**Haskell** for a while and I think I'm falling in love for them -, data
-analysis - I have some knowledge in **data mining** from college courses that I
-still didn't have the chance to put to work in non-college related tasks - and
-artificial intelligence - same goes for **machine learning**, which I think is
-an awesome field I'd like to explore more.
+**Haskell** for a while and I really want to spend more time mastering these
+tools-, data analysis - I have some knowledge in **data mining** from college
+courses that I still didn't have the chance to put to work in non-college
+related tasks - and artificial intelligence - same goes for **machine
+learning**, which I think is an awesome field I'd like to explore more.
 
 I also like **football** - mostly the one played with the feet but have been
 learning about the one played with the hands lately -, **music** - many genres but
