@@ -33,7 +33,7 @@ mostly indie and folk rock - and **coffee**.
 
 I <del>should be blogging</del> blog at [fuad.im](//fuad.im).
 
-## Where I've been studying
+## Where I've studyed
 
 ### **Computer Science Sandwich Graduation**
 
@@ -46,7 +46,7 @@ non-degree exchange program sponsored by the Brazilian Government.
 At [Unisinos](//unisinos.br/global/en/) since March 2011. I'm in the 7th period
 (will hopefully graduate in 2016).
 
-## Where I've been working
+## Where I've worked
 
 ### [WISDM Lab (wisdmproject.com)](//wisdmproject.com)
 
