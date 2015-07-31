@@ -10,10 +10,11 @@ redirect_from: "/resume.html"
 
 ## Hi there
 
-I'm a 19 years old software developer and computer geek living in
-{{site.author.location }}. I'm currently studying abroad in the U.S and working
-as a Research Assistant for the [WISDM Lab](//wisdmproject.com) at
-[Fordham University](//fordham.edu) - until August -, after having attended
+I'm a 19 years old software developer and computer geek from
+[Rio Grande do Sul, Brazil](https://en.wikipedia.org/wiki/Rio_Grande_do_Sul),
+but living in {{site.author.location}}. I'm currently studying abroad in the
+U.S and working as a Research Assistant for the [WISDM Lab](//wisdmproject.com)
+at [Fordham University](//fordham.edu) - until August -, after having attended
 [Rochester Institute of Technology's Computer Science program](//cs.rit.edu)
 for a year.
 
