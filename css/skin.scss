@@ -13,6 +13,7 @@ $feed-color:      #f50;
 $github-color:    #777778;
 $linkedin-color:  #015a86;
 $socareers-color: #fd8808;
+$stackexchange-color: #153f86;
 $twitter-color:   #2eb8e7;
 
 @mixin invert-colors-on-hover($color: $secondary-color) {
@@ -185,11 +186,12 @@ blockquote {
 }
 
 .contact-links {
-    .email     { @include invert-colors-on-hover($email-color); }
-    .github    { @include invert-colors-on-hover($github-color); }
-    .linkedin  { @include invert-colors-on-hover($linkedin-color); }
-    .socareers { @include invert-colors-on-hover($socareers-color); }
-    .twitter   { @include invert-colors-on-hover($twitter-color); }
+    .email         { @include invert-colors-on-hover($email-color); }
+    .github        { @include invert-colors-on-hover($github-color); }
+    .linkedin      { @include invert-colors-on-hover($linkedin-color); }
+    .socareers     { @include invert-colors-on-hover($socareers-color); }
+    .stackexchange { @include invert-colors-on-hover($stackexchange-color); }
+    .twitter       { @include invert-colors-on-hover($twitter-color); }
 
     li {
         @include reset-links;
