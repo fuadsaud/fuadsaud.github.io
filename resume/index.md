@@ -51,7 +51,7 @@ At [Unisinos](//unisinos.br/global/en/) since March 2011. I'm in the 7th period
 
 ### [WISDM Lab (wisdmproject.com)](//wisdmproject.com)
 
-#### Research Assistant - May 2015 to August 2015 (current)
+#### Research Assistant - May 2015 to August 2015
 
 ### [CWI (cwi.com.br)](//cwi.com.br)
 
