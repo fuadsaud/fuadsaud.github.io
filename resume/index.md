@@ -49,6 +49,10 @@ At [Unisinos](//unisinos.br/global/en/) since March 2011. I'm in the 7th period
 
 ## Where I've worked
 
+### [Codeminer 42 (codeminer42.com)](//codeminer42.com)
+
+#### Software Developer - September 2015 to present
+
 ### [WISDM Lab (wisdmproject.com)](//wisdmproject.com)
 
 #### Research Assistant - May 2015 to August 2015
