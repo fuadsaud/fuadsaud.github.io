@@ -2,6 +2,7 @@ gems:
   - jemoji
   - jekyll-redirect-from
   - jekyll-sitemap
+  - jekyll-feed
 highlighter: pygments
 permalink: /:year/:month/:day/:title
 sass:
@@ -22,3 +23,5 @@ author:
     socareers: //careers.stackoverflow.com/fuad
     stackexchange: //stackexchange.com/users/1280082/fuad-saud?tab=accounts
     twitter: //twitter.com/fuadsaud
+feed:
+  path: atom.xml
