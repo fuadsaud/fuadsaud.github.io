@@ -44,8 +44,8 @@ non-degree exchange program sponsored by the Brazilian Government.
 
 ### **Computer Science BS**
 
-At [Unisinos](//unisinos.br/global/en/) since March 2011. I'm in the 7th period
-(will hopefully graduate in 2016).
+At [Unisinos](//unisinos.br/global/en/) since March 2011. I'm hopefully
+graduating by the end of 2016.
 
 ## Where I've worked
 
