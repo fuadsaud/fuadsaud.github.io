@@ -9,7 +9,7 @@ So I'm reading
 and one of the examples given to illustrate the usage of closures caught my
 eye. Here it is:
 
-{% highlight clojure %}
+```clojure
 (defn make-composed-comparison [& comparisons]
   (fn [p1 p2]
     (let [results (for [comparison comparisons] (comparison p1 p2))
@@ -18,7 +18,7 @@ eye. Here it is:
       (if (nil? first-non-zero-result)
         0
         first-non-zero-result))))
-{% endhighlight %}
+```
 
 It's a function that takes a list of comparator functions and returns their
 composition, which in turn, returns the first nonzero comparation result, or
@@ -34,7 +34,7 @@ to all of them (commom use case for `map`), I have a list of functions that I
 want to apply to a fixed set of arguments. Meet `juxt`, a neat little function
 that does exactly what's needed:
 
-{% highlight clojure %}
+```clojure
 (defn make-composed-comparison [& comparisons]
   (fn [p1 p2]
     (let [results ((apply juxt comparisons) p1 p2)
@@ -43,21 +43,21 @@ that does exactly what's needed:
       (if (nil? first-non-zero-result)
         0
         first-non-zero-result))))
-{% endhighlight %}
+```
 
 There it is. I already feel better. But wait, we can dry it up even more!
 We don't need to grab the first nonzero result then check if it's `nil` or not;
 we can that very `some` function to just give us back the first result that
 matches a given predicate, or `nil` otherwise.
 
-{% highlight clojure %}
+```
 (defn make-composed-comparison [& comparisons]
   (fn [p1 p2]
     (let [comparison-results ((apply juxt comparisons) p1 p2)]
       (or
         (some #(when (nonzero? %) %) comparison-results)
         0))))
-{% endhighlight %}
+```
 
 And ther you have it. This may feel stupid, but I can't describe how much fun
 I have trying to figure out this kind of stuff.

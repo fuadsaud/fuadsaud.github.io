@@ -16,11 +16,11 @@ The problem with immutable collections is that, sometimes, to realize a simple
 set of operations on it, using it's public interface, will lead to a pretty
 insatisfactory performance. Take the following example in account:
 
-{% highlight ruby %}
+```ruby
 bis = Bis.new(8, 7) #=> <<00000111>> 7
 
 bis.set(5) #=> <<00100111>> 39
-{% endhighlight %}
+```
 
 Simple. Just need to flips some bits and instantiate a new bis object with that
 new value, right? Yeah, but the problem with that approach is: since I'm not
@@ -36,7 +36,7 @@ could easily duplicate the current object and change only the bits I needed
 directly in the new object's storage. This is the piece of code that actually
 sets the store:
 
-{% highlight ruby %}
+```ruby
 def change_bit_at(index)
   ->(bit) {
     return self if self[index] == bit
@@ -50,7 +50,7 @@ def change_bit_at(index)
     }
   }
 end
-{% endhighlight %}
+```
 
 Nevermind the weird overly functional-ish idioms - when I'm coding on my own I
 do some crazy stuff for fun. The important part here is that I'm instantiating
