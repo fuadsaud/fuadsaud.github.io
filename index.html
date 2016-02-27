@@ -5,17 +5,28 @@ layout: default
     Hello comrade!<br>
     My name is <strong>{{ site.author.name }}</strong> and I'm an average guy<br>
     living in {{ site.author.location }}.<br>
-    I hack software <a href="{{ site.author.links.github }}" target="_blank">for fun</a>
-    and for living.
+    I hack software at <a href="{{ site.author.links.company }}" target="_blank">Codeminer 42</a>
+    and also do
+    <a href="{{ site.author.links.github }}" target="_blank"> some stuff on my free time</a>
     Wanna talk? Just ping me on
     <a href="{{ site.author.links.twitter }}" target="_blank">twitter</a>!
 </p>
+
+<hr>
 
 <p class="about">
     I write some random stuff in this blog.<br>You should probably check it out:
 </p>
 
 <section class="stream">
+    <section class="post">
+        <h1 class="title">
+            <a href="https://medium.com/codeminer-42/writing-custom-railsadmin-actions-e0799aadc8ae#.mxx922i3r">
+                Writing custom RailsAdmin actions<br>
+            </a>
+        </h1>
+    </section>
+
     {% for post in site.posts %}
         {% if post.published %}
             <hr>
@@ -29,8 +40,7 @@ layout: default
                 {% if post.tldr %}
                     <p class="tldr">{{ post.tldr }}</p>
                 {% endif %}
-
-            </section class="post-headsup">
+            </section>
         {% endif %}
     {% endfor %}
 </section>
