@@ -129,9 +129,10 @@ understand what they're doing and you really need them.  Don't use a plugin just
 because it's popular; Vim's defaults and core features are pretty powerful
 already, you may not need much more.
 
-Btw, please do yourself a favour and keep away from Janus. I tried it twice and
-I can tell you: it's just not worth it. It's gonna give you a lot of crap you
-don't need and it'll make you scream of anger with that startup time.
+Btw, please do yourself a favour and keep away from
+[Janus](https://github.com/carlhuda/janus). I tried it twice and I can tell
+you: it's just not worth it. It's gonna give you a lot of crap you don't need
+and it'll make you scream of anger with that startup time.
 
 My vimrc is pretty basic. I like getting as close as possible to the default
 mappings, making my muscle memory more portable. If you wanna get an idea, you
