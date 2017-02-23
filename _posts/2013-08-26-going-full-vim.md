@@ -123,11 +123,11 @@ is a must have.
 
 ## Know your vimrc
 
-You should definetly get some plugins to start. But just go throwing anything
-you find cool into your vimrc. Only add things after you're sure you understand
-what they're doing and you really need them.  Don't use a plugin just because
-it's popular; Vim's defaults and core features are pretty powerful already, you
-may not need much more.
+You should definetly get some plugins to start. But don't just go throwing
+anything you find cool into your vimrc. Only add things after you're sure you
+understand what they're doing and you really need them.  Don't use a plugin just
+because it's popular; Vim's defaults and core features are pretty powerful
+already, you may not need much more.
 
 Btw, please do yourself a favour and keep away from Janus. I tried it twice and
 I can tell you: it's just not worth it. It's gonna give you a lot of crap you
