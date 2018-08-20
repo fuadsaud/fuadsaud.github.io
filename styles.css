@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'longhaul';
+  src: url('./longhaul/Longhaul.ttf') format('truetype'),
+       url('./longhaul/longhaul-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Big John';
+  src: url('./bjsj/big-john.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Slim Joe';
+  src: url('./bjsj/slim-joe.otf') format('opentype');
+}
+
+body {
+  font-family: Big John;
+  background-color: rgb(63, 81, 181);
+  background-color: #dafff0;
+}
+
+.container {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.row {
+  width: 100%;
+
+  text-align: center;
+}
+
+.hero {
+  font-size: 12em;
+  color: #fedede;
+  color: #333333;
+  text-shadow: 10px 9px #fedede;
+  /* text-shadow: 10px 9px #dafff0; */
+}
+
+.refs {
+  font-family: Fira Code;
+  list-style: none;
+  padding: 0;
+}
+
+.refs li {
+  display: inline;
+}
+
+.refs li a {
+  color:  #333333;
+}
+
+.refs li a:hover {
+  background-color: #fedede;
+}
+
+.refs li a:visited {
+  color: rgb(63, 81, 181);
+}

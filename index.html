@@ -1,45 +1,61 @@
----
-layout: default
----
-<p class="about">
-    Hello comrade!<br>
-    My name is <strong>{{ site.author.name }}</strong> and I'm an average guy<br>
-    living in {{ site.author.location }}.<br>
-    I build money machines at <a href="{{ site.author.links.company }}" target="_blank">Nubank</a>
-    and spend more time than I should talking utterly important stuff
-    <a href="{{ site.author.links.twitter }}" target="_blank">on twitter</a>.<br>
-    So feel free to hit me up and have some good banter!
-</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-37834803-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-<hr>
+      gtag('config', 'UA-37834803-2');
+    </script>
 
-<p class="about">
-    I used to write some random, tech stuff on this blog, but I have been too lazy recently:<br>
-</p>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>I'm Fuad</title>
 
-<section class="stream">
-    <section class="post">
-        <h1 class="title">
-            <a href="https://medium.com/codeminer-42/writing-custom-railsadmin-actions-e0799aadc8ae#.mxx922i3r">
-                Writing custom RailsAdmin actions<br>
-            </a>
-        </h1>
-    </section>
+  </head>
 
-    {% for post in site.posts %}
-        {% if post.published %}
-            <hr>
-            <section class="post">
-                <h1 class="title">
-                    <a href="{{ post.url }}">
-                        {{ post.title }}<br>{% include date.html %}
-                    </a>
-                </h1>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 
-                {% if post.tldr %}
-                    <p class="tldr">{{ post.tldr }}</p>
-                {% endif %}
-            </section>
-        {% endif %}
-    {% endfor %}
-</section>
+  <body>
+    <main class="container">
+      <div class="row">
+        <div class="item">
+          <span class="hero">I'm Fuad</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="item">
+          <span>
+            I solve problemas at <a href="https://nubank.com.br">Nubank</a>.
+          </span>
+        </div>
+      </div>
+
+      <ul class="refs">
+        <li class="item">
+          <a href="https://github.com/fuadsaud">GitHub</a>
+        </li>
+
+        <li class="item">
+          <a href="https://linkedin.com/in/fuadsaud">LinkedIn</a>
+        </li>
+
+        <li class="item">
+          <a href="https://twitter.com/fuadsaud">Twitter</a>
+        </li>
+
+        <li class="item">
+          <a href="https://medium.com/@fuad">Medium</a>
+        </li>
+
+        <li class="item">
+          <a href="https://instagram.com/fuadfsaud">Instagram</a>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
