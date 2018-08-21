@@ -59,7 +59,9 @@ a {
 }
 
 .refs {
-  padding: 0;
+  padding: 1em;
+  line-height: 1.6;
+
 
   list-style: none;
   font-family: 'Anonymous Pro', monospace;
@@ -78,13 +80,27 @@ a {
   color: rgb(63, 81, 181);
 }
 
-@media only screen and (min-device-width : 480px) {
+@media only screen and (min-device-width : 824px) {
   .hero-container {
-    margin-top: 150px;
+    margin-top: 15em;
   }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width: 480px) and (max-device-width : 824px) {
+  body {
+    background-color: #fa9ba9 !important;
+  }
+
+  .hero-container {
+    margin-top: 15em;
+  }
+
+  .hero {
+    /* text-shadow: 10px 9px #8474a2; */
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 823px) {
   html {
     font-size: 6px;
   }
