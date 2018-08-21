@@ -1,21 +1,23 @@
-@font-face {
-  font-family: 'longhaul';
-  src: url('./longhaul/Longhaul.ttf') format('truetype'),
-       url('./longhaul/longhaul-webfont.woff') format('woff');
-}
+/* @font-face { */
+/*   font-family: 'longhaul'; */
+/*   src: url('./longhaul/Longhaul.ttf') format('truetype'), */
+/*        url('./longhaul/longhaul-webfont.woff') format('woff'); */
+/* } */
+
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
 
 @font-face {
   font-family: 'Big John';
-  src: url('./bjsj/big-john.otf') format('opentype');
+  src: url('./fonts/bjsj/big-john.otf') format('opentype');
 }
 
-@font-face {
-  font-family: 'Slim Joe';
-  src: url('./bjsj/slim-joe.otf') format('opentype');
-}
+/* @font-face { */
+/*   font-family: 'Slim Joe'; */
+/*   src: url('./bjsj/slim-joe.otf') format('opentype'); */
+/* } */
 
 body {
-  font-family: Big John;
+  font-family: 'Big John', sans-serif;
   background-color: rgb(63, 81, 181);
   background-color: #dafff0;
 }
@@ -45,7 +47,7 @@ body {
 }
 
 .refs {
-  font-family: Fira Code;
+  font-family: 'Anonymous Pro', monospace;
   list-style: none;
   padding: 0;
 }
