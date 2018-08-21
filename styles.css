@@ -16,20 +16,28 @@
 /*   src: url('./bjsj/slim-joe.otf') format('opentype'); */
 /* } */
 
+html {
+  font-size: 10px;
+}
+
 body {
   font-family: 'Big John', sans-serif;
-  background-color: rgb(63, 81, 181);
   background-color: #dafff0;
+}
+
+a {
+  color:  #333333;
 }
 
 .container {
   min-height: 100vh;
+  min-width: 100vw;
 
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .row {
@@ -39,25 +47,27 @@ body {
 }
 
 .hero {
-  font-size: 12em;
+  font-size: 18em;
   color: #fedede;
   color: #333333;
   text-shadow: 10px 9px #fedede;
   /* text-shadow: 10px 9px #dafff0; */
 }
 
+.bio {
+  font-size: 3em;
+}
+
 .refs {
-  font-family: 'Anonymous Pro', monospace;
-  list-style: none;
   padding: 0;
+
+  list-style: none;
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 3em;
 }
 
 .refs li {
   display: inline;
-}
-
-.refs li a {
-  color:  #333333;
 }
 
 .refs li a:hover {
@@ -66,4 +76,37 @@ body {
 
 .refs li a:visited {
   color: rgb(63, 81, 181);
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  html {
+    font-size: 6px;
+  }
+
+  body {
+    background-color: rgb(63, 81, 181);
+    color: #ffffff;
+  }
+
+  .hero {
+    color: #333333;
+  }
+
+  a {
+    color:  #ffffff;
+  }
+
+  .refs li a:hover {
+    background-color: #fedede;
+    color: #333333;
+  }
+
+  .refs li a:visited {
+    color: #bbbbbb;
+  }
+
+  /* .hero { */
+  /*   text-align: left; */
+  /*   font-size: 10em; */
+  /* } */
 }
