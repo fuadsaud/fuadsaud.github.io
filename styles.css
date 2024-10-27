@@ -25,8 +25,10 @@ body {
   font-family: var(--font-family-sans-serif);
   background-color: var(--color-surface);
   color: var(--color-content-main);
-  min-height: 100vh;
+  height: 100vh;
   width: 100vw;
+  padding: 5rem;
+  display: flex;
 }
 
 a {
@@ -47,8 +49,6 @@ a:visited {
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  padding: 5rem;
-  height: 100vh;
   box-sizing: border-box;
 }
 
