@@ -4,11 +4,11 @@
 /*        url('./longhaul/longhaul-webfont.woff') format('woff'); */
 /* } */
 
-@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
+@import url("https://fonts.googleapis.com/css?family=Anonymous+Pro");
 
 @font-face {
-  font-family: 'Big John';
-  src: url('./fonts/bjsj/big-john.otf') format('opentype');
+  font-family: "Big John";
+  src: url("./fonts/bjsj/big-john.otf") format("opentype");
 }
 
 /* @font-face { */
@@ -16,114 +16,181 @@
 /*   src: url('./bjsj/slim-joe.otf') format('opentype'); */
 /* } */
 
-html {
-  font-size: 10px;
+:root {
+  font-size: clamp(10px);
+
+  --color-green: #dafff0;
+  --color-dark-grey: #333333;
+  --color-light-grey: #bbbbbb;
+  --color-beige: #fedede;
+  --color-coral: #fa9ba9;
+  --color-white: #ffffff;
+  --color-light-blue: #4287f5;
+  --color-dark-blue: #3f51b5;
+
+  --font-family-sans-serif: "Big John", sans-serif;
+  --font-family-monospace: "Anonymous Pro", monospace;
 }
 
 body {
-  font-family: 'Big John', sans-serif;
-  background-color: #dafff0;
+  font-family: var(--font-family-sans-serif);
+  background-color: var(--color-surface);
+  color: var(--color-content-main);
+  min-height: 100vh;
+  width: 100vw;
 }
 
 a {
-  color:  #333333;
+  color: var(--color-content-main);
+}
+
+a:hover {
+  background-color: var(--color-accent);
+  color: var(--color-content-contrast);
+}
+
+a:visited {
+  color: var(--color-content-visited);
 }
 
 .container {
-  min-height: 100vh;
-  min-width: 100vw;
-
   display: flex;
-  flex-flow: row wrap;
-  /* flex-direction: column; */
   align-items: center;
-  justify-content: center;
-}
-
-.row {
-  width: 100%;
-
-  text-align: center;
+  flex-direction: column;
+  /* flex-flow: row wrap; */
+  justify-content: space-around;
+  padding: 5rem;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
 .hero {
-  font-size: 18em;
-  color: #fedede;
-  color: #333333;
-  text-shadow: 10px 9px #fedede;
-  /* text-shadow: 10px 9px #dafff0; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 1;
+}
+
+.title {
+  font-size: 18rem;
+  color: var(--color-content-title);
+  text-align: center;
+  text-shadow: 10px 9px var(--color-beige);
+  /* padding: 15rem 0; */
 }
 
 .bio {
-  font-size: 3em;
+  font-size: 3rem;
+  text-align: center;
 }
 
-.refs {
-  padding: 1em;
-  line-height: 1.6;
+.outlinks ul {
+  display: flex;
+  gap: 3rem;
+  line-height: 4.8rem;
 
-
-  list-style: none;
-  font-family: 'Anonymous Pro', monospace;
-  font-size: 3em;
+  font-family: var(--font-family-monospace);
+  font-size: 3rem;
 }
 
-.refs li {
-  display: inline;
-}
-
-.refs li a:hover {
-  background-color: #fedede;
-}
-
-.refs li a:visited {
-  color: rgb(63, 81, 181);
-}
-
-@media only screen and (min-device-width : 824px) {
-  .hero-container {
-    margin-top: 15em;
+/*
+ * NOTE: Desktop
+ */
+@media (1440px < width) {
+  :root {
+    font-size: 10px;
   }
 }
 
-@media only screen and (min-device-width: 480px) and (max-device-width : 824px) {
-  body {
-    background-color: #fa9ba9 !important;
+/*
+ * NOTE: Tablet, landscape
+ */
+@media (768px <=width <=1440px) {
+  :root {
+    font-size: 10px;
   }
 
-  .hero-container {
-    margin-top: 15em;
-  }
-
-  .hero {
-    /* text-shadow: 10px 9px #8474a2; */
+  .container {
+    padding: 10rem;
   }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 823px) {
-  html {
+/*
+ * NOTE: Low-res tablet, phone (landscape)
+ */
+@media (height <=1024px) and (width < 430px) {
+  :root {
     font-size: 6px;
   }
+}
 
-  body {
-    background-color: rgb(63, 81, 181);
-    color: #ffffff;
+/*
+ * NOTE: Phone (portrait)
+ */
+@media (height <=1024px) {
+  :root {
+    font-size: 6px;
   }
+}
 
-  .hero {
-    color: #333333;
+@media (height < 360px) {
+  :root {
+    font-size: 5px;
   }
+}
 
-  a {
-    color:  #ffffff;
+/*
+ * NOTE: Green
+ */
+@media (1024px <=height) {
+  :root {
+    --color-surface: var(--color-green);
+    --color-accent: var(--color-coral);
+    --color-content-main: var(--color-dark-grey);
+    --color-content-contrast: var(--color-dark-grey);
+    --color-content-visited: var(--color-dark-blue);
+    --color-content-title: var(--color-dark-grey);
   }
+}
 
-  .refs li a:hover {
-    background-color: #fedede;
-    color: #333333;
+/*
+ * NOTE: Pink
+ */
+@media (768px <=height < 1024px) {
+  :root {
+    --color-surface: var(--color-coral);
+    --color-accent: var(--color-beige);
+    --color-content-main: var(--color-white);
+    --color-content-contrast: var(--color-dark-grey);
+    --color-content-visited: var(--color-dark-blue);
+    --color-content-title: var(--color-dark-grey);
   }
+}
 
-  .refs li a:visited {
-    color: #bbbbbb;
+/*
+ * NOTE: Blue
+ */
+@media (360px <=height < 768px) {
+  :root {
+    --color-surface: var(--color-dark-blue);
+    --color-accent: var(--color-beige);
+    --color-content-main: var(--color-white);
+    --color-content-contrast: var(--color-dark-grey);
+    --color-content-visited: var(--color-light-grey);
+    --color-content-title: var(--color-dark-grey);
+  }
+}
+
+/*
+ * NOTE: Beige
+ */
+@media (height < 360px) {
+  :root {
+    --color-surface: var(--color-beige);
+    --color-accent: var(--color-blue);
+    --color-content-main: var(--color-dark-grey);
+    --color-content-contrast: var(--color-dark-grey);
+    --color-content-visited: var(--color-dark-blue);
+    --color-content-title: var(--color-dark-grey);
   }
 }
